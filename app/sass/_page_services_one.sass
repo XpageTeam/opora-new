@@ -178,5 +178,289 @@ body[class*="page_services_"]
 
 
 
-			
+.advantages
+	background-image: url('../img/ico-triangl.svg')
+	background-position: center bottom
+	background-repeat: no-repeat
 
+	&-cont
+		margin-top: 85px
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		margin: 90px 0 -20px -20px
+
+	&__item
+		width: calc((100% - 20px * 3) / 3)
+		margin: 0 0 50px 20px
+		display: flex
+		flex-direction: column
+		align-items: center
+
+		&-text
+			max-width: 320px
+			text-align: center
+
+		figure
+			margin-bottom: 35px
+
+
+.price-roof
+	display: flex
+	align-items: center
+
+	&-cont
+		padding: 100px 0
+
+	&__img
+		flex: none
+		margin-right: 120px
+
+	&__title
+		font-size: rem(35)
+		font-weight: bold
+		margin-bottom: 20px
+
+	&__info
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+
+	&__btn
+		margin-top: 40px
+
+
+	.btn
+		padding: 13px 20px 13px 20px
+		background: linear-gradient(90deg, #59335E 8.27%, rgba(76, 51, 94, 0.86) 146.74%, rgba(141, 0, 201, 0) 342.5%)
+		font-weight: bold
+		color: #fff
+		text-decoration: none
+		display: flex
+		align-items: center
+
+
+
+.calculate-cost
+	display: flex
+	flex-direction: column
+	align-items: center
+	padding: 130px 0 65px
+
+	&-cont
+		position: relative
+
+		> .wrapper
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			z-index: 10
+
+			display: flex
+			align-items: center
+			justify-content: center
+
+	&__img
+		position: relative
+
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background: linear-gradient(180.39deg, #000000 0.6%, rgba(0, 0, 0, 0) 349.72%)
+
+		img
+			width: 100%
+			display: block
+
+	&__subtitle
+		font-size: rem(15)
+		text-align: center
+
+	.title
+		margin-bottom: 25px
+
+	.forms-wrap
+		flex-direction: column
+		max-width: 360px
+		margin-top: 45px
+
+	.forms-input-cont
+		width: 100%
+
+		&--checkbox
+			display: flex
+			justify-content: center
+			border: 1px solid #fff
+			border-radius: 30px
+			background: #202121
+			padding: 6px
+			box-shadow: inset 0px 4px 2px rgba(0, 0, 0, 0.25)
+			min-height: 56px
+
+			.forms-checkbox
+				&:before
+					+size(44px)
+					border-radius: 50%
+					top: -6px
+					background: #fff
+
+
+			.forms__checkbox-label
+				padding-left: 95px
+				font-weight: bold
+				font-size: rem(15)
+
+				&:before
+					left: 13px
+
+				&:after
+					left: 17px
+
+		&--bot
+			flex-direction: row
+			justify-content: space-between
+
+			.forms-checkbox
+				display: flex
+				align-items: center
+				width: 180px
+				background: #202121
+				min-height: 56px
+				border-radius: 30px
+				border: 1px solid #fff
+
+				&:before
+					+size(44px)
+					border-radius: 50%
+					top: 5px
+					background: #fff
+					left: auto
+					right: 5px
+
+
+			.forms__checkbox-label
+				padding-left: 23px
+				padding-right: 58px
+				font-weight: bold
+				font-size: rem(15)
+
+				&:before
+					left: auto
+					right: 23px
+					top: 17px
+
+				&:after
+					left: auto
+					right: 17px
+					top: 15px
+
+			.forms-input-cont--file
+				width: 148px
+				margin: 0
+
+			.forms__input--file-support
+				opacity: 0
+				position: absolute
+				pointer-events: none
+
+			.forms__label--file
+				&:before
+					top: 0
+					right: 0
+					left: 0
+					bottom: 0
+					background-color: transparent
+					padding: 10px 50px 10px 10px
+					border: 1px solid #fff
+					width: auto
+					height: auto
+					text-align: left
+					line-height: 1
+					background-image: url('../img/ico-clip.svg')
+					background-position: right 10px center
+					background-repeat: no-repeat
+
+				&:after
+					display: none
+
+	input
+		border: 1px solid #fff
+		padding: 0 15px
+
+		&[type="submit"]
+			padding: 15px
+			border: 0
+			color: #fff
+			background: linear-gradient(90deg, #59335E 8.27%, rgba(76, 51, 94, 0.86) 146.74%, rgba(141, 0, 201, 0) 342.5%)
+
+	.forms-text
+		font-size: rem(12)
+
+		a 
+			text-decoration: underline
+
+.statistics
+	&-cont
+		padding: 104px 0 163px
+
+	&__list
+		display: flex
+		margin-top: 140px
+
+	&__item
+		position: relative
+		width: calc(100% / 5)
+		text-align: center
+
+		&-num
+			font-size: rem(80)
+			font-weight: bold
+
+		&:not(:last-child):after
+			content: ''
+			position: absolute
+			right: 0
+			top: calc(50% - 7px)
+			+size(14px)
+			border-radius: 50%
+			background: #fff
+
+.brands
+	&-cont
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		margin: 95px 0 -40px -40px
+
+	&__item
+		position: relative
+		width: calc((100% - 40px * 4) / 4)
+		margin: 0 0 40px 40px
+
+		&:hover
+			&:before
+				background: transparent
+
+		img
+			display: block
+			width: 100%
+
+		&:before
+			content: ''
+			position: absolute
+			display: block
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background: rgba(#000, .85%)
+			transition: background .5s ease

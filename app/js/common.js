@@ -138,6 +138,31 @@ X.onScroll(function (e, offset) {
 			$this.addClass("countered");
 		});
 	}
+
+	if ($(".statistics__item-num").length) if ($(".statistics__item-num").offset().top + 50 <= $(window).scrollTop() + $(window).height()) {
+		$(".statistics__item-num:not(.countered)").each(function (i, el) {
+			var $this = $(el),
+			    speed = 0;
+
+			switch (i) {
+				case 0:
+					speed = 4000;
+					break;
+				case 1:
+					speed = 2000;
+					break;
+
+				default:
+					speed = 3000;
+			}
+
+			$this.countTo({
+				speed: speed
+			});
+
+			$this.addClass("countered");
+		});
+	}
 });
 
 $(".directions__slider").each(function (i, el) {

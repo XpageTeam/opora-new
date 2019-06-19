@@ -930,6 +930,334 @@ body[class*="page_services_"] .title {
   margin-left: 15px;
 }
 
+.advantages {
+  background-image: url("../img/ico-triangl.svg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.advantages-cont {
+  margin-top: 85px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 90px 0 -20px -20px;
+}
+
+.advantages__item {
+  width: calc((100% - 20px * 3) / 3);
+  margin: 0 0 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages__item-text {
+  max-width: 320px;
+  text-align: center;
+}
+
+.advantages__item figure {
+  margin-bottom: 35px;
+}
+
+.price-roof {
+  display: flex;
+  align-items: center;
+}
+
+.price-roof-cont {
+  padding: 100px 0;
+}
+
+.price-roof__img {
+  flex: none;
+  margin-right: 120px;
+}
+
+.price-roof__title {
+  font-size: 2.1875rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.price-roof__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.price-roof__btn {
+  margin-top: 40px;
+}
+
+.price-roof .btn {
+  padding: 13px 20px 13px 20px;
+  background: linear-gradient(90deg, #59335E 8.27%, rgba(76, 51, 94, 0.86) 146.74%, rgba(141, 0, 201, 0) 342.5%);
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.calculate-cost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 130px 0 65px;
+}
+
+.calculate-cost-cont {
+  position: relative;
+}
+
+.calculate-cost-cont > .wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculate-cost__img {
+  position: relative;
+}
+
+.calculate-cost__img:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180.39deg, #000000 0.6%, transparent 349.72%);
+}
+
+.calculate-cost__img img {
+  width: 100%;
+  display: block;
+}
+
+.calculate-cost__subtitle {
+  font-size: 0.9375rem;
+  text-align: center;
+}
+
+.calculate-cost .title {
+  margin-bottom: 25px;
+}
+
+.calculate-cost .forms-wrap {
+  flex-direction: column;
+  max-width: 360px;
+  margin-top: 45px;
+}
+
+.calculate-cost .forms-input-cont {
+  width: 100%;
+}
+
+.calculate-cost .forms-input-cont--checkbox {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  background: #202121;
+  padding: 6px;
+  box-shadow: inset 0px 4px 2px rgba(0, 0, 0, 0.25);
+  min-height: 56px;
+}
+
+.calculate-cost .forms-input-cont--checkbox .forms-checkbox:before {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  top: -6px;
+  background: #fff;
+}
+
+.calculate-cost .forms-input-cont--checkbox .forms__checkbox-label {
+  padding-left: 95px;
+  font-weight: bold;
+  font-size: 0.9375rem;
+}
+
+.calculate-cost .forms-input-cont--checkbox .forms__checkbox-label:before {
+  left: 13px;
+}
+
+.calculate-cost .forms-input-cont--checkbox .forms__checkbox-label:after {
+  left: 17px;
+}
+
+.calculate-cost .forms-input-cont--bot {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.calculate-cost .forms-input-cont--bot .forms-checkbox {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  background: #202121;
+  min-height: 56px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+}
+
+.calculate-cost .forms-input-cont--bot .forms-checkbox:before {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  top: 5px;
+  background: #fff;
+  left: auto;
+  right: 5px;
+}
+
+.calculate-cost .forms-input-cont--bot .forms__checkbox-label {
+  padding-left: 23px;
+  padding-right: 58px;
+  font-weight: bold;
+  font-size: 0.9375rem;
+}
+
+.calculate-cost .forms-input-cont--bot .forms__checkbox-label:before {
+  left: auto;
+  right: 23px;
+  top: 17px;
+}
+
+.calculate-cost .forms-input-cont--bot .forms__checkbox-label:after {
+  left: auto;
+  right: 17px;
+  top: 15px;
+}
+
+.calculate-cost .forms-input-cont--bot .forms-input-cont--file {
+  width: 148px;
+  margin: 0;
+}
+
+.calculate-cost .forms-input-cont--bot .forms__input--file-support {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.calculate-cost .forms-input-cont--bot .forms__label--file:before {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+  padding: 10px 50px 10px 10px;
+  border: 1px solid #fff;
+  width: auto;
+  height: auto;
+  text-align: left;
+  line-height: 1;
+  background-image: url("../img/ico-clip.svg");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+}
+
+.calculate-cost .forms-input-cont--bot .forms__label--file:after {
+  display: none;
+}
+
+.calculate-cost input {
+  border: 1px solid #fff;
+  padding: 0 15px;
+}
+
+.calculate-cost input[type="submit"] {
+  padding: 15px;
+  border: 0;
+  color: #fff;
+  background: linear-gradient(90deg, #59335E 8.27%, rgba(76, 51, 94, 0.86) 146.74%, rgba(141, 0, 201, 0) 342.5%);
+}
+
+.calculate-cost .forms-text {
+  font-size: 0.75rem;
+}
+
+.calculate-cost .forms-text a {
+  text-decoration: underline;
+}
+
+.statistics-cont {
+  padding: 104px 0 163px;
+}
+
+.statistics__list {
+  display: flex;
+  margin-top: 140px;
+}
+
+.statistics__item {
+  position: relative;
+  width: calc(100% / 5);
+  text-align: center;
+}
+
+.statistics__item-num {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.statistics__item:not(:last-child):after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: calc(50% - 7px);
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.brands__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 95px 0 -40px -40px;
+}
+
+.brands__item {
+  position: relative;
+  width: calc((100% - 40px * 4) / 4);
+  margin: 0 0 40px 40px;
+}
+
+.brands__item:hover:before {
+  background: transparent;
+}
+
+.brands__item img {
+  display: block;
+  width: 100%;
+}
+
+.brands__item:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  transition: background .5s ease;
+}
+
 *[v-cloak] {
   display: none;
 }
