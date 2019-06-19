@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Компания
+		include inc/head.jade
+		include inc/css.jade
+	body.inner.loading
+		#page-wr
+			.content
+				include inc/header.jade
+				main.main
+					.inner-page
+						.title-block__cont
+							.wrapper
+								.title-block
+									.title-block__title
+										h1 Компания
+									.title-block__crumbs
+										.bread-crumbs
+											a.bread-crumbs__link(href="#") Главная
+											span.bread-crumbs__this Компания
+						.inner-page__content
+							.wrapper
+								.about__cont
+									.about
+										.about__top
+											.about-top
+												figure.about-top__bg
+													img(src="img/photos/about-bg.png", alt="")
+												.about-top__text
+													.about-top__text-title доверьте вашу рекламу <br /> и о вас узнает весь город
+													.about-top__text-text
+														.text-page
+															p Производственная группа «ОПОРА» – лидер рекламных технологий и законодатель рекламной моды. <br />Мы рады предложить Вам комплексную систему услуг, направленных на создание по-настоящему эффективной рекламы Вашего бизнеса
+												.about-top__number
+													.number
+														.number__number 7
+														.number__sub лет <br /> на рынке
+							.about
+								.about__timeline
+									.timeline
+										.timeline__canvas
+											canvas#timeline
+										ul.timeline__list
+											each title in [{number: 12775, label: "изготовлено конструкций", color1: "#c3862e", color2: "#c3862e"}, {number: 120, label: "городов России", color1: "#603a75", color2: "#4d3f80"}, {number: 7, label: "лет на рынке", color1: "#c3862e", color2: "#c3862e"}, {number: 63, label: "сотрудника в штате", color1: "#603a75", color2: "#4d3f80"}, {number: 1807, label: "клиентов", color1: "#883f5c", color2: "#743569"}, ]
+												li.timeline__el
+													.timeline__number.counter(data-from="0" data-to=title.number, data-color1=title.color1, data-color2=title.color2) 0 
+													.timeline__label=title.label
+							.wrapper
+								.about
+									.about__text
+										.about-text
+											.about-top__text-title Производственная <br /> группа «ОПОРА»
+											.about-text__text
+												.text-page
+													p Производственная группа «ОПОРА» – лидер рекламных технологий и законодатель рекламной моды. Мы рады предложить Вам комплексную систему услуг, направленных на создание по-настоящему эффективной рекламы Вашего бизнеса. <br />И Вы можете быть уверены в качестве производства и целостности концепта – мы не обращаемся к подрядчикам. Нам это не нужно, компания «ОПОРА» обладает. <br />Почему нас выбирают ведущие российские и зарубежные компании, почему нам доверяют сотрудничество с ведущими брендами? Ответ прост – Мы гарантируем.
+													p Будем рады взаимовыгодному сотрудничеству! <br />Отправьте заявку, и наш менеджер свяжется с вами в кратчайшие сроки.
+							.about__slider
+								.wrapper
+									.team
+										.team__slider
+											.team-slider__title-cont
+												.team-slider__title Наша команда
+												.team-slider__arrows
+											.team-slider
+												each name, i in ["Татьяна Обухова", "Светлана Демидова", "Максим Аксёнов", ]
+													.team-slider__slide
+														.person
+															figure.person__img
+																img(src="img/photos/pers-"+(i+1)+".jpg")
+															.person__name=name
+															.person__status менеджер
+												each name, i in ["Татьяна Обухова", "Светлана Демидова", "Максим Аксёнов", ]
+													.team-slider__slide
+														.person
+															figure.person__img
+																img(src="img/photos/pers-"+(i+1)+".jpg")
+															.person__name=name
+															.person__status менеджер
+										.team__info
+											.team-info
+												.team-info__counter
+													.team-info__counter-number 64
+													.team-info__counter-text сотрудника <br /> в штате
+												.team-info__title Хочешь к нам <br />в команду?
+												.team-info__btn
+													.bordered-btn
+														a.bordered-btn__link(href="#") Актуальне вакансии
+							.wrapper
+								.about
+									.about__job
+										.about-job
+											.about-job__title Вакансии
+											.about-job__vacancy
+												.accordion
+													.accordion__one.js__opened
+														.accordion__one-title Менеджер
+														.accordion__one-text
+															.text-page
+																p Данная должность предполагает тесное взаимодействие с функциональными подразделениями Группы компаний UNISTEAM™: руководителями предприятий группы, руководителями проектов, техническим, юридическим и маркетинговым отделами, в целях успешного продвижения продукции Группы компаний на рынках.
+																p Идеальный кандидат – это профессионал, обладающий необходимыми знаниями, который хочет работать с высокотехнологичными проектами и продвигать инновации.
+																p В зону ответственности Конструктора-теплотехника входит проектно-конструкторская работа по всем производственным направлениям.
+																p И даже если вы не соответствуете всем нижеперечисленным критериям, но обладаете нужными знаниями и желанием работать, мы рекомендуем вам откликнуться на данную позицию.
+															.accordion__one-btn
+																a.gradient-btn.fancybox(href="#") Отправить резюме
+													each title in ["Дизайнер", "Проектировщик"]
+														.accordion__one
+															.accordion__one-title=title
+															.accordion__one-text
+																.text-page
+																	p Данная должность предполагает тесное взаимодействие с функциональными подразделениями Группы компаний UNISTEAM™: руководителями предприятий группы, руководителями проектов, техническим, юридическим и маркетинговым отделами, в целях успешного продвижения продукции Группы компаний на рынках.
+																	p Идеальный кандидат – это профессионал, обладающий необходимыми знаниями, который хочет работать с высокотехнологичными проектами и продвигать инновации.
+																	p В зону ответственности Конструктора-теплотехника входит проектно-конструкторская работа по всем производственным направлениям.
+																	p И даже если вы не соответствуете всем нижеперечисленным критериям, но обладаете нужными знаниями и желанием работать, мы рекомендуем вам откликнуться на данную позицию.
+																.accordion__one-btn
+																	a.gradient-btn.fancybox(href="#") Отправить резюме
+				include inc/footer-inner.jade
+		include inc/scripts.jade

@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/Gotham/Bold/GothamPro-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Gotham/Reg/GothamPro.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/Gotham/Italic/GothamPro-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Gotham/Light/GothamPro-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/Gotham/LightItalic/GothamPro-LightItalic.woff") format("woff");
+}
+
+/*# sourceMappingURL=fonts.css.map */

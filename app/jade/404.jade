@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Производство
+		include inc/head.jade
+		include inc/css.jade
+	body.inner.loading
+		#page-wr
+			.content
+				include inc/header.jade
+				main.main
+					.inner-page
+						.inner-page__content
+							.wrapper
+								.page-404__cont
+									.page-404
+										figure.page-404__img-cont
+											img.page-404__img(src="img/404.png", alt="")
+										.page-404__title К сожалению, запрашиваемая страница не найдена
+										.page-404__subtitle 
+											.text-page
+												p Что-то пошло не так, страница больше не существует. <br />Пожалуйста перейдите на <a href="#">главную страницу</a> сайта.
+				include inc/footer.jade
+		include inc/scripts.jade

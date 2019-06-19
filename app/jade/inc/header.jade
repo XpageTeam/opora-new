@@ -1,0 +1,33 @@
+.loader
+	.loader__title OPORA
+header.head
+	.head__wrap
+		.head__logo
+			a.logo(href="#")
+				img.logo__img(src="img/logo.png", alt="")
+		.head__phones
+			.head-phone
+				address.head-phone__links
+					a(href="tel: +7 (343) 239-55-12") +7 (343) 239-55-12
+				.head-phone__subtitle многоканалльный
+			.head-phone
+				address.head-phone__links
+					a(href="tel: +7 (343) 271-71-80") +7 (343) 271-71-80
+				.head-phone__subtitle типография
+		nav.head__menu
+			ul.menu
+				li.have-sub
+					a.menu__link.active(href="#") Компания
+					nav.submenu__cont
+						ul.submenu
+							li.submenu__el
+								a.submenu__link.active(href="#") Видеогалерея
+							each title in ["Видеогалерея1", "Видеогалерея2", "Видеогалерея3", ]
+								li.submenu__el
+									a.submenu__link(href="#")=title
+				each title in ["Услуги", "Портфолио", "Клиенты", "Контакты", ]
+					li
+						a.menu__link(href="#")=title
+		.head__burger
+			.burger
+				span

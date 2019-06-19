@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Видеогалерея
+		include inc/head.jade
+		include inc/css.jade
+	body.inner.loading
+		#page-wr
+			.content
+				include inc/header.jade
+				main.main
+					.inner-page
+						.title-block__cont
+							.wrapper
+								.title-block
+									.title-block__title
+										h1 Видеогалерея
+									.title-block__crumbs
+										.bread-crumbs
+											a.bread-crumbs__link(href="#") Главная
+											a.bread-crumbs__link(href="#") Компания
+											span.bread-crumbs__this Видеогалерея
+						.inner-page__content
+							.wrapper
+								.videogallery__cont
+									.videogallery
+										each title, i in ["Вывеска «Летуаль»", "Вывеска «X43»", "Вывеска «X43»", ]
+											.videogallery__one
+												a.video.fancybox.fancybox-ajax(href="https://www.youtube.com/embed/Kf6lgI_hTeU" rel="videogallery" class="fancybox.iframe")
+													figure.video__img
+														img(src="img/photos/video-"+(i+1)+".jpg", alt="")
+														.video__play
+													.video__title
+														span=title
+										each title, i in ["Вывеска «X43»", "Вывеска «X43»", ]
+											.videogallery__one
+												a.video.fancybox.fancybox-ajax(href="https://www.youtube.com/embed/Kf6lgI_hTeU" rel="videogallery" class="fancybox.iframe")
+													figure.video__img
+														img(src="img/photos/video-"+(i+2)+".jpg", alt="")
+														.video__play
+													.video__title
+														span=title
+				include inc/footer-inner.jade
+		include inc/scripts.jade

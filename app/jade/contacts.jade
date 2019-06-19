@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Контакты
+		include inc/head.jade
+		include inc/css.jade
+	body.inner.loading
+		#page-wr
+			.content
+				include inc/header.jade
+				main.main
+					.inner-page
+						.title-block__cont
+							.wrapper
+								.title-block
+									.title-block__title
+										h1 Контакты
+									.title-block__crumbs
+										.bread-crumbs
+											a.bread-crumbs__link(href="#") Главная
+											span.bread-crumbs__this Контакты
+						.inner-page__content
+							.map__cont
+								.map
+									.map__map#map
+										img(src="img/photos/big-map.jpg", alt="")
+									.map__contacts
+										.wrapper
+											.map-contacts
+												.map-contacts__title НАШИ ОФИСЫ <br />И ПРОИЗВОДСТВО
+												.map-contacts__text
+													address.text-page
+														p Центральный офис: <br />г.Екатеринбург ул. Московская 195 офис 1127
+														p 8 (343) 239-55-12 многоканальный <br /> <a href="mailto: office@oporagroup.com">office@oporagroup.com</a>
+												.map-contacts__text
+													address.text-page
+														p Офис типография: <br />г.Екатеринбург ул. Московская 195 офис 1004
+														p 8 (343) 239-40-19<br /> <a href="mailto: print@oporagroup.com">print@oporagroup.com</a>
+												.map-contacts__text
+													address.text-page
+														p Производственная база: <br />г.Екатеринбург ул. Военного Флота 8
+				include inc/footer-inner.jade
+		include inc/scripts.jade

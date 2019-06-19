@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Гриль Бар YORK
+		include inc/head.jade
+		include inc/css.jade
+	body.inner.loading.page_portfolio
+		#page-wr
+			.content
+				include inc/header.jade
+				main.main
+					.inner-page
+						.title-block__cont
+							.wrapper
+								.title-block
+									.title-block__title
+										h1 Гриль Бар YORK
+									.title-block__crumbs
+										.bread-crumbs
+											a.bread-crumbs__link(href="#") Главная
+											a.bread-crumbs__link(href="#") Компания
+											a.bread-crumbs__link(href="#") Портфолио
+											span.bread-crumbs__this Гриль Бар YORK
+						.inner-page__content
+							.wrapper
+								.project__cont
+									.project
+										<!-- По макету не слайдер, но мало ли -->
+										.project__slider
+											figure.project__slider-slide
+												img(src="img/photos/creat-top-img.jpg", alt="")
+										.project__title-block
+											.project__title
+												h2 Производственная <br /> группа «ОПОРА» 
+											.project__subtitle осуществляет следующие услуги:
+										.project__icons
+											.project-icons
+												each title, i in ["конструкторские решения и дизайн наружной рекламы;", "металлообработка", "покраска материалов и готовых изделий", "фрезеровка и раскрой материалов", "сборка рекламных конструкций", "монтаж рекламных конструкций", "широкоформатная и интерьерная печать", "электромонтажные работы", ]
+													.project-icons__one
+														figure.project-icons__one-img
+															img(src="img/photos/icon-"+(i+1)+".png", alt="")
+														.project-icons__one-text=title
+								.creat__cont
+									.creat
+										.creat-slider
+											.creat-slider__text
+												.creat-text
+													.creat-text__title ОТДЕЛ <br /> ПРОЕКТИРОВАНИЯ <br /> И ДИЗАЙНА
+													.creat-text__text
+														.text-page
+															p Отдел проектирования и дизайна осуществляет разработку проектов конструкций наружной и внутренней рекламы для оформления объектов коммерческой недвижимости. Мы обеспечиваем своим Клиентам высокий уровень технических и пользовательских качеств, проектируемых решений за счёт использования передовых технологий и знаний в области наружной рекламы. Также, специалисты нашей компании подготавливают всю необходимую документацию по проекту, тем самым, обеспечивая беспрепятственное согласование объекта в администрации города.
+											.creat-slider__slider
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img.jpg" rel="gallery-1")
+													img(src="img/photos/creat-img.jpg", alt="")
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img.jpg" rel="gallery-1")
+													img(src="img/photos/creat-img.jpg", alt="")
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img.jpg" rel="gallery-1")
+													img(src="img/photos/creat-img.jpg", alt="")
+										.creat-slider.creat-slider--reverse
+											.creat-slider__text
+												.creat-text
+													.creat-text__title УЧАСТОК <br />МЕТАЛЛООБРАБОТКИ
+													.creat-text__text
+														.text-page
+															p Используемое нами современное оборудование, а так же высокая квалификация наших специалистов позволяет осуществлять производство тяжелых металлоконструкций, а также легкие профильные металлоконструкции на высоком технологическом и профессиональном уровне. Сварочный участок оснащен следующим оборудованием:
+															ul
+																li Сварочные аппараты: полуавтомат и дуговая сварка
+																li Отрезное оборудование
+																li Гибочное оборудование
+																li Токарный станок
+																li Гильотина
+																li Цех оснащён кран балкой до 5т.
+											.creat-slider__slider
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-2.jpg" rel="gallery-13")
+													img(src="img/photos/creat-img-2.jpg", alt="")
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-2.jpg" rel="gallery-13")
+													img(src="img/photos/creat-img-2.jpg", alt="")
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-2.jpg" rel="gallery-13")
+													img(src="img/photos/creat-img-2.jpg", alt="")
+										.creat-slider
+											.creat-slider__text
+												.creat-text
+													.creat-text__title ПОКРАСКА <br />МАТЕРИАЛОВ <br />И ГОТОВЫХ ИЗДЕЛИЙ
+													.creat-text__text
+														.text-page
+															p Специалисты компании осуществляют грунтовку и покраску метало каркасов и готовых изделий. В цехе имеется чистое помещение для покрасочных работ и имеется современные краскопульты. Также есть покрасочная камера для порошковой покраски.
+											.creat-slider__slider
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-3.jpg" rel="gallery-12")
+													img(src="img/photos/creat-img-3.jpg", alt="")
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-3.jpg" rel="gallery-12")
+													img(src="img/photos/creat-img-3.jpg", alt="")
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-3.jpg" rel="gallery-12")
+													img(src="img/photos/creat-img-3.jpg", alt="")
+										.creat-slider.creat-slider--reverse
+											.creat-slider__text
+												.creat-text
+													.creat-text__title ФРЕЗЕРОВКА <br /> И РАСКРОЙ <br /> МАТЕРИАЛОВ
+													.creat-text__text
+														.text-page
+															p Специалисты произведут раскрой материала по различным контурам, даже сложным и комбинированным для того, чтобы на выходе получилось изделие, которое в полной мере будет способствовать всем требованиям клиентов. Мы производим резку алюминия и пластика, а также оргстекла в четко оговоренные сроки, необходимые заказчику. Раскрой материала от специалистов нашей компании — это точность замеров по утвержденным макетам.
+											.creat-slider__slider
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-4.jpg" rel="gallery-10")
+													img(src="img/photos/creat-img-4.jpg", alt="")
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-4.jpg" rel="gallery-10")
+													img(src="img/photos/creat-img-4.jpg", alt="")
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-4.jpg" rel="gallery-10")
+													img(src="img/photos/creat-img-4.jpg", alt="")
+										.creat-slider
+											.creat-slider__text
+												.creat-text
+													.creat-text__title Электромонтажные работы
+													.creat-text__text
+														.text-page
+															p Проводятся, как правило, вручную. Несмотря на кажущуюся простоту, работы весьма ответственны, так как от качества их выполнения зависит электробезопасность и качество подсветки изделия.
+															p В качестве комплектующих используются различное электро- и световое оборудование, различные светодиодные источники света и блоки питания.
+											.creat-slider__slider
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-5.jpg" rel="gallery-9")
+													img(src="img/photos/creat-img-5.jpg", alt="")
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-5.jpg" rel="gallery-9")
+													img(src="img/photos/creat-img-5.jpg", alt="")
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-5.jpg" rel="gallery-9")
+													img(src="img/photos/creat-img-5.jpg", alt="")
+										.creat-slider.creat-slider--reverse
+											.creat-slider__text
+												.creat-text
+													.creat-text__title СБОРОЧНЫЙ <br />УЧАСТОК
+													.creat-text__text
+														.text-page
+															p Сборочный участок является неотъемлемой составляющей любого производства. На данном участке рекламные конструкции собираются в единое целое и подготавливаются к монтажу. 
+											.creat-slider__slider
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-6.jpg" rel="gallery-3")
+													img(src="img/photos/creat-img-6.jpg", alt="")
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-6.jpg" rel="gallery-3")
+													img(src="img/photos/creat-img-6.jpg", alt="")
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-6.jpg" rel="gallery-3")
+													img(src="img/photos/creat-img-6.jpg", alt="")
+										.creat-slider
+											.creat-slider__text
+												.creat-text
+													.creat-text__title ЦЕХ ШИРОКОФОРМАТНОЙ ПЕЧАТИ
+													.creat-text__text
+														.text-page
+															p Наш цех для широкоформатной печати имеет современные широкоформатные плоттеры с разрешением печати от 360 до 1440 dpi, что позволяет срочно изготавливать около 3000 кв.м. продукции в сутки любых размеров и различной степени сложности. Мы используем широкий спектр материалов: баннерные ткани, самоклеющую пленку, плёнку для транспорта, бумагу, сетку, фотобумагу, бэклит, полиэстр, холст, пластик и др.
+															table
+																tbody
+																	tr
+																		td
+																			p Предоставляем допечатную подготовку:
+																			ul
+																				li дизайн макета
+																				li цветокоррекция
+																				li цветопроба - бесплатно!
+																		td
+																			p Послепечатная обработка:
+																			ul
+																				li проклейка-сварка карманов
+																				li установка люверсов
+																				li ламинирование
+																				li накатка, печать на пластике
+											.creat-slider__slider
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-7.jpg" rel="gallery-4")
+													img(src="img/photos/creat-img-7.jpg", alt="")
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-7.jpg" rel="gallery-4")
+													img(src="img/photos/creat-img-7.jpg", alt="")
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-7.jpg" rel="gallery-4")
+													img(src="img/photos/creat-img-7.jpg", alt="")
+										.creat-slider.creat-slider--reverse
+											.creat-slider__text
+												.creat-text
+													.creat-text__title МОНТАЖНЫЕ <br />БРИГАДЫ
+													.creat-text__text
+														.text-page
+															p Компания ОПОРА располагает собственными монтажными бригадами, имеющими <br />многолетний опыт выездных монтажей на территории РФ.
+											.creat-slider__slider
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-8.jpg" rel="gallery-5")
+													img(src="img/photos/creat-img-8.jpg", alt="")
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-8.jpg" rel="gallery-5")
+													img(src="img/photos/creat-img-8.jpg", alt="")
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-8.jpg" rel="gallery-5")
+													img(src="img/photos/creat-img-8.jpg", alt="")
+										.creat-slider
+											.creat-slider__text
+												.creat-text
+													.creat-text__title ТРАНСПОРТНЫЙ ЦЕХ
+													.creat-text__text
+														.text-page
+															p Компания «ОПОРА» имеет в собственности два автоподъемника и автокран:
+															ul 
+																li Автовышка на базе Mitsubishi Canter (Митсубиси Кантер. Телескопическая, высотой 15 метров с поворотной люлькой на 180 градусов.
+																li Автовышка на базе ЗИЛ-131 (вездеход), высота 22 метра. 
+																li Автокран на базе Урал, высотой 22 метра и грузоподъемностью 25 тонн. 
+																p Техника проста в использовании благодаря мобильности. Автовышки применяются для подъема людей, необходимого оборудования и инструментов. Автокран предназначен для проведения строительных и монтажных, а также погрузочно-разгрузочных работ. Спецтехника передвижная, что позволяет выполнять большой перечень сложных работ на высоте: установка наружной рекламы (световых вывесок, объемных букв, растяжек и баннеров и т.п.), а также монтаж кондиционеров и оборудования, коммунальные, строительные, клининговые работы. Нашу технику вы можете арендовать в Екатеринбурге по приемлемым ценам!
+											.creat-slider__slider
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-9.jpg" rel="gallery-6")
+													img(src="img/photos/creat-img-9.jpg", alt="")
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-9.jpg" rel="gallery-6")
+													img(src="img/photos/creat-img-9.jpg", alt="")
+												a.creat-slider__slider-slide.fancybox(href="img/photos/creat-img-9.jpg" rel="gallery-6")
+													img(src="img/photos/creat-img-9.jpg", alt="")
+				include inc/footer-inner.jade
+		include inc/scripts.jade

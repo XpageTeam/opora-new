@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Производство
+		include inc/head.jade
+		include inc/css.jade
+	body.inner.loading
+		#page-wr
+			.content
+				include inc/header.jade
+				main.main
+					.inner-page
+						.title-block__cont
+							.wrapper
+								.title-block
+									.title-block__title
+										h1 Производство
+									.title-block__crumbs
+										.bread-crumbs
+											a.bread-crumbs__link(href="#") Главная
+											a.bread-crumbs__link(href="#") Компания
+											span.bread-crumbs__this Производство
+						.inner-page__content
+							.wrapper
+								.creating__cont
+									.creating
+										.creating__slider
+											nav.creating__slider-nav
+												ul.creating-nav
+													li.creating-nav__el.active
+														figure.creating-nav__img
+															img.creating-nav__img-img(src="img/photos/ico-creating-img.png", alt="")
+															img.creating-nav__img-hover(src="img/photos/ico-creating-img-active.png", alt="")
+														span.creating-nav__link конструкторские решения и дизайн наружной рекламы; 
+													each title in ["металлообработка", "покраска материалов и готовых изделий", "фрезеровка и раскрой материалов", "сборка рекламных конструкций", "монтаж рекламных конструкций", "широкоформатная печать", ]
+														li.creating-nav__el
+															figure.creating-nav__img
+																img.creating-nav__img-img(src="img/photos/ico-creating-img.png", alt="")
+																img.creating-nav__img-hover(src="img/photos/ico-creating-img-active.png", alt="")
+															span.creating-nav__link=title
+											.creating__slider-slider
+												each title, i in ["конструкторские решения и дизайн наружной рекламы; ", "металлообработка", "покраска материалов и готовых изделий", "фрезеровка и раскрой материалов", "сборка рекламных конструкций", "монтаж рекламных конструкций", "широкоформатная печать", ]
+													.creating-slider
+														.creating-slider__slider
+															a.creating-slider__slider-slide.fancybox(href="img/photos/creating-img.jpg" rel="gallery-"+i)
+																img(src="img/photos/creating-img.jpg", alt="")
+															a.creating-slider__slider-slide.fancybox(href="img/photos/creating-img.jpg" rel="gallery-"+i)
+																img(src="img/photos/creating-img.jpg", alt="")
+															a.creating-slider__slider-slide.fancybox(href="img/photos/creating-img.jpg" rel="gallery-"+i)
+																img(src="img/photos/creating-img.jpg", alt="")
+															a.creating-slider__slider-slide.fancybox(href="img/photos/creating-img.jpg" rel="gallery-"+i)
+																img(src="img/photos/creating-img.jpg", alt="")
+														.creating-slider__text
+															.creating-text
+																.creating__ttitle УЧАСТОК ПО ПРОИЗВОДСТВУ НЕОНА
+																.creating__text
+																	.text-page
+																		p Неоновая реклама считается самой эффектной, поэтому конструкции с применением неона так прочно заняли лидирующие позиции в оформлении фасадов и интерьеров, а также в качестве внутренней подсветки реклам носителей. Современные технологии позволяют изготавливать трубки различных цветов и размера. Высококвалифицированные рабочие нашего неонового участка изготовят для Вас трубки любой сложности. 
+				include inc/footer-inner.jade
+		include inc/scripts.jade

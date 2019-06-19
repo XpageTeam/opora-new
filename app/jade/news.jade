@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Видеогалерея
+		include inc/head.jade
+		include inc/css.jade
+	body.inner.loading
+		#page-wr
+			.content
+				include inc/header.jade
+				main.main
+					.inner-page
+						.title-block__cont
+							.wrapper
+								.title-block
+									.title-block__title
+										h1 Видеогалерея
+									.title-block__crumbs
+										.bread-crumbs
+											a.bread-crumbs__link(href="#") Главная
+											a.bread-crumbs__link(href="#") Компания
+											span.bread-crumbs__this Видеогалерея
+						.inner-page__content
+							.wrapper
+								.news__cont
+									.news
+										each title, i in ["Производственная группа «ОПОРА» – лидер рекламных технологий и законодатель рекламной моды . . .", "И Вы можете быть уверены в качестве производства и целостности концепта . . .", "Почему нас выбирают ведущие российские и зарубежные компании, почему нам доверяют . . . ", ]
+											.news__one
+												.news__one-desc
+													.news__one-date 12/12/2017
+													.news__one-title
+														a(href="#")=title
+													.news__one-btn
+														a.gradient-btn(href="#") Подробнее
+												a.news__one-img(href="#")
+													img(src="img/photos/news-"+(i+1)+".jpg", alt="")
+				include inc/footer-inner.jade
+		include inc/scripts.jade

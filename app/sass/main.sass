@@ -1,0 +1,2592 @@
+$output-bourbon-deprecation-warnings: false
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "functions"
+
+@import "_page_services_one.sass"
+
+*[v-cloak]
+	display: none
+
+
+.list-services
+	width: calc(100% - 373px)
+
+	.services__one
+		width: calc((100% - 40px * 3)/ 3)
+
+.head
+	&__certificate 
+		display: flex
+		flex-direction: column
+
+		a
+			text-decoration: none
+			color: #fff
+			font-size: 14px
+			line-height: 1.8
+			padding-left: 40px
+			background: url('../img/ico-certificate.png') no-repeat left 10px center
+
+.soc__link
+	width: 25px
+	height: 30px
+	justify-content: center
+
+
+.slick
+	
+	&-slide
+		height: auto
+
+	&-list, &-track
+		// min-width: 100%
+
+.jsp
+	
+	&VerticalBar
+		width: 4px
+
+	&Track
+		background: #ececec
+
+	&Drag
+		background: $main-color
+
+.main__nav
+	position: fixed
+	top: 0
+	bottom: 0
+	right: rem(59)
+	z-index: 3
+	display: flex
+	align-items: center
+
+.main-nav
+	position: relative
+	display: flex
+	flex-direction: column
+
+	&__el
+
+		&:not(:first-child)
+			margin: rem(37) 0 0
+
+	&__link
+		border-radius: 50%
+		background: #fff
+		+size(7px)
+		display: block
+		transition: background .3s ease
+
+		&.active
+			background: #5c5c5c
+
+button, input, select
+	font-family: inherit
+
+.head
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 5
+
+	&__logo
+		flex: none
+
+		a
+			display: block
+
+		img
+			display: block
+
+	&.js__scrolled
+
+		.head__wrap
+			background: #000
+			padding: rem(20) rem(60)
+
+		.head-phone
+
+			&__subtitle
+				color: #fff
+				opacity: 1
+
+	&__wrap
+		margin: 0 auto
+		max-width: 1920px
+		padding: rem(60)
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		transition: background .3s ease, padding .3s ease
+		will-change: padding
+
+	&__phones
+		display: flex
+
+.head-phone
+	text-align: right
+	
+	&:not(:first-child)
+		margin: 0 0 0 vw(90)
+
+	&__links
+
+		a
+			display: block
+			text-decoration: none
+			color: #fff
+
+	&__subtitle
+		// margin: 0px 0 0
+		// color: rgba(#f5f5f5, .3)
+		font-size: rem(14)
+
+.submenu
+	background: $bgc
+	// border-radius: 15px
+	box-shadow: $bs
+	position: relative
+	transform: translate3d(.5px, 0, 0)
+	text-align: center
+	// padding: .5rem 0
+
+	&:before
+		// content: ""
+		top: 0;
+		position: absolute
+		left: 0;
+		height: 3px;
+		width: 100%;
+		// background: linear-gradient(to right, rgb(96, 58, 117), rgb(77, 63, 128));
+	
+	&__cont
+		position: absolute
+		top: 100%
+		left: 50%
+		transform: translate3d(-50%, 0, 0)
+		padding: 2rem 0 0
+		opacity: 0
+		transition: opacity .3s ease
+		pointer-events: none
+		width: 200px
+		transition-delay: 0s
+
+	&__el
+		position: relative
+
+		&:not(:last-child)
+			border-bottom: 1px solid #000
+
+		&:before
+			content: ""
+			background: linear-gradient(to right, $main-color, $second-color)
+			top: 0
+			left: 0
+			position: absolute
+			+size(100%)
+			transform-origin: left
+			transition: transform .3s ease
+			transform: scale3d(0, 1, 1)
+
+		&:hover, &:focus
+
+			&:before
+				transform: scale3d(1, 1, 1)
+
+	&__link
+		color: #fff
+		text-decoration: none
+		display: block
+		padding: 10px 15px
+		position: relative
+		z-index: 1
+
+		&.active
+			// font-weight: bold
+			background: linear-gradient(to right, $main-color, $second-color)
+
+.menu
+	display: flex
+
+	&__link
+		color: #fff
+		text-decoration: none
+		position: relative
+
+		&:after
+			content: ""
+			position: absolute
+			left: 8px
+			top: calc(100% + 5px)
+			height: 1px
+			width: calc(100% - 16px)
+			background: linear-gradient(to right, $main-color, $second-color)
+			transform: scale3d(0, 1, 1)
+			transition: transform .3s ease
+
+		&:hover, &:focus, &.active
+
+			&:after
+				transform: scale3d(1, 1, 1)
+
+	> li
+
+		&.have-sub
+			position: relative
+
+			&:hover, &:focus
+
+				.submenu__cont
+					opacity: 1
+					pointer-events: all
+					transition-delay: .3s
+
+				.menu__link
+					
+					&:after
+						transform: scale3d(3.07, 3, 1) translate3d(0, .6rem, 0)
+
+		&:not(:last-child)
+			margin: 0 vw(80) 0 0
+
+@media screen and (min-width: 1000px)
+	.submenu
+
+		&__el
+			border-bottom:  !important
+
+.main-video
+	+size(100% 100vh)
+	position: relative
+	overflow: hidden
+
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		+size(100%)
+		background: rgba(#000, .7)
+		z-index: 1
+	
+	video
+		position: absolute
+		min-width: 100%
+		display: block
+		min-height: 100%
+		top: 50%
+		left: 50%
+		transform: translate3d(-50%, -50%, 0)
+
+	&__footer
+		display: flex
+		// justify-content: flex-end
+		position: absolute
+		z-index: 2
+		bottom: 0
+		left: 0
+		width: 100%
+		padding: rem(50) rem(60)
+
+.main-video__text
+	position: absolute
+	left: 0
+	top: 0
+	+size(100%)
+	z-index: 2
+	display: flex
+	align-items: center
+
+.video-text
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+	&__title
+		font-size: rem(50)
+		max-width: 660px
+
+		h1
+			font-size: inherit
+			font-weight: inherit
+			line-height: inherit
+			margin: inherit
+			max-width: inherit
+
+	&__subtitle
+		margin: 30px 0 0
+
+	&__btn
+		opacity: 0
+		transition: opacity .3s ease
+		pointer-events: none
+
+		&.visible
+			pointer-events: all
+			opacity: 1
+
+.video-projects
+	
+	&__count
+		font-size: rem(154)
+		font-weight: 400
+		line-height: 1
+		min-width: 500px
+
+	&__subtitle
+		font-size: rem(25)
+		text-transform: lowercase
+
+.directions
+	display: flex
+	padding: rem(165) 0 rem(110)
+
+	&__links
+		width: 400px
+		flex: none
+		padding: 0 0 0 40px
+		margin: 0 0 0 auto
+
+	&__slider, &__links
+		display: flex
+
+	&__slider
+		width: calc(100% - 400px)
+		flex-wrap: wrap
+
+		&-title
+			display: flex
+			justify-content: space-between
+			align-items: center
+			width: 100%
+			margin: 0 0 50px
+
+			span
+				font-size: rem(26)
+
+		&-arrows
+
+			.slick
+
+				&-arrow
+					+size(8px 16px)
+					border: none
+					background: url("../img/ico-white-arrow.png") no-repeat
+
+				&-prev
+					transform: rotate(180deg)
+					margin: 0 26px 0 0
+
+.directions-menu
+	position: relative
+	padding: rem(52) rem(29px) rem(52) rem(75)
+	background: $bgc
+	margin: 87px 0 0
+	box-shadow: $bs
+
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		+size(100% 3px)
+		background: linear-gradient(to right, $main-color, $second-color)
+
+	&__link
+		color: #fff
+		text-decoration: none
+		position: relative
+		transition: color .3s ease
+
+		span
+			position: relative
+			z-index: 1
+
+		&:before
+			// content: ""
+			position: absolute
+			background: $link-color
+			+size(11px 1px)
+			top: calc(50% - 1px)
+			left: -35px
+			transition: opacity .3s ease
+			opacity: 0
+
+		&:after
+			position: absolute
+			content: ""
+			left: -6px
+			top: -3px
+			bottom: -4px
+			right: -6px
+			background: linear-gradient(to right, $main-color, $second-color)
+			transition: transform .3s ease
+			transform-origin: left
+			transform: scale3d(0, 1, 1)
+
+		&:not(.active)
+			cursor: pointer
+
+			&:hover
+				color: $link-color
+
+				&:before
+					// opacity: 1
+
+		&.active
+
+
+			&:after
+				transform: scale3d(1, 1, 1)
+
+	li
+
+		&:not(:first-child)
+			margin: 18px 0 0
+
+.directions__slider
+	
+	&-slider
+		@extend %clearfix
+		margin: 0 -20px
+		width: calc(100% + 40px)
+		display: flex
+
+		> .directions__slider-slide:nth-child(n + 4)
+			display: none
+
+		.slick
+
+			&-track, &-list
+				display: flex
+				// min-width: 0
+
+	&-slide
+		float: left
+		width: 29%
+		margin: 0 20px
+		display: flex !important
+
+.direction
+	width: 100%
+	display: flex
+	flex-direction: column
+	
+	&__img
+		position: relative
+		flex: none
+		overflow: hidden
+		// max-height: 249px
+		background: #252527
+
+		ul 
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			opacity: 0
+			pointer-events: none
+			padding: 1rem
+			transition: background .3s ease
+			column-count: 2
+			column-gap: 15px
+			line-height: 1.1
+
+			li
+				display: block
+
+				&:not(:first-child)
+					margin: 15px 0 0
+
+			a 
+				text-decoration: none 
+				color: #fff 
+				font-weight: 400
+				font-size: rem(14)
+
+				&:hover
+					text-decoration: underline
+
+
+		img
+			display: block
+			transition: transform 3s ease
+			width: 100%
+			min-height: 100%
+			object:
+				fit: cover
+				position: center
+
+	&:hover, &:focus
+
+		
+		img
+			transform: scale3d(1.1, 1.1, 1.1)
+
+		ul
+			opacity: 1
+			pointer-events: all
+			background: rgba(#000, .5)
+
+
+	&__desc
+		background: $bgc
+		flex: 1 0 auto
+		padding: 37px 39px
+		font-size: rem(14)
+		display: flex
+		flex-direction: column
+
+	&__title
+		font-size: rem(18)
+		font-weight: 400
+		flex: 1 0 auto
+
+		a
+			color: #fff
+			text-decoration: none
+
+	&__text
+		margin: 22px 0 0
+
+	&__links
+		padding: 30px 0 0
+		margin: auto 0 0
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+
+	&__link
+		position: relative
+		text-decoration: none
+		color: #fff
+		padding: 0 0 0 29px
+		transition: color .3s ease
+
+		&:hover, &:focus
+			// color: $link-color
+
+		&:after
+			left: 21px !important
+
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			top: calc(50% - 9px)
+			height: 18px
+			width: 17px
+
+		&--read
+
+			&:before
+				background: url("../img/ico-doc.png") no-repeat
+
+		&--view
+
+			&:before
+				background: url("../img/ico-photo.png") no-repeat
+
+.footer
+	font-size: rem(14)
+	
+	&__wrap
+		padding: rem(52) rem(62)
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&-mail
+
+		a
+			color: #fff
+			text-decoration: none
+
+.dev
+	color: #fff
+	text-decoration: none
+	display: flex
+	align-items: center
+
+	&__text
+		margin: 0 23px 0 0
+
+.promo
+	padding: 160px 0 215px
+	
+	&__cont
+		background: 
+			position: center
+			repeat: no-repeat
+			size: cover
+
+	&__text, &__title
+		text-align: center
+		max-width: 840px
+		margin: 0 auto
+
+	&__title
+		text-transform: uppercase
+		font-size: rem(50)
+		line-height: lh(60, 50)
+		margin-bottom: 40px
+
+	&__counters
+		margin: 90px auto 0
+		display: flex
+		max-width: 1310px
+		justify-content: center
+
+.promo-counter
+	display: flex
+	align-items: flex-end
+
+	&:not(:first-child)
+		margin: 0 0 0 65px
+	
+	&__number
+		font-weight: bold
+		font-size: rem(80)
+		line-height: .9
+		-webkit-background-clip: text !important
+		background-clip: text !important
+		color: transparent
+		margin: 0 17px 0 0
+		flex: none
+		white-space: nowrap
+
+	&:first-child
+
+		.promo-counter
+
+			&__number
+				background: linear-gradient(to right, #c3862e, #a86641)
+				width: 50px
+
+	&:nth-child(2)
+
+		.promo-counter
+
+			&__number
+				background: linear-gradient(to right, #883f5c, #743569)
+				width: 215px
+
+	&:nth-child(3)
+
+		.promo-counter
+
+			&__number
+				background: linear-gradient(to right, #603a75, #4d3f80)
+				width: 142px
+
+	&:nth-child(4)
+
+		.promo-counter
+
+			&__number
+				background: linear-gradient(to right, #3a448b, #2e4793)
+				width: 110px
+
+.main-port
+	display: flex
+	flex-wrap: wrap
+	margin: 0 0 -40px -43px
+
+	&__desc
+
+		&-title, &-desc
+			transition: transform .3s ease, opacity .3s ease
+			opacity: 0
+
+		&-title
+			font-size: rem(24)
+			transform: translate3d(0, -100%, 0)
+
+		&-desc
+			font-size: rem(14)
+			margin: 20px 0 0
+			transform: translate3d(0, -50%, 0)
+			transition-delay: 0s
+
+			.text-page
+
+				> *
+					margin: 0
+
+					:not(:first-child)
+						margin: 5px 0 0 !important
+
+	&__one
+		width: calc((100% - 43px * 3) / 3)
+		margin: 0 0 40px 43px
+		transition: box-shadow .3s ease
+		position: relative
+		overflow: hidden
+
+		&:hover, &:focus
+			box-shadow: $bs
+
+			img
+				// filter: grayscale(0)
+
+			&:before, .main-port__one-desc
+				opacity: 1
+			
+			.main-port
+
+				&__desc
+
+					&-title, &-desc
+						transform: translate3d(0, 0, 0)
+						opacity: 1
+
+					&-desc
+						transition-delay: .3s
+
+		&:before
+			content: ""
+			background: rgba(#000, .6)
+			z-index: 2
+
+		&:before, &-desc
+			position: absolute
+			top: 0
+			left: 0
+			+size(100%)
+			transition: opacity .3s ease
+			opacity: 0
+
+		&-desc
+			z-index: 3
+			color: #fff
+			padding: 2rem
+
+		&--big
+			width: calc((133.33% - 43px * 2) / 2)
+
+		&-img
+			display: block
+			// filter: grayscale(100%)
+			// transition: filter .3s ease
+			transition: transform 2s ease
+
+	&__title
+		font-size: rem(26)
+
+		&-cont
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin: 0 0 53px
+
+	&__link
+		font-size: rem(14)
+		position: relative
+
+		&:after
+			content: ""
+			position: absolute
+			left: -7px
+			right: -7px
+			bottom: -5px
+			height: 1px
+			background: linear-gradient(to left, $main-color, $second-color)
+			transition: height .3s ease
+			will-change: height
+
+		&:hover, &:focus
+
+			&:after
+				height: calc(100% + 10px)
+
+		a
+			color: #fff
+			position: relative
+			z-index: 1
+			display: inline-block
+			text-decoration: none
+
+.main-contacts
+	display: flex
+	// position: relative
+	align-items: center
+	justify-content: space-between
+	max-width: calc(1564px + 2rem)
+	padding: 0 2rem
+	margin: 
+		right: auto
+		left: auto
+	width: 100%
+	// box-sizing: content-box
+
+	&.js__visible
+
+		@media screen and (min-width: 1300px)
+
+			.main-contacts
+
+				&__form, &__info
+					pointer-events: none
+					opacity: 0
+
+	// &.js__hidden
+
+	// 	@media screen and (min-width: 1300px)
+
+	// 		.main-contacts
+
+	// 			&__info, &__for,
+	// 				opacity: 0
+	// 				pointer-events: none
+
+	&__form, &__info
+		position: relative
+		z-index: 1
+		transition: opacity .3s ease
+
+	&__cont
+		margin: 195px 0 110px
+		position: relative
+
+		.wrapper
+			margin: 0
+			max-width: none
+			padding: 0
+
+	&__map
+		position: absolute
+		height: 100%
+		left: 306px
+		right: 475px
+		left: 0
+		width: 100%
+
+	&__info
+		transition: color .3s ease
+
+	&__form
+		flex: none
+		width: 513px
+
+.contacts-map
+	position: absolute
+	+size(100% 694px)
+	top: calc(50% - 347px)
+	left: 50%
+	transform: translate3d(-50%, 0, 0)
+	overflow: hidden
+
+	&:before, &:after
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		width: 2px
+		z-index: 2
+		background: #171718
+
+	&:before
+		left: 0
+
+	&:after
+		right: 0
+
+	#map
+		overflow: hidden
+		// padding: 0 1px
+		width: 100%
+		inset 0px 0px 20px 10px rgba(0, 0, 0, 0.6)
+		position: relative
+
+		&.js__visible
+
+			&:before, &:after
+				opacity: 0
+
+			ymaps[class*="-copyright"]
+				pointer-events: all
+				opacity: 1
+
+			ymaps[class*="-inner-panes"]
+
+				&:before
+					// opacity: .6
+					opacity: 0
+					transform: scale(5)
+
+				&:after
+					transform: scale(5)
+					opacity: 0
+
+		&:before, &:after
+			content: ""
+			position: absolute
+			top: 0
+			bottom: 0
+			background: #171718
+			transition: opacity .15s ease
+			pointer-events: none
+
+		&:before
+			left: 0
+			width: 26.3%
+			z-index: 3
+
+		&:after
+			right: 0
+			width: 36.2%
+
+		canvas
+			display: block
+
+		ymaps[class*="-copyright"]
+			pointer-events: none
+			transition: opacity .3s ease
+			opacity: 0
+
+		ymaps[class*="-inner-panes"]
+
+			&:before, &:after
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				+size(100%)
+				pointer-events: none
+				left: 26.23594%
+				right: 36.11823%
+				width: auto
+				transition: opacity .3s ease, transform .3s ease
+
+			&:before
+				z-index: 648
+				background: rgba(#000, .8)
+
+			&:after
+				z-index: 649
+				background: url("../img/map-overlay.png") center no-repeat
+				background-size: cover
+				pointer-events: none
+
+		.ymaps-2-1-60-places-pane
+			// position: static !important
+
+.contacts-form
+	position: relative
+	background: #252527
+	padding: 40px 55px
+
+	&__title
+		font-size: rem(20)
+		margin: 0 0 rem(35)
+
+	&__input
+		margin-bottom: 20px
+		position: relative
+
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		+size(100% 3px)
+		background: linear-gradient(to right, $main-color, $second-color)
+
+	&__text
+		text-align: left
+		font-size: rem(14)
+		line-height: lh(22, 14)
+		margin-top: 30px
+
+		a
+			text-decoration: none
+			color: #69696e
+
+			&:hover, &:focus
+				text-decoration: underline
+
+	&__submit
+		margin: 48px 0 0
+		text-align: center
+
+.main-contacts__info
+	width: 530px
+	
+	&-title
+		text-transform: uppercase
+		font-size: rem(50)
+		line-height: lh(60, 50)
+		margin: 0 0 22px
+
+	&-address, &-soc
+		margin-bottom: 20px
+
+	&-mail
+		margin-bottom: 35px
+
+		a
+			color: #fff
+			text-decoration: none
+
+.title-block
+	padding: rem(88) 0
+
+	&__title
+		margin: 0 0 10px
+
+		h1
+			font-size: rem(26)
+			font-weight: 100
+
+.bread-crumbs
+	color: rgba(#fff, .30)
+	font-size: rem(14)
+	
+	&__link
+		color: inherit
+		text-decoration: none
+
+		&:after
+			content: "/"
+			display: inline-block
+			margin: 0 7px
+
+		&:hover, &:focus
+			text-decoration: underline
+
+	&__this
+
+.filter
+	display: flex
+	align-items: flex-end
+
+	&__label
+		font-size: rem(14)
+		margin: 0 0 14px
+
+	&__input
+		display: flex
+		flex-direction: column-reverse
+		justify-content: flex-end
+		width: 358px
+
+		&:not(:last-child)
+			margin: 0 40px 0 0
+
+		&--submit
+			width: auto !important
+
+		.selectize
+
+			&-control
+				min-height: 56px
+
+		.forms
+
+			&__input
+				border: 1px solid #2c2c2d
+
+				&--select
+					background: url("../img/ico-select-white-arrow.png") center right 23px no-repeat, #171718
+
+.port
+	
+	&__filter
+		margin: 0 0 rem(74)
+
+	&__paginator
+		margin: rem(70) 0 0
+
+.port
+	display: flex
+	flex-wrap: wrap
+	$offset: 6px
+	margin: 0 0 -6px -6px
+
+	&__one
+		width: calc((100% - 6px * 4) / 4)
+		margin: 0 0 $offset 6px
+		position: relative
+		overflow: hidden
+		color: #fff
+		text-decoration: none
+
+		&:hover, &:focus
+
+			&:after
+				opacity: 1
+
+			.port__one
+
+				&-title, &-bot
+					transform: translate3d(0, 0, 0)
+
+		&:after, &:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			+size(100%)
+			transition: opacity .3s ease
+
+		&:after
+			background: rgba(#000, .6)
+			opacity: 0
+
+		&:before
+			background: linear-gradient(to right, $main-color, $second-color)
+			opacity: 0
+
+		&-img
+
+			img
+				display: block
+				width: 100%
+
+		&-title, &-bot
+			position: absolute
+			transition: transform .3s $ease-in-out-circ
+			z-index: 4
+			left: 0
+			width: 100%
+
+		&-title
+			text-transform: uppercase
+			font-weight: 400
+			font-size: rem(18)
+			top: 0
+			padding: rem(20) rem(50) 0
+			min-height: 70px
+			display: flex
+			flex-wrap: wrap
+			align-items: flex-end
+			transform: translate3d(0, -100%, 0)
+
+		&-bot
+			display: flex
+			justify-content: space-between
+			align-items: flex-end
+			bottom: 0
+			padding: 0 rem(50) rem(47)
+			transform: translate3d(0, 100%, 0)
+
+		&-fake-btn
+			// border: 1px solid #fff
+			border-radius: 50%
+			+size(33px)
+			background: url("../img/ico-port-arrow.svg") center no-repeat
+
+.paginator
+	
+	&__list
+		display: flex
+		font-size: rem(14)
+		margin: 2rem 0 0
+
+
+		li
+
+			&:not(:last-child)
+				margin: 0 19px 0 0
+
+	&__link
+		color: #fff
+		text-decoration: none
+
+a.paginator__link
+	position: relative
+	display: block
+
+	&:after
+		content: ''
+		position: absolute
+		left: calc(50% - 8px)
+		+size(15px 1px)
+		top: calc(100% + 11px)
+		background: linear-gradient(to right, $main-color, $second-color)
+		transition: opacity .3s ease
+		opacity: 0
+
+	&.active, &:hover, &:focus
+
+		&:after
+			opacity: 1
+
+.service
+	
+	&-big, &-info
+		background: #252527
+		flex: 1 0 auto
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		padding: 40px
+
+		&__title
+			text-transform: uppercase
+
+	&-big
+
+		&__wrap
+			max-width: 530px
+
+		&__title
+			font-size: rem(50)
+			line-height: lh(60, 50)
+
+		&__count
+			-webkit-background-clip: text !important
+			background-clip: text !important
+			color: transparent
+			font-size: rem(200)
+			line-height: 1
+			flex: none
+			font-weight: bold
+			background: linear-gradient(to bottom right, $main-color, $second-color)
+
+			margin-right: 50px
+
+		&__desc
+			display: flex
+			align-items: center
+
+			.direction
+
+				&__links
+					flex-direction: column
+
+				&__link
+
+					&:not(:last-child)
+						margin: 0 0 23px
+
+	&-info
+
+		&__wrap
+
+		&__title
+			font-size: rem(30)
+			line-height: lh(40, 30)
+
+		&__btn
+			margin: 55px 0 0
+
+.services
+	display: flex
+	flex-wrap: wrap
+	margin: 0 0 -41px -40px
+
+	&__one
+		width: calc((100% - 40px * 4) / 4)
+		margin: 0 0 41px 40px
+		display: flex
+
+		&--big, &--info
+			display: flex
+			flex-direction: column
+
+		&--big
+			width: calc((100% - 40px * 2) / 2)
+
+		.direction
+
+			&__img
+				position: relative
+
+				img
+
+				// &:after, &:before
+				// 	content: ''
+				// 	position: absolute
+				// 	top: 0
+				// 	left: 0
+				// 	+size(100%)
+				// 	transition: opacity .3s ease
+				// 	z-index: 1
+
+				// &:before
+				// 	background: rgba(#000, .6)
+
+				// &:after
+				// 	background: linear-gradient(to right, $main-color, $second-color)
+				// 	opacity: 0
+
+.videogallery
+	display: flex
+	flex-wrap: wrap
+	margin: 0 0 rem(-60) rem(-65)
+
+	&__one
+		margin: 0 0 rem(60) rem(65)
+		width: calc((100% - 4.0625rem * 3) / 3)
+
+.video
+	color: inherit
+	text-decoration: none
+
+	&:hover, &:focus
+
+		.video
+
+			&__play
+				opacity: 1
+
+			&__img:after
+				opacity: .9
+
+	&__img, &__play, &__title
+
+		&:after
+			content: ''
+			position: absolute
+
+	&__play, &__title
+
+		&:after
+			+size(21px 27px)
+			top: calc(50% - 13px)
+			background: url("../img/ico-triangle.png") no-repeat
+			
+	&__img:after, &__play
+		opacity: 0
+		transition: opacity .3s ease
+		
+	&__img
+		position: relative
+		margin: 0 0 rem(36)
+
+		&:after
+			left: 0
+			top: 0
+			+size(100%)
+			background: linear-gradient(to right, $main-color, $second-color)
+
+		img
+			display: block
+			width: 100%
+
+	&__play
+		border-radius: 50%
+		background: #fff
+		+size(73px)
+		position: absolute
+		z-index: 2
+		top: calc(50% - 37px)
+		left: calc(50% - 37px)
+
+		&:after
+			left: calc(50% - 8px)
+
+	&__title
+		text-transform: uppercase
+		font-size: rem(18)
+		position: relative
+		padding: 4px 0 0 39px
+
+		&:after
+			left: 0
+
+.news
+	
+	&__one
+		display: flex
+		justify-content: space-between
+
+		&:hover, &:focus
+
+			.news__one
+
+				&-title, &-btn
+					// opacity: 1
+
+				&-img:after
+					// opacity: 0
+
+		&:first-child
+
+			.news__one
+
+				&-desc
+					border:
+						top: 1px solid #2f2f30
+
+		&:last-child
+
+			.news__one
+
+				&-desc
+					border:
+						bottom: 1px solid #2f2f30
+
+		&-img
+			position: relative
+
+			// &:after
+			// 	content: ''
+			// 	position: absolute
+			// 	+size(100%)
+			// 	top: 0
+			// 	left: 0
+			// 	background: rgba(#000, .6)
+			// 	transition: opacity .3s ease
+
+			img
+				display: block
+				width: 100%
+
+		&-title, &-btn
+			// transition: opacity .3s ease
+			// opacity: .6
+
+		&-title
+			font-size: rem(26)
+			line-height: lh(33, 26)
+			max-width: 650px
+
+			a
+				color: inherit
+				text-decoration: none
+
+		&-desc
+			width: 782px
+			border:
+				// top: 1px solid #2f2f30
+				bottom: 1px solid #2f2f30
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			padding: rem(72) 0
+
+		&-btn
+			margin-top: auto
+			padding: rem(40) 0 0
+
+		&-date
+			font-size: rem(14)
+			margin: 0 0 rem(30)
+			opacity: .3
+
+.clients
+	display: flex
+	flex-wrap: wrap
+	margin: 0 0 50px -1px
+
+	// &:before, &:after
+	// 	content: ''
+	// 	position: absolute
+	// 	background: linear-gradient(to right bottom, $main-color, $second-color)
+	// 	z-index: -1
+
+	// &:before
+	// 	top: 0
+	// 	left: 0
+	// 	+size(418px 476px)
+
+	// &:after
+	// 	right: 0
+	// 	bottom: -130px
+	// 	+size(97px 95px)
+
+	&__one
+		width: calc((100% - 1px * 5) / 5)
+		display: flex
+		flex-direction: column
+		margin: 0 0 1px 1px
+		height: 312px
+
+		&:first-child
+			order: -4
+
+		&:nth-child(2)
+			order: -3
+
+		&:nth-child(3)
+			order: -2
+
+		&--counters
+			order: -1
+			width: calc((160% - 1px * 4) / 4)
+			position: relative
+			display: flex
+			align-items: center
+			justify-content: center
+
+.clients-count
+	font-weight: bold
+	
+	&__abs
+		position: absolute
+		top: 0
+		right: 0
+		text-align: right
+
+.projects-counter, .clients-counter
+
+	&__number
+		-webkit-background-clip: text !important
+		background-clip: text !important
+		color: transparent
+
+	&__text
+		text-transform: lowercase
+
+.projects-counter
+
+	&__number
+		background: linear-gradient(to right, #883f5c, #743569)
+		font-size: rem(40)
+		line-height: 1
+
+	&__text
+		color: #7a3865
+
+.clients-counter
+	line-height: 1
+
+	&__number, &__text
+		display: inline-block
+		// vertical-align: bottom
+
+	&__number
+		background: linear-gradient(to right, $main-color, $second-color)
+		font-size: rem(196)
+
+	&__text
+		color: #4e3f80
+		font-size: rem(26)
+
+.client
+	background: #242426
+	display: flex
+	justify-content: center
+	align-items: center
+	flex: 1 0 auto
+	overflow: hidden
+	position: relative
+
+	img
+		transform: scale(1.05)
+		// transition: filter .3s ease
+		// filter: contrast(40%) grayscale(100%)
+		display: block
+		transition: opacity .3s ease
+
+		&:not(:last-child)
+
+	&:hover, &:focus
+
+		img
+			// filter: contrast(100%) grayscale(0%)
+
+		img:not(:last-child):not([class])
+			opacity: 0
+
+		.hover-img
+			opacity: 1
+
+	.hover-img
+		// display: none
+		opacity: 0
+		position: absolute
+		top: 0
+		left: 0
+		+size(100%)
+
+.map
+	position: relative
+	
+	&__map
+
+		img
+			display: block
+			width: 100%
+
+	&__contacts
+		position: absolute
+		top: 0
+		left: 0
+		+size(100% 100%)
+		pointer-events: none
+
+		.wrapper
+			height: 100%
+
+.map-contacts
+	background: #252527
+	width: 780px
+	height: 100%
+	padding: rem(80) rem(100)
+	pointer-events: all
+
+	&__title
+		text-transform: uppercase
+		font-size: rem(50)
+		line-height: lh(60, 60)
+		margin-bottom: rem(47)
+
+	&__text
+
+		&:not(:last-child)
+			margin-bottom: rem(33)
+
+		a
+			text-decoration: none
+			color: #fff
+			border-bottom: 1px solid $main-color
+
+.standart-page
+	
+	&--stands
+
+		table
+
+			&:not([border])
+
+				td, th
+					padding: 0
+
+	&:not(.standart-page--stands)
+
+		.standart-page
+
+			&__img
+				// display: none
+
+			&__form
+				display: none
+
+.stands
+	
+	&__contacts
+		margin: rem(70) -4.75rem -3.875rem -4.75rem
+
+		table
+			color: #000
+	
+	&-contacts
+		background: #e9e9e9
+		padding: rem(50) 4.75rem
+
+.project
+
+	&__slider
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		z-index: -1
+
+		img
+			display: block
+			width: 100%
+
+		@media screen and (min-width: 1300px)
+			img
+				height: 100vh
+				max-height: 964px
+				object-fit: cover
+				object-position: center
+
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			+size(100%)
+			background: #000
+			opacity: .5
+			z-index: 1
+
+	&__title
+
+		h2
+			font-size: rem(50)
+			line-height: lh(60, 50)
+			font-weight: 300
+			text-transform: uppercase
+
+		&-block
+			min-height: calc(43vh - 50px)
+
+	&__subtitle
+		font-size: rem(26)
+
+.project-desc
+	display: flex
+	justify-content: space-between
+	// margin: 180px 0 0
+
+	&__one
+		background: #252527
+		padding: rem(65) rem(78)
+		width: persent(477)
+
+	&__label
+		opacity: .3
+
+	&__title
+		font-size: rem(30)
+		line-height: lh(40, 30)
+
+.project__another-slider
+	display: flex
+	background: #252527
+	flex: 1 0 auto
+	justify-content: space-between
+	margin: 114px 0 0
+
+	&__desc
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 2rem rem(110)
+
+.pr-desc
+	max-width: 420px
+
+	&__title
+		font-size: rem(26)
+
+	&__text
+		font-size: rem(14)
+
+.project-slider
+	flex: none
+	width: 785px
+	
+	> .project-slider__slide:not(:first-child)
+		display: none
+
+	.slick
+
+		&-arrow
+			bottom: 0
+			position: absolute
+			+size(57px)
+			border: none
+			z-index: 1
+			background: url("../img/ico-project-slider-arrow.png") center no-repeat, #4d3f80
+
+		&-prev
+			right: 100%
+			opacity: .66
+			transform: rotate3d(0, 0, 1, 180deg)
+
+		&-next
+			left: 0
+			opacity: .8
+
+	&__slide
+
+		img
+			display: block
+			width: 100%
+
+.project__video
+	margin: rem(97) 0 0
+
+.project-video
+	display: flex
+	background: #242426
+
+	&__link
+		flex: none
+		position: relative
+
+		&:before, &:after
+			content: ""
+			position: absolute
+
+		&:before
+			top: 0
+			left: 0
+			+size(100%)
+			background: linear-gradient(to right, $main-color, $second-color)
+			opacity: .9
+
+		&:after
+			+size(74px)
+			top: calc(50% - 32px)
+			background: url("../img/ico-triangle.png") center no-repeat, #fff
+			left: calc(50% - 32px)
+			border-radius: 50%
+
+	&__desc
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 2rem rem(115)
+
+		&-title
+			font-size: rem(50)
+			line-height: lh(60, 50)
+
+.project__bot
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin: rem(100) 0 0
+
+	&-form
+		width: 660px
+		text-align: center
+
+		form
+			display: inline-block
+			width: 378px
+
+		.contacts-form__text
+			text-align: center
+
+.page-404
+	text-align: center
+	background: #242426
+	padding: 4.2rem 0
+
+	&__cont
+		margin: 40px 0 0
+
+	&__title
+		text-transform: uppercase
+		margin: 40px 0 0
+		font-weight: bold
+		color: $main-color
+		font-size: rem(26)
+
+	&__subtitle
+		margin: 30px 0 0
+		font-size: rem(20)
+
+.creating-slider__slider
+	
+	> .creating-slider__slider-slide:not(:first-child)
+		display: none
+
+.creating__slider-slider
+	
+	> .creating-slider:not(:first-child)
+		display: none
+
+.creating__slider
+	display: flex
+
+	&-nav
+		background: #242426
+		width: 340px
+		flex: none
+		display: flex
+
+	&-slider
+		width: calc(100% - 340px)
+
+.creating-slider
+	display: flex !important
+	align-items: center
+
+	&__text
+		padding: 2rem rem(75)
+
+	&__slider
+		flex: none
+		width: 604px
+
+		&-slide
+
+			img
+				display: block
+
+		.slick
+
+			&-arrow
+				bottom: 0
+				position: absolute
+				+size(57px)
+				border: none
+				z-index: 1
+				background: url("../img/ico-project-slider-arrow.png") center no-repeat, #4d3f80
+
+			&-prev
+				right: 57px
+				opacity: .66
+				transform: rotate3d(0, 0, 1, 180deg)
+
+			&-next
+				right: 0
+				opacity: .8
+
+.creating__ttitle
+	text-transform: uppercase
+	font-size: rem(50)
+	line-height: lh(60, 50)
+
+.creating__text
+	font-size: rem(14)
+	margin: rem(55) 0 0
+
+.creating-nav
+	display: flex
+	flex-direction: column
+	width: 100%
+	
+	&__el
+		display: flex
+		flex: 1 0 auto
+		align-items: center
+		cursor: pointer
+		padding: rem(20) rem(27)
+		transition: background .3s ease
+
+		&:hover, &:focus, &.active
+			background: $main-color
+
+			.creating-nav__img-hover
+				opacity: 1
+
+	&__link
+		font-size: rem(14)
+		line-height: lh(22, 14)
+
+	&__img
+		position: relative
+		flex: none
+		margin-right: 28px
+
+		img
+			display: block
+
+		&-hover
+			position: absolute
+			top: 0
+			left: 0
+			transition: opacity .3s ease
+			opacity: 0
+
+.about-top
+	display: flex
+	align-items: center
+
+	&__bg
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		z-index: -1
+
+		img
+			display: block
+
+	&__text
+		max-width: 850px
+
+		&-title
+			text-transform: uppercase
+			font-size: rem(50)
+			line-height: lh(60, 50)
+
+		&-text
+			// line-height: lh(24, 16)
+
+	&__number
+		flex: 1 0 auto
+		display: flex
+		justify-content: center
+
+.number
+	display: flex
+	align-items: flex-end
+
+	&__number
+		font-size: rem(200)
+		line-height: .8
+		-webkit-background-clip: text !important
+		background-clip: text !important
+		color: transparent
+		flex: none
+		font-weight: bold
+		background: linear-gradient(to bottom right, #c3862e, #a86641)
+
+	&__sub
+		color: #ae6d3d
+		line-height: lh(22, 16)
+
+.about
+	
+	&__text
+		margin: rem(120) 0 0
+
+	&__timeline
+		padding: rem(200) 0 0
+		overflow: hidden
+
+		&-title
+			text-transform: uppercase
+			font-size: 2rem
+			font-weight: 400
+			text-align: center
+			color: #775fbf
+			margin-bottom: rem(70)
+
+	&__slider
+		margin: rem(175) 0 0
+		position: relative
+		background: #252527
+		overflow: hidden
+
+	&__job
+		margin: rem(70) 0 0
+
+.about-text
+	max-width: 920px
+
+	&__text
+		font-size: rem(14)
+		line-height: lh(22, 14)
+
+.team
+	display: flex
+	// align-items: center
+
+	&__slider
+		width: 1100px
+		flex: none
+		position: relative
+		padding: rem(53px) rem(102) rem(60) 0
+
+	&__info
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		flex: 1 0 auto
+
+.team-slider
+	@extend %clearfix
+	margin: 0 rem(-48)
+	flex: none
+	position: static
+	// width: 100%
+
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		width: 2000px
+		pointer-events: none
+		background: linear-gradient(to right bottom, $main-color, $second-color)
+
+	> .team-slider__slide:nth-child(n + 4)
+		display: none
+
+	&__slide
+		float: left
+		margin: 0 rem(48)
+
+		img
+			display: block
+
+	&__title
+		font-size: rem(20)
+
+		&-cont
+			display: flex
+			align-items: center
+			justify-content: space-between
+			margin: 0 0 rem(45)
+			position: relative
+			z-index: 2
+
+	&__arrows
+		display: flex
+		align-items: center
+
+		.slick
+
+			&-arrow
+				border: none
+				padding: 0
+				+size(8px 17px)
+				background: url("../img/ico-team-slider-arrow.png") no-repeat
+
+			&-prev
+				transform: rotate(180deg)
+				margin-right: 24px
+
+.team-info__counter
+	display: flex
+	align-items: flex-end
+	font-weight: bold
+
+	&-number
+		-webkit-background-clip: text !important
+		background-clip: text !important
+		color: transparent
+		background: linear-gradient(to right bottom, $main-color, $second-color)
+		font-size: rem(200)
+		line-height: .77
+
+	&-text
+		color: $second-color
+		line-height: lh(22, 16)
+
+.team-info
+
+	&__title
+		font-size: rem(30)
+		line-height: lh(40, 30)
+		text-transform: uppercase
+		margin: rem(43) 0 0
+
+	&__btn
+		margin: rem(50) 0 0
+
+.person
+	
+	&__img
+
+		img
+			display: block
+			width: 100%
+
+	&__name
+		margin: rem(38) 0 0
+		font-size: rem(20)
+
+	&__status
+		font-size: rem(14)
+		opacity: .3
+
+.about-job
+	
+	&__title
+		font-size: rem(20)
+		margin: 0 0 rem(41)
+
+	&__vacancy
+		max-width: 1100px
+
+.accordion
+	
+	&__one
+
+		&:not(:first-child)
+			margin: rem(28) 0 0
+
+		&.js__opened
+
+			.accordion
+	
+				&__one
+
+					&-text
+						display: block
+
+					&-title
+
+						&:after
+							transform: rotate3d(0, 0, 1, 180deg)
+
+		&-text
+			display: none
+			border: 1px solid #252527
+			border-top: none
+			padding: rem(28)
+
+			.text-page
+				max-width: 940px
+
+		&-title
+			background: #252527
+			position: relative
+			padding: 30px 35px 31px
+			cursor: pointer
+
+			&:after
+				content: ''
+				position: absolute
+				+size(13px 6px)
+				background: url("../img/ico-accord-arrow.png") no-repeat
+				top: calc(50% - 3px)
+				right: 2rem
+				transition: transform .3s ease
+
+		&-btn
+			margin: rem(25) 0 0
+
+.timeline
+	position: relative
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	height: 250px
+
+	&__list
+		width: 1903px
+
+	&__canvas, &__list
+		height: 100%
+		left: 50%
+		transform: translate3d(-50%, 0, 0)
+		position: absolute
+		top: 0
+
+	&__canvas
+		// width: 100% !important
+		// height: 220px
+		width: 100%
+		overflow: hidden
+		display: flex
+		justify-content: center
+
+		canvas
+			display: block
+
+	&__el
+		position: absolute
+		text-align: center
+		transform: translate3d(-50%, -50%, 0)
+
+		&:after
+			content: ""
+			position: absolute
+			background: #000
+			border: 4px solid #452361
+			+size(28px)
+			left: calc(50% - 14px)
+			border-radius: 50%
+			bottom: -51px
+
+	&__number, &__label
+		// transform: translate3d(.5px, .5px, .5px)
+
+	&__number
+		-webkit-background-clip: text !important
+		background-clip: text !important
+		color: transparent
+		font-size: rem(50)
+		font-weight: bold
+
+	&__label
+		font-size: rem(14)
+
+.project__icons
+	margin: rem(83) 0 0
+
+.project-icons
+	display: flex
+	flex-wrap: wrap
+	width: 1100px
+	margin: 0 0 rem(-50) -2rem
+	// column-count: 4
+	// columng-gap: 2rem
+
+	&__one
+		width: calc((100% - 2rem * 4) / 4)
+		margin: 0 0 rem(50) 2rem
+		display: flex
+		align-items: center
+		// margin-top: rem(50)
+
+		&-img
+			flex: none
+			margin-right: 10px
+
+			img
+				display: block
+
+.creat
+
+	&__cont
+		margin: rem(120) 0 0
+
+	&-slider
+		display: flex
+		justify-content: space-between
+
+		&:not(:first-child)
+			margin: rem(112) 0 0
+
+		&--reverse
+			flex-direction: row-reverse
+
+			.creat-text
+				padding: 2rem 0 2rem rem(84)
+
+			.creat-slider
+
+				&__text
+
+					&:before
+						display: none
+
+				&__slider
+
+					.slick
+
+						&-next
+							right: 0
+							left: auto
+
+						&-prev
+							right: 57px
+
+		&__slider
+			flex: none
+			width: 693px
+			display: flex 
+
+			img
+				display: block
+				width: 100%
+
+			> .creat-slider__slider-slide:not(:first-child)
+				display: none
+
+			&-slide
+
+			.slick
+
+
+				&-arrow
+					bottom: 0
+					position: absolute
+					background:
+						image: url("../img/ico-project-slider-arrow.png")
+						repeat: no-repeat
+						position: center
+					+size(57px)
+					z-index: 2
+					border: none
+
+				&-next
+					background-color: rgba($main-color, .66)
+					left: 0
+
+				&-prev
+					transform: rotate3d(0,0,1, 180deg)
+					right: 100%
+					background-color: rgba(#5b4b8e, .66)
+
+		&__text
+			display: flex
+			flex-direction: column
+			justify-content: center
+			position: relative
+			width: 100%
+
+			&:before
+				content: ""
+				position: absolute
+				top: 0
+				left: -20%
+				height: 100%
+				width: 120%
+				background: linear-gradient(to right, $main-color, $second-color)
+
+.creat-text
+	position: relative
+	z-index: 1
+	padding: 2rem rem(84) 2rem 0
+	// max-width: 590px
+
+	table
+
+		td, th
+			padding: 0 
+
+	&__title
+		text-transform: uppercase
+		font-size: rem(50)
+		line-height: lh(60, 50)
+		margin: 0 0 rem(42)
+
+	&__text
+		font-size: rem(14)
+		line-height: lh(22, 14)
+		max-width: 655px
+
+.contacts-form
+
+	&__top
+
+		&-text
+			font-weight: 400
+
+.block-up-with-form
+	display: flex
+	align-items: flex-start
+
+	.contacts-form
+		border: 2px solid $main-color
+		border-radius: 2px
+		padding: 20px 30px
+
+		&:before
+			display: none
+
+		&__title
+			margin-bottom: 26px
+			font-weight: bold
+			font-size: 1.6rem
+
+		&__text
+			font-size: 12px
+
+		&__submit, &__text
+			margin: 20px 0 0
+
+		.forms
+
+			&-wrap
+
+				&--bot
+					justify-content: center
+					display: flex
+
+					.recaptcha
+						width: auto !important
+						padding-right: 0 !important
+
+			&__input
+				text-align: center
+				border-bottom: 2px solid $second-color
+
+	.standart-page
+
+		&__img
+			display: flex
+
+			img
+				width: 100%
+				object:
+					fit: cover
+					position: center
+
+			img[src=""]
+				display: none
+
+		&__right
+			padding: 0
+
+		&__aside
+			flex: none
+			margin-left: 28px
+			width: 385px
+
+		&__btn
+			display: none
+
+.service
+
+	&__projects, &__clients
+		margin: rem(50) 0 0
+
+	&__projects
+
+		&-title
+			font-size: rem(24)
+			font-weight: 400
+			margin-bottom: rem(20)
+
+	&__timeline
+
+		.about
+
+			&__timeline
+				padding: rem(90px) 0 0
+
+	&__text-block
+		margin: rem(95) 0 0
+
+		.standart-page
+			flex-direction: row-reverse
+			background: none
+			flex-wrap: nowrap
+
+			&__text
+				padding: rem(30)
+				width: auto
+				flex: 1 1 auto
+
+			&__right
+				padding: 0
+
+			&__aside
+				flex: none
+				margin-right: 28px
+				width: 385px
+
+			&__btn
+				display: none
+
+		.contacts-form
+			border: 2px solid $main-color
+			border-radius: 2px
+			padding: 20px 30px
+
+			&:before
+				display: none
+
+			&__title
+				margin-bottom: 26px
+				font-weight: bold
+				font-size: 1.6rem
+
+			&__text
+				font-size: 12px
+
+			&__submit, &__text
+				margin: 20px 0 0
+
+			.forms
+
+				&-wrap
+
+					&--bot
+						justify-content: center
+						display: flex
+
+						.recaptcha
+							width: auto !important
+							padding-right: 0 !important
+
+				&__input
+					text-align: center
+					border-bottom: 2px solid $second-color
+
+	&__video
+
+		&-title
+			text-align: center
+			font-size: rem(30)
+			font-weight: 400
+
+		.project
+
+			&__video
+
+				&:not(:first-child)
+					margin: 20px 0 0
+
+			&-video
+
+				&__link
+					width: 48%
+
+					img
+						display: block
+						width: 100%
+
+				&__desc
+					width: 52%
+					// align-items: flex-start
+					justify-content: flex-start
+
+@import "grid"
+@import "media"

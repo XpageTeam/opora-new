@@ -1,0 +1,16 @@
+@import "vars"
+@import "functions"
+
+@supports (display: grid)
+	.main-port
+		display: grid
+		grid-gap: 43px 40px
+		margin: 0 !important
+		grid-template-columns: repeat(3, 1fr)
+
+		&__one
+			margin: 0 !important
+			width: auto !important
+
+			&--big
+				grid-column: 1 / span 2

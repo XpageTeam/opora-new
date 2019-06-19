@@ -1,0 +1,1805 @@
+$output-bourbon-deprecation-warnings: false;
+@import "bourbon"
+@import "vars"
+
+@media screen and (min-width: 1000px)
+	.head__burger
+		display: none
+
+	.head__menu .js__moved,
+	.submenu__el.js__moved,
+	.js__soc-moved
+		display: none
+
+	.footer__phone, .head__phone-link
+		display: none
+
+@media screen and (max-width: 1750px)
+	.loader
+
+		&__title
+			font-size: 24rem
+
+@media screen and (max-width: 1645px)
+	.wrapper
+		box-sizing: border-box
+
+	.footer, .head
+
+		&__wrap
+			padding: 2rem
+
+	body.inner
+		padding-top: 109px
+
+@media screen and (max-width: 1600px)
+	html
+		font-size: 97%
+
+	.title-block
+		padding: 3rem 0
+
+	.port
+
+		&__filter
+			margin-bottom: 3rem
+
+		&__paginator
+			margin: 3rem 0 0
+
+	body.inner 
+
+		.footer
+			margin: 3rem 0 0
+
+	.main__nav
+		right: 2rem
+
+@media screen and (max-width: 1500px)
+	.loader
+
+		&__title
+			font-size: 21rem
+
+	.services
+		margin: 0 0 -2rem -2rem
+
+		&__one
+			width: calc((100% - 2rem * 3) / 3)
+			margin: 0 0 2rem 2rem
+
+			&:first-child
+				order: -2
+
+			&--big
+				width: calc((133.3% - 2rem * 2) / 2)
+				order: -1
+
+			&--info
+				order: 1
+
+	.creat-text
+		padding: 2rem 2rem 2rem 0
+
+		&__title
+			font-size: 2.5rem
+			margin-bottom: 2rem
+
+	.creat-slider--reverse .creat-text
+		padding: 2rem 0 2rem 2rem
+
+	.creat-slider
+
+		&:not(:first-child)
+			margin: 4rem 0 0
+
+	.direction
+
+		&__img
+
+			img
+				width: 100%
+
+	.news
+
+		&__one
+
+			&-desc
+				padding: 3rem 0
+				width: 650px
+
+	.clients
+		margin-bottom: 0
+
+		&:after
+			display: none
+
+		&__one
+			height: 280px
+
+	.creating__slider
+		align-items: center
+
+	.creating-slider
+
+		&__slider
+			width: 500px
+
+		&__text
+			padding: 2rem 
+
+	.project
+
+		&-desc
+			// margin: 105px 0 0
+
+			&__one
+				padding: 2rem 3rem
+
+		&__another-slider
+			margin: 4rem 0 0
+
+			&__desc
+				padding: 2rem 4rem
+
+		&__bot
+			margin: 4rem 0 0
+
+	.project-video
+
+		&__desc
+			padding: 2rem 4rem
+
+	.directions
+		padding: 5rem 0 3rem
+
+		&-menu
+			padding: 2rem 3rem
+			width: 100%
+			margin: 67px 0 0
+
+		&__slider
+
+			&-title
+				margin: 0 0 30px
+
+	.direction
+
+		&__desc
+			padding: 2rem
+
+		&__text
+			margin: .7rem 0 0
+
+		&__links
+			padding: 1rem 0 0
+
+	.main-port__title-cont
+		margin: 0 0 2rem
+
+	.team__slider
+		padding: 3.3125rem 3.75rem 3.75rem 0
+		width: 915px
+
+	.menu > li:not(:last-child)
+		margin: 0 2.20389vw 0 0
+
+	.head-phone:not(:first-child)
+		margin: 0 0 0 2.72937vw
+
+@media screen and (max-width: 1400px)
+
+	.head.js__scrolled .head__wrap
+		background: #000
+		padding: 1.25rem 1.75rem
+
+
+	.standart-page__text, .stands-contacts
+		padding: 2rem 3rem
+
+	.stands__contacts
+		margin: 2rem -3rem -2rem
+
+	.main__nav
+		right: 1rem
+
+	.clients
+
+		&__one
+			height: 260px
+
+	.creating__slider
+
+		&-nav
+			width: 285px
+
+		&-slider
+			width: calc(100% - 285px)
+
+	.team__slider
+		width: 855px
+
+	.team-slider
+		margin: 0 -2rem
+
+		&__slide
+			margin: 0 2rem
+
+@media screen and (max-width: 1400px) and (min-width: 1300px)
+
+	.creating-nav
+
+		&__img
+			display: none
+
+@media screen and (max-width: 1300px)
+	html
+		font-size: 96%
+
+	.list-services 
+
+		.services__one
+
+			width: calc((100% - 40px * 2)/ 2)
+
+	.loader
+
+		&__title
+			font-size: 19rem
+
+	.creat-slider
+
+		&__slider
+			width: 520px
+
+			.slick
+
+				&-track, &-list, &-slide
+					display: flex
+
+				&-slide
+					align-items: center
+					justify-content: center
+					overflow: hidden
+
+					img
+						max-width: none
+
+		&__text
+			width: calc(100% - 520px)
+
+	.creat-text
+		padding: 1.4rem 1.4rem 1.4rem 0
+
+		&__title
+			margin-bottom: .8rem
+
+	.port
+
+		&__one
+
+			&-bot
+				padding: 0 2rem 2rem
+
+			&-title
+				padding: 1rem 2rem 0
+
+	.videogallery
+		margin: 0 0 -2rem -2rem
+
+		&__one
+			width: calc((100% - 2rem * 3) / 3)
+			margin: 0 0 2rem 2rem
+
+	.video
+
+		&__img
+			margin: 0 0 1rem
+
+	.news
+
+		&__one
+
+			&-desc
+				padding: 3rem 2rem 3rem 0
+				width: 650px
+
+	.clients
+
+		&__one
+			height: 220px
+
+	.map
+		display: flex
+		flex-direction: column-reverse
+
+		&__contacts
+			position: static
+			height: auto
+			margin: 0 0 2rem
+
+	.map-contacts
+		width: 100%
+		padding: 2rem 3rem
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+		&__title
+			width: 100%
+
+			br
+				display: none
+
+		&__text
+			width: 48%
+
+	.contacts-map
+
+		#map
+
+			&:before, &:after
+				display: none
+
+			ymaps[class*="-inner-panes"]:before, 
+			ymaps[class*="-inner-panes"]:after
+				left: 0
+				right: 0
+
+	.project
+
+		&__video
+			margin: 2rem 0 0
+
+		&__another-slider
+
+			&__desc
+				padding: 2rem
+
+		&-video
+			background: none
+			flex-direction: column-reverse
+			align-items: center
+
+			&__desc
+				padding: 2rem
+				
+				&-title
+					font-size: rem(36)
+					text-align: center
+
+	.creating__slider
+		flex-direction: column
+		align-items: stretch
+
+		&-slider, &-nav
+			width: 100%
+
+		&-nav
+			margin: 0 0 2rem
+
+	.creating-nav
+		flex-direction: row
+		flex-wrap: wrap
+
+		&__el
+			width: 33.33%
+			flex: none
+
+	.directions
+		padding: 3rem 0 2rem
+
+		&__links
+			width: 320px
+
+		&__slider
+			width: calc(100% - 320px)
+
+	.main-contacts
+		flex-wrap: wrap
+
+		&__cont
+			margin: 4rem 0 0
+
+		&__map
+			width: 100%
+
+		&__info
+			order: -2
+
+		&__form
+			order: -1
+
+		&__map
+			position: static
+			height: auto
+			margin: 2rem 0 0
+
+		.contacts-map
+			position: static
+			transform: none
+
+			&:before, &:after
+				display: none
+
+	.main-port
+		grid-gap: 1.4rem
+		margin: 0 0 -1.4rem -1.4rem
+
+		&__one
+			width: calc((100% - 1.4rem * 3) / 3)
+			margin: 0 0 1.4rem 1.4rem
+
+	.main-contacts
+
+		&__info
+			width: 480px
+
+			&-title
+				font-size: 2.8rem
+
+		&__form
+			width: 410px
+
+	.contacts-form
+		padding: 2rem
+
+@media screen and (max-width: 1200px)
+	html
+		font-size: 95%
+
+	.head__wrap
+		flex-wrap: wrap
+		align-items: center
+
+	.head__certificate
+		flex-direction: row
+		order: 1
+		width: 100%
+		margin-left: auto
+		text-align: right
+		justify-content: flex-end
+
+	.team__slider
+		width: 650px
+
+	.port
+		$offset: 6px
+		margin: 0 0 -6px -6px
+
+		&__one
+			width: calc((100% - 6px * 3) / 3)
+			margin: 0 0 $offset 6px
+
+	.services
+
+		&__one
+
+	.direction
+
+		&__desc
+			padding: 1.8rem
+
+	.news
+
+		&__one
+			align-items: center
+			border-top: 1px solid #2f2f30
+
+			&:last-child
+				border-bottom: 1px solid #2f2f30
+
+			&-desc
+				border: none !important
+
+	.standart-page
+
+		&--stands
+
+			.standart-page__btn
+				background: #e9e9e9
+
+		&__text, &__aside
+			width: 100%
+
+		&__right
+			flex-direction: column-reverse
+			padding-bottom: 0
+
+		&__btn
+			background: #fff
+			padding: 1rem 3rem 2rem
+			text-align: left
+
+	.clients
+
+		&__one
+			width: calc((100% - 1px * 4) / 4)
+
+			&--counters
+				width: calc((150% - 1px * 3) / 3)
+
+			&:nth-child(3)
+				order: 0
+
+	.projects-counter
+
+		&__number
+
+
+	.project
+
+		&__bot
+			margin-top: 2rem
+			flex-wrap: wrap
+			justify-content: center
+
+			&-back
+				margin-right: auto
+
+			&-next
+				margin-left: auto
+
+			&-form
+				order: 1
+				margin: 3rem 0 0
+
+	.promo
+		padding: 4rem 0
+
+		&__counters
+			margin: 4rem 0 0
+
+	.promo-counter
+
+		&:not(:first-child)
+			margin: 0 0 0 5px
+
+		&:first-child
+
+			.promo-counter
+
+				&__number
+					width: 38px
+
+		&:nth-child(2)
+
+			.promo-counter
+
+				&__number
+					width: 163px
+
+		&:nth-child(3)
+
+			.promo-counter
+
+				&__number
+					width: 108px
+
+		&:nth-child(4)
+
+			.promo-counter
+
+				&__number
+					width: 83px
+
+		&__number
+			font-size: 4rem
+
+	.team__slider
+		width: 540px
+
+	.about__slider
+		margin: 3rem 0 0
+
+	.creat-slider
+		// flex-direction: column
+
+		&__text, &__slider
+			// width: 100%
+
+	.creat-text__title
+		font-size: rem(22)
+
+	.project-icons
+		width: 100%
+
+		&__one
+			width: calc((100% - 2rem * 3) / 3)
+
+@media screen and (max-width: 1200px) and (min-width: 1000px)
+	.dev
+
+		&__text
+			display: none
+
+	.menu
+
+		li
+
+			&:not(:last-child)
+				margin: 0 2vw 0 0
+
+	.head-phone
+
+		&:not(:first-child)
+			margin: 0 0 0 2vw
+
+	.head
+
+		&__logo
+			width: 90px
+
+	.title-block
+		padding: 1rem 0 3rem
+
+	.project__another-slider
+		position: relative
+
+		&:hover
+
+			.project__another-slider__desc
+				opacity: 0
+
+		&__desc
+			position: absolute
+			z-index: 2
+			background: inherit
+			left: 0
+			top: 0
+			height: 100%
+			transition: opacity .3s ease
+			opacity: .5
+
+			&:hover
+				opacity: 1 !important
+
+	.project-slider
+		width: 100%
+
+		.slick
+
+			&-arrow
+				right: 0
+				opacity: .66
+
+			&-next
+				left: auto
+
+			&-prev
+				transform: translate3d(-100%, 0, 0) rotate(180deg)
+
+@media screen and (max-width: 1150px)
+	.loader
+
+		&__title
+			font-size: 17rem
+
+@media screen and (pointer: coarse)
+	.main__nav
+		display: none
+
+@media screen and (max-width: 1000px)
+	html
+		font-size: 93%
+
+	.phone-img
+		display: block
+		+size(30px)
+		background: url("../img/ico-phone.svg") no-repeat
+		background-size: contain !important
+
+	.f-phone
+
+		a
+			color: #fff
+			text-decoration: none
+
+			border-bottom: 1px solid currentColor
+
+	body.inner
+		padding-top: 100px
+
+	.head
+		.head__certificate
+			display: none
+
+	
+	.head__menu
+		.head__certificate
+			display: block
+			padding: 15px 20px
+			text-align: left
+			border-bottom: 1px solid #000
+
+			a 
+				display: block
+				padding: 0
+				background: none
+
+
+				&:not(:first-child)
+					margin-top: 10px
+			
+
+
+	.main-contacts
+		padding: 0 1.4rem
+
+	.contacts-form
+		padding: 1.4rem
+
+	.loader
+
+		&__title
+			font-size: 15rem
+
+	.block-up-with-form
+		flex-direction: column
+
+		.standart-page
+
+			&__img
+				// width: 100%
+				width: auto
+				display: block
+
+				img
+
+
+			&__aside
+				width: 100%
+				display: flex
+				justify-content: center
+				margin: 2rem 0 0
+
+			&__right
+				width: auto
+
+		.contacts-form
+			width: 414px
+			max-width: 100%
+
+	.service
+
+		&__video
+
+			.project-video
+
+				&__link, &__desc
+					width: 100%
+
+				&__desc
+
+					&-title
+						width: 100%
+						// text-align: center
+
+		&__text-block
+			
+
+			.standart-page
+				flex-direction: column
+
+				&__aside
+					width: auto
+					display: flex
+					justify-content: center
+					margin: 2rem 0 0
+
+				&__right
+					width: auto
+
+			.contacts-form
+				width: 414px
+				max-width: 100%
+
+	.project__icons
+		display: none
+
+	.project
+
+		&__title
+
+			&-block
+				min-height: 0
+
+		&__bot
+
+			&-back, &-next
+				width: 100%
+
+				.gradient-btn
+					width: 100%
+
+	.creat-slider
+		flex-direction: column
+
+		&__text, &__slider
+			width: 100%
+
+		&__text
+
+			&:before
+				display: none
+
+		&__slider
+
+			.slick
+
+				&-arrow
+					+size(44px)
+					bottom: auto
+					top: calc(50% - 22px)
+
+				&-next
+					left: auto
+					right: 0
+
+				&-prev
+					right: auto
+					left: 0
+
+			img
+				width: 100%
+
+	.creat-text
+		padding: 0 0 1.4rem 0 !important
+
+	.submenu
+		padding: 0
+		text-align: left
+
+		&__link
+			padding-left: 40px
+
+		&__cont
+			position: static
+			transform: none
+			width: 100%
+			border-top: 1px solid #000
+			opacity: 1
+			pointer-events: all
+			padding: 0
+			display: none
+
+		&:before
+			display: none
+
+	.head
+
+		&__wrap
+			padding: 2rem !important
+			align-items: center
+
+		&__logo
+			flex: none
+
+		&__menu
+			position: fixed
+			top: 0
+			bottom: 0
+			right: 100%
+			width: 260px
+			background: $bgc
+			transition: transform .3s $ease-in-out-circ, box-shadow
+			z-index: 10
+			overflow: auto
+
+			.head-phone
+				border-bottom: 1px solid #000
+				width: 100%
+				text-align: left
+				padding: 15px 20px
+
+				&:not(:first-child)
+					margin-left: 0
+
+	.js__mobile-menu-opened
+		overflow: hidden
+		height: 100vh
+
+		.head
+
+			&__menu
+				transform: translate3d(100%, 0, 0)
+				box-shadow: $bs
+
+	.menu
+		flex-direction: column
+
+		li
+			border-bottom: 1px solid #000
+
+			&:not(:last-child)
+				margin-right: 0
+
+			&.have-sub
+
+				&.js__opened
+
+					.menu__link:before
+						transform: rotate3d(0,0,1,270deg)
+
+				.menu
+
+					&__link
+						position: relative
+
+						&:before
+							content: ""
+							position: absolute
+							+size(8px 16px)
+							background: url("../img/ico-white-arrow.png") no-repeat
+							top: calc(50% - 8px)
+							transform: rotate3d(0, 0, 1, 90deg)
+							right: 20px
+							transition: transform .3s ease
+
+		&__link
+			padding: 15px 20px
+			display: block
+			font-size: 16px
+
+			&:after
+				display: none
+
+			&.active
+				// font-weight: bold
+				color: $main-color
+
+	.burger
+		+size(30px 20px)
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+
+		&:before, &:after
+			content: ""
+			display: inline-block
+			transition: transform .3s ease
+			transform-origin: left
+
+		span, &:before, &:after
+			background: linear-gradient(to right bottom, $main-color, $second-color)
+			height: 2px
+
+		span
+			transition: opacity .3s ease
+
+		&.active
+
+			span
+				opacity: 0
+
+			$angle: 38deg
+
+			&:before
+				transform: rotate3d(0,0,1, $angle)
+
+			&:after
+				transform: rotate3d(0,0,1, -$angle)
+
+	.main-video
+		height: auto
+		padding: rem(100) 0 0
+
+		&__text
+			position: static
+
+		video, &:before, &__footer
+			display: none
+
+	.video-text
+		flex-direction: column
+		align-items: flex-start
+
+		&__title
+			max-width: none
+			font-size: 2.4rem
+
+		&__btn
+			opacity: 1
+			pointer-events: all
+
+		&__subtitle
+
+			.text-page
+
+				> p:first-child
+
+					br
+						display: none
+
+	.video-projects
+
+		&__count
+			font-size: 6rem
+			line-height: 1.2
+			margin: .8rem 0 0
+
+	.video-text
+		padding: 1.4rem 20px
+		background: #252527
+
+	.video-projects
+
+		&__subtitle
+			font-size: 1rem
+
+	.directions
+
+		&__slider
+			width: 100%
+
+		&__links
+			display: none
+
+	.promo
+		padding: 2rem 0
+
+		&__title
+			font-size: 2.4rem
+
+		&__counters
+			flex-wrap: wrap
+			justify-content: space-between
+
+		&-counter
+			width: 48%
+			margin: 0 0 20px !important
+
+	.main-port
+		grid-template-columns: repeat(2, 1fr)
+
+		&__one
+			width: calc((100% - 1.4rem * 2) / 2)
+
+			&--big
+				width: 100%
+
+	.main-contacts
+
+		&__info, &__form
+			width: 100%
+
+		&__form
+			margin: 2rem 0 0
+
+		&__info
+
+			&-title
+
+				br
+					display: none
+
+	.filter
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-bottom: -1.4rem
+
+		&__input
+			width: 48%
+			margin: 0 0 1.4rem !important
+
+			&:not(:last-child)
+				margin-right: 0
+
+	.port
+		$offset: 6px
+		margin: 0 0 -6px -6px
+
+		&__one
+			width: calc((100% - 6px * 2) / 2)
+			margin: 0 0 $offset 6px
+
+	.inner
+
+		.dev
+
+			&__text
+				display: none
+
+		.footer
+			margin: 2rem 0 0 !important
+
+	.footer
+
+		&__mail
+			display: none
+	
+	.services, .videogallery
+
+		&__one
+			width: calc((100% - 2rem * 2) / 2)
+	
+	.services__one--big
+		width: 100%
+		order: -3
+
+	.news
+
+		&__one
+			flex-direction: column-reverse
+
+			&-desc
+				width: 100%
+
+	.standart-page__text, 
+	.stands-contacts
+		padding: 2rem
+
+	.clients
+
+		&:before
+			display: none
+
+		&__one
+			width: calc((100% - 1px * 3) / 3)
+
+			&--counters
+				width: calc((200% - 1px * 3) / 3)
+
+			&:nth-child(2)
+				order: 0
+	
+	.project
+
+		&__desc
+			margin: 3rem 0 0
+
+		&__title
+
+			h2
+				font-size: 2rem
+				margin: 0
+
+			br
+				display: none
+
+		&__subtitle
+			margin: 1rem 0 0
+
+	.project-desc
+		flex-wrap: wrap
+		justify-content: center
+		margin: 0 0 -2rem -2rem
+
+		&__one
+			width: calc((100% - 2rem * 2) / 2)
+			margin: 0 0 2rem 2rem
+
+	.project__another-slider
+		margin: 3rem 0 0
+		flex-direction: column
+		align-items: stretch
+
+	.pr-desc
+		max-width: none
+
+	.project-slider, .creating-slider__slider
+		width: 100%
+
+		.slick
+
+			&-arrow
+				top: calc(50% - 28px)
+
+			&-next
+				left: auto
+				right: 0
+
+			&-prev
+				right: auto
+				left: 0
+
+	.creating-nav
+
+		&__el
+			width: 50%
+
+	.creating-slider
+		flex-direction: column-reverse
+
+		&__slider
+
+			img
+				width: 100%
+
+		&__text
+			margin: 1rem 0 2rem
+			padding: 0
+
+	.creating__text
+		margin: 1rem 0 0
+
+	.about-top
+
+		&__bg, &__number
+			display: none
+
+		&__text
+
+			&-title
+				font-size: 2rem
+
+	.about
+
+		&__timeline
+			margin: 4rem 0 0
+			padding: 0
+			overflow: visible
+
+		&__text
+			margin: 4rem 0 0
+
+	.timeline
+		height: auto
+		padding: 0 2rem
+
+		&__canvas
+			display: none
+
+		&__list, &__el
+			position: static
+			transform: none
+
+		&__list
+			width: 100%
+			height: auto
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+
+		&__el
+			width: 47%
+			text-align: left
+			display: flex
+			align-items: center
+
+			&:after
+				display: none
+
+		&__number
+			flex: none
+			margin-right: 1rem
+
+	.team
+		flex-direction: column
+
+		&__slider
+			width: calc(100% + 2rem)
+			padding: 2rem 2rem 2rem 0
+
+		&__info
+			align-items: flex-start
+			justify-content: flex-start
+			padding: 2rem 0
+
+	.team-info
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+
+		&__title
+			margin-top: 0
+			margin-left: 2rem
+
+		&__btn
+			width: 100%
+			text-align: center
+
+	.js__soc-moved
+		width: 100%;
+		text-align: left;
+		padding: 15px 20px;
+		border-bottom: 1px solid rgb(0, 0, 0)
+
+	.list-services
+		width: 100%
+		margin: 0 0 -2rem -40px
+
+		.services__one
+			width: calc((100% - 40px * 2) / 2)
+			margin: 0 0 2rem 40px
+
+
+@media screen and (max-width: 880px)
+	.loader
+
+		&__title
+			font-size: 13rem
+
+@media screen and (max-width: 768px)
+	.loader
+
+		&__title
+			font-size: 11rem
+
+@media screen and (max-width: 660px)
+	html
+		font-size: 91%
+		overflow-x: hidden
+		width: 100%
+
+	.head__phone-link
+		margin: 0 1rem 0 auto
+
+	.direction__img 
+		ul
+			opacity: 1
+			background: rgba(#000, .3)
+
+	.list-services
+		width: 100%
+		margin: 0 0 -2rem 0
+
+		.services__one
+			width: 100%
+			margin: 0 0 2rem 0
+
+
+	.block-up-with-form
+
+		.contacts-form
+			width: 100%
+
+		.standart-page
+
+			&__right
+				width: 100%
+
+	.service
+
+		&__text-block
+
+			.contacts-form
+				width: 100%
+
+	.creat-text
+		padding-bottom: 0 !important
+
+	.creat-slider:not(:first-child)
+		margin: 2rem 0 0
+
+	.recaptcha
+		padding: 0 !important
+		display: flex
+		justify-content: center
+
+	.loader
+
+		&__title
+			font-size: 9rem
+
+	.about-top__text-title
+		font-size: 1.6rem
+
+		br
+			display: none
+
+	.about
+
+		&__timeline, &__text
+			margin: 3rem 0 0
+
+		&__timeline
+			display: none
+
+	.footer__soc
+		display: none
+
+	.timeline
+		padding: 0 1.4rem
+
+		&__list
+
+		&__el
+			width: 100%
+
+	.about-job
+
+		&__title
+			margin: 0 0 1.4rem
+
+	.accordion
+
+		&__one
+
+			&-title, &-text
+				padding: 2rem 1.4rem
+
+	.team__slider
+		padding: 2rem 1.4rem 2rem 0
+		width: calc(100% + 1.4rem)
+
+	.person
+		display: inline-block
+
+		&__img
+
+			img
+				width: auto
+				display: inline-block
+
+	.project__slider
+		display: none
+
+	.creat__cont
+		margin: 2.2rem 0 0
+
+	.team-slider
+		margin: 0
+
+		.slick
+
+			&-arrow
+				position: absolute
+				+size(50px)
+				border: none
+				z-index: 1
+				top: calc(50% - 25px)
+				background: url("../img/ico-team-slider-arrow.png") center no-repeat, $main-color
+
+			&-prev
+				left: 0
+				transform: rotate3d(0, 0, 1, 180deg)
+
+			&-next
+				right: 1.4rem
+
+		&__slide
+			margin: 0
+			text-align: center
+
+	.team-info__counter-number
+		line-height: .9
+
+	.creating-nav
+		position: relative
+
+		&__el
+			width: 100%
+
+			&:not(.active)
+				display: none
+
+				&:hover, &:focus
+					background: none
+
+			&.active
+				order: -1
+				position: relative
+
+				&:after
+					content: ""
+					position: absolute
+					right: 15px
+					+size(11px 5px)
+					top: calc(50% - 3px)
+					background: url("../img/ico-select-white-arrow.png") no-repeat
+					transition: transform .3s ease
+
+		&__img
+			display: none
+
+		&.js__opened
+
+			.creating-nav__el
+				display: block
+
+	.project
+
+		&__title
+
+			h2
+				font-size: 1.6rem
+
+		&__subtitle
+			display: none
+
+	.project-desc
+		flex-direction: column
+		margin-left: 0
+
+		&__one
+			margin-left: 0
+			width: 100%
+
+	.project-video
+
+		&__desc
+			padding: 0
+			margin: 0 0 1.3rem
+
+			&-title
+				font-size: 1.8rem
+
+	.project__bot
+
+		&-back
+			margin-bottom: 1rem
+
+		&-form
+			width: 100%
+
+			form
+				width: 100%
+
+	.map-contacts
+		padding: 1.4rem
+
+		&__title
+			font-size: rem(32)
+			margin-bottom: 1.3rem
+
+		&__text
+			width: 100%
+
+			&:not(:last-child)
+				margin-bottom: 1.3rem
+
+	.table-wrap
+		overflow: auto
+
+		table
+			width: auto
+
+	.clients
+
+		&__one
+			width: calc((100% - 1px * 2) / 2)
+			height: auto
+
+			&--counters
+				order: -5
+				width: 100%
+				padding: 2.5rem 0 1.5rem
+
+	.clients-counter
+		flex-direction: column
+		align-items: flex-start
+		display: flex
+
+	.stands__contacts
+		margin: 2rem -1.4rem -1.4rem -1.4rem
+
+		table
+			display: block
+
+			tbody, tr
+				display: flex
+				flex-direction: column
+
+			td, tr
+
+				&:not(:first-child)
+					margin: 15px 0 0
+
+	.client
+		// padding: 3rem 2rem
+
+	.page-404
+		padding: 3rem 1.4rem
+
+		&__img
+
+			&-cont
+				padding: 0 1.4rem
+
+		&__title
+			font-size: 1.1rem
+
+		&__subtitle
+			font-size: rem(15)
+
+			br
+				display: none
+
+	.services, .videogallery
+		margin-left: 0
+
+		&__one
+			margin-left: 0
+			width: 100%
+
+	.service-big,
+	.standart-page__text, 
+	.stands-contacts
+		padding: 1.4rem
+
+	.standart-page__btn
+		padding: 1rem 1.4rem 2rem
+
+	.service-big
+
+		&__wrap
+
+		&__title
+			font-size: 1.5rem
+
+		&__count
+			font-size: 7rem
+			margin-right: 15px
+
+	.title-block
+		padding: 1rem 0 2.5rem
+		display: flex
+		flex-direction: column-reverse
+
+		&__title
+			margin-bottom: 0
+
+		&__crumbs
+			margin-bottom: 10px
+
+	.bread-crumbs
+		color: #fff
+
+		&__link:not(:nth-last-child(2)), &__this
+			display: none
+
+		&__link:nth-last-child(2)
+			position: relative
+			padding: 10px 15px 10px 20px
+
+			&:after
+				display: none
+
+			&:before
+				+size(8px 17px)
+				content: ""
+				position: absolute
+				left: 0
+				top: calc(50% - 9px)
+				background: url("../img/ico-team-slider-arrow.png") no-repeat
+				transform: rotate3d(0, 0, 1, 180deg)
+
+	.filter__input
+		width: 100%
+
+	.port
+		margin: 0
+
+		&__one
+			width: 100%
+			margin: 0
+
+	.port__one
+
+		&:not(:last-child)
+			margin-bottom: 1rem
+
+		&:before
+			display: none
+
+		&:after
+			opacity: 1 !important
+
+		&-bot, &-title
+			transform: none
+
+	.footer__wrap, .head__wrap
+		padding: 1.4rem !important
+
+	.wrapper
+		padding: 0 1.4rem
+
+	.head
+
+		&__phones
+			display: none
+
+	.main-video
+		padding: 6rem 0 0
+
+	.video-text	
+
+		&__title
+			font-size: rem(26)
+
+		&__subtitle
+			margin: 1rem 0 0
+
+	.directions
+
+		&__slider
+
+			&-slider, &-slide
+				margin: 0
+
+			&-slider
+				width: calc(100% - .25px)
+
+				.slick
+
+					&-arrow
+						position: absolute
+						+size(40px)
+						border: none
+						z-index: 1
+						background: url(../img/ico-project-slider-arrow.png) center no-repeat, rgb(77, 63, 128)
+						top: calc(50% - 20px)
+
+					&-prev
+						left: 0
+						transform: rotate3d(0,0,1, 180deg)
+
+					&-next
+						right: 0
+	
+	.promo
+		padding: 1rem 0 0
+
+		&__cont
+			display: none
+
+		&__text, &__title
+			text-align: left
+
+		&__title
+			font-size: rem(22)
+			margin-bottom: 15px
+
+		&-counter
+			width: 100%
+
+	.main-port
+		grid-template-columns: 1fr
+
+		&__title
+
+			&-cont
+				flex-direction: column
+				align-items: flex-start
+
+		&__link
+			margin: .8rem 0 0
+
+		&__one
+
+			&--big
+				grid-column: 1
+
+	.main-contacts
+
+		&__cont
+			margin: 2rem 0 0
+			// display: none
+
+		&__info, &__map
+			display: none
+
+		&__info
+
+			&-title
+				font-size: rem(22)
+
+			&-soc
+				display: none
+
+			&-mail
+				margin-bottom: 0
+
+	.footer
+		margin: 2rem 0 0
+		background: $bgc
+
+		&__wrap
+			flex-direction: column
+
+		&__dev
+			margin: 1.4rem 0 0
+
+@media screen and (max-width: 530px)
+	.loader
+
+		&__title
+			font-size: 7rem
+
+@media screen and (max-width: 410px)
+	.loader
+
+		&__title
+			font-size: 5rem

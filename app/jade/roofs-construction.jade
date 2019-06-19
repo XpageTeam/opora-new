@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Крышные установки под ключ
+		include inc/head.jade
+		include inc/css.jade
+	body.inner.loading.page_services_kryshnye-ustanovki
+		#page-wr
+			.content
+				include inc/header.jade
+				main.main
+					.inner-page
+						.title-block__cont
+							.wrapper
+								.title-block
+									//- .title-block__title
+									//- 	h1 Гриль Бар YORK
+									.title-block__crumbs
+										.bread-crumbs
+											a.bread-crumbs__link(href="#") Главная
+											a.bread-crumbs__link(href="#") Компания
+											a.bread-crumbs__link(href="#") Портфолио
+											span.bread-crumbs__this Гриль Бар YORK
+						.inner-page__content
+							.main-banner__cont
+								.main-banner
+									.main-banner__slider
+										figure.main-banner__slider-slide
+											img(src="img/photos/creat-top-img-1.jpg", alt="")
+									.wrapper
+										.main-banner__title-block
+											.main-banner__title
+												h1 Крышные установки под ключ
+											.main-banner__subtitle Изготовим рекламную конструкцию на крышу от проектирования до установки собственными силами
+											.main-banner__form-cont
+												form(action="")
+													.main-banner__form
+														input(type="tel" placeholder="+7(___) ___-___").main-banner__input
+														input(type="submit" value="Перезвоните мне")
+													.main-banner__form-text Нажимая кнопку вы даете информированное согласие на 
+														a(href="#") обработку своих персональных данных
+							.works-cont
+								.wrapper
+									.works
+										.title Посмотрите примеры наших работ
+										.works__list
+											.works__item
+												figure
+													img(src="img/photos/works-1.jpg", alt="")
+												.works__item-hidden
+													.works__item-date 07.12.2014
+													.works__item-title X5 RETAIL GROUP
+													.works__item-btn
+														a(href="").btn Посмотреть работу
+											.works__item
+												figure
+													img(src="img/photos/works-2.jpg", alt="")
+												.works__item-hidden
+													.works__item-date 07.12.2014
+													.works__item-title X5 RETAIL GROUP
+													.works__item-btn
+														a(href="").btn Посмотреть работу
+											.works__item
+												figure
+													img(src="img/photos/works-3.jpg", alt="")
+												.works__item-hidden
+													.works__item-date 07.12.2014
+													.works__item-title X5 RETAIL GROUP
+													.works__item-btn
+														a(href="").btn Посмотреть работу
+											.works__item
+												figure
+													img(src="img/photos/works-4.jpg", alt="")
+												.works__item-hidden
+													.works__item-date 07.12.2014
+													.works__item-title X5 RETAIL GROUP
+													.works__item-btn
+														a(href="").btn Посмотреть работу
+											.works__item
+												figure
+													img(src="img/photos/works-5.jpg", alt="")
+												.works__item-hidden
+													.works__item-date 07.12.2014
+													.works__item-title X5 RETAIL GROUP
+													.works__item-btn
+														a(href="").btn Посмотреть работу
+											.works__item
+												figure
+													img(src="img/photos/works-6.jpg", alt="")
+												.works__item-hidden
+													.works__item-date 07.12.2014
+													.works__item-title X5 RETAIL GROUP
+													.works__item-btn
+														a(href="").btn Посмотреть работу
+
+											.works__more-btn
+												a(href="").btn Смотреть больше примеров
+							.advantages-cont
+								.wrapper
+									.advantages
+										.title Наши преимущества
+										.advantages__list
+											.advantages__item
+												figure
+													img(src="img/advantages-1.svg", alt="")
+												.advantages__item-text Все необходимые лицензии (Свидетельство СРО, ISO 9001)
+											.advantages__item
+												figure
+													img(src="img/advantages-2.png", alt="")
+												.advantages__item-text Строго соблюдаем нормативы и стандарты
+											.advantages__item
+												figure
+													img(src="img/advantages-3.svg", alt="")
+												.advantages__item-text Точные расчеты – учтём всё до мелочей
+											.advantages__item
+												figure
+													img(src="img/advantages-4.svg", alt="")
+												.advantages__item-text Материалы используем только долговечные и качественные
+											.advantages__item
+												figure
+													img(src="img/advantages-5.svg", alt="")
+												.advantages__item-text Большой опыт в реализации крупных проектов
+											.advantages__item
+												figure
+													img(src="img/advantages-6.svg", alt="")
+												.advantages__item-text Строго соблюдаем сроки
+
+							.price-roof
+								.price-roof__img
+									figure
+										img(src="img/photos/price-roof.svg", alt="") 
+								.price-roof__info
+									.price-roof__title Сколько стоит установка на крышу?
+									.price-roof__text Оценка стоимости возможна, как правило, только при наличии проекта. Если у вас уже есть проект, отправьте его нам через форму ниже. Если нет – отправьте ваши к контактные данные и мы поможем разработать проект вашей крышной установки.
+									.price-roof__btn
+										a(href="").btn Оставить заявку на расчет стоимости
+							.calculate-cost
+								.title Рассчитайте стоимость крышной установки
+								.calculate-cost__subtitle Расчет стоимости бесплатный и ни к чему вас не обязывает
+								.forms-wrap
+									.forms-input-cont
+										input(type="text" required).forms__input.input--email
+										label.forms__label Как к вам обращаться?
+										.forms__error-message
+											i.forms__error-message-icon
+									.forms-input-cont
+										input(type="text" required).forms__input.input--email
+										label.forms__label Ваш телефон *
+										.forms__error-message
+											i.forms__error-message-icon
+									.forms-input-cont
+										.forms-checkbox
+											input(type="checkbox" id="checkbox-1").forms__checkbox
+											label(for="checkbox-1").forms__checkbox-label У меня нет макета
+									.forms-input-cont.forms-input-cont--bot
+										.forms-checkbox
+											input(type="checkbox" id="checkbox-2").forms__checkbox
+											label(for="checkbox-2").forms__checkbox-label У меня есть макет
+										.forms-input-cont.forms-input-cont--file
+											input.forms__input.forms__input--file(type="file" id="3" required)
+											label.forms__label.forms__label--file(for="3") Загрузить файл
+											input.forms__input.forms__input--file-support(readonly)
+									.forms-input-cont
+										input(type="submit" value="Перезвоните мне")
+									.forms-text Нажимая кнопку вы даете информированное согласие на обработку своих персональных данных
+							.statistics
+								.title О нас в цифрах
+								.statistics__list
+									.statistics__item
+										.statistics__item-num(data-from="0" data-to="12775") 0
+										.statistics__item-text Изготовлено конструкций
+									.statistics__item
+										.statistics__item-num(data-from="0" data-to="120") 0
+										.statistics__item-text Городов России
+									.statistics__item
+										.statistics__item-num(data-from="0" data-to="63") 0
+										.statistics__item-text Сотрудника в штате
+									.statistics__item
+										.statistics__item-num(data-from="0" data-to="7") 0
+										.statistics__item-text Лет на рынке
+									.statistics__item
+										.statistics__item-num(data-from="0" data-to="1807") 0
+										.statistics__item-text Клиентов
+							.brands
+								.title Вы в хорошей компании
+								.brands__list
+									.brands__item
+										figure
+											img(src="img/brands-1.jpg", alt="")
+									.brands__item
+										figure
+											img(src="img/brands-2.jpg", alt="")
+									.brands__item
+										figure
+											img(src="img/brands-3.jpg", alt="")
+									.brands__item
+										figure
+											img(src="img/brands-4.jpg", alt="")
+							.seo-text
+								.title Реклама на крыше здания
+								.seo-text__text
+									p Крышные установки это, пожалуй, самый массивный и значительный вид наружной рекламы. Внушительные размеры таких установок безусловно подчеркивают бренд и высокий статус компании. Установленные на значительной высоте, они видны с различных сторон за несколько километров. 
+									p Яркие и красочные буквы и логотипы, с подсветкой и объёмными изображениями ежедневно привлекают внимание людей и формируют положительный имидж рекламируемой компании.
+
+								.seo-text__elements
+									.seo-text__element
+										.seo-text__el-title Преимущества
+										.seo-text__el-text 
+											p Установка рекламы на крыше имеет массу достоинств. 
+											ol 
+												li Индивидуальный подход к проектированию каждой установки. Такая реклама запоминается своей нестандартностью и несёт информацию о конкретном бренде.
+												li Большая площадь рекламного поля. Имея значительные габаритные размеры и находясь на крыше зданий, такая конструкция доминирует над остальными видами рекламы.
+												li Постоянно напоминает жителям города о статусе компании, поднимая её престиж.
+									.seo-text__element
+										.seo-text__el-title Существует два варианта изготовления рекламных устройств на крышах:
+										.seo-text__el-text 
+											p Существует два варианта изготовления рекламных устройств на крышах: 
+											ol
+												li Плоские установки – наиболее простые в изготовлении, легко монтируются и имеют доступную цену;
+												li Объёмные установки – получили широкое распространение, несмотря на относительную сложность изготовления и высокую стоимость, позволяют создавать запоминающиеся трёхмерные конструкции.
+									.seo-text__element
+										.seo-text__el-title Изготовление крышных рекламных конструкций – достаточно непростая задача.
+										.seo-text__el-text 
+											p Изготовление крышных рекламных конструкций – достаточно непростая задача. Кроме творческой разработки изображения и сочетания эффектов, необходима масса инженерных расчётов. Чтобы реклама на крыше была долговечной и безопасной для окружающих, она должна быть изготовлена с учётом веса, габаритов конструкции и ветровых нагрузок. Поэтому изготовлением и монтажом рекламных металлоконструкций занимаются только специализированные компании. 
+											p Производственная группа «Опора» изготавливает крышные установки любой сложности. Компания выполняет весь цикл работ, от проектирования до установки собственными силами, без привлечения подрядных организаций. А это помогает экономить время и деньги.
+
+
+
+
+
+
+
+
+
+
+								
+				include inc/footer-inner.jade
+		include inc/scripts.jade

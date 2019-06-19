@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Главная
+		include inc/head.jade
+		include inc/css.jade
+	body.main.loading
+		#page-wr
+			.content
+				include inc/header.jade
+				main.main
+					.main-video
+						video(src="video/video.mp4" poster="img/photos/main-slider-img.jpg")
+						.main-video__text
+							.wrapper
+								.video-text
+									.video-text__left
+										.video-text__title ИЗГОТОВЛЕНИЕ И МОНТАЖ ВЫВЕСОК
+										.video-text__subtitle 
+											.text-page
+												p Мы предлагаем изготовление любых форм и видов наружной рекламы - вывески светодиодные, <br />лайтбоксы, оформление витрин, крышные установки всевозможных видов и форм
+									.video-text__right
+										.video-projects
+											.video-projects__count(data-from="0", data-to="3416") 0
+											.video-projects__subtitle реализованных проектов
+						.main-video__footer
+							include inc/soc.jade
+					.directions__cont
+						.wrapper
+							.directions
+								.directions__slider
+									.directions__slider-title
+										span Мы работаем по следующим направлениям
+										.directions__slider-arrows
+									.directions__slider-slider
+										.directions__slider-slide
+											.direction
+												a.direction__img(href="#")
+													img(src="img/photos/dir-img-1.png", alt="")
+												.direction__desc
+													.direction__title Крышные установки
+													.direction__text
+														.text-page
+															p Выбор для тех, кто хочет смело заявить об уровне качества своих товаров и услуг
+													.direction__links
+														a.direction__link.direction__link--read(href="#") Читать
+														a.direction__link.direction__link--view(href="#") Смотреть
+										.directions__slider-slide
+											.direction
+												a.direction__img(href="#")
+													img(src="img/photos/dir-img-2.png", alt="")
+												.direction__desc
+													.direction__title Крышные установки
+													.direction__text
+														.text-page
+															p По-настоящему революционный способ эффектного оформления рекламы
+													.direction__links
+														a.direction__link.direction__link--read(href="#") Читать
+														a.direction__link.direction__link--view(href="#") Смотреть
+										.directions__slider-slide
+											.direction
+												a.direction__img(href="#")
+													img(src="img/photos/dir-img-3.png", alt="")
+												.direction__desc
+													.direction__title Фасадные вывески
+													.direction__text
+														.text-page
+															p Эффективный способов увеличения продаж и беспроигрышного привлечения внимания
+													.direction__links
+														a.direction__link.direction__link--read(href="#") Читать
+														a.direction__link.direction__link--view(href="#") Смотреть
+										.directions__slider-slide
+											.direction
+												a.direction__img(href="#")
+													img(src="img/photos/dir-img-1.png", alt="")
+												.direction__desc
+													.direction__title Крышные установки
+													.direction__text
+														.text-page
+															p Выбор для тех, кто хочет смело заявить об уровне качества своих товаров и услуг
+													.direction__links
+														a.direction__link.direction__link--read(href="#") Читать
+														a.direction__link.direction__link--view(href="#") Смотреть
+										.directions__slider-slide
+											.direction
+												a.direction__img(href="#")
+													img(src="img/photos/dir-img-2.png", alt="")
+												.direction__desc
+													.direction__title Крышные установки
+													.direction__text
+														.text-page
+															p По-настоящему революционный способ эффектного оформления рекламы
+													.direction__links
+														a.direction__link.direction__link--read(href="#") Читать
+														a.direction__link.direction__link--view(href="#") Смотреть
+										.directions__slider-slide
+											.direction
+												a.direction__img(href="#")
+													img(src="img/photos/dir-img-3.png", alt="")
+												.direction__desc
+													.direction__title Фасадные вывески
+													.direction__text
+														.text-page
+															p Эффективный способов увеличения продаж и беспроигрышного привлечения внимания
+													.direction__links
+														a.direction__link.direction__link--read(href="#") Читать
+														a.direction__link.direction__link--view(href="#") Смотреть
+								nav.directions__links
+									ul.directions-menu
+										each title in ["Крышные установки", "Фасадные вывески", "Интерьерные вывески", "Стеллы", "Уникальные проекты", "Выставочные стенды", "Брендирование", "Печать", "Фрезерная / Лазерная резка", ]
+											li
+												a.directions-menu__link(href="#")=title
+					.promo__cont(style="background-image: url('img/photos/counters-bg.png')")
+						.wrapper
+							.promo
+								.promo__title доверьте вашу рекламу и о вас узнает весь город
+								.promo__text
+									.text-page
+										p Производственная группа «ОПОРА» – лидер рекламных технологий и законодатель рекламной моды.	Мы рады предложить Вам комплексную систему услуг, направленных на создание по-настоящему эффективной рекламы Вашего бизнеса
+								.promo__counters
+									.promo-counter
+										.promo-counter__number(data-from="0" data-to="7") 0
+										.promo-counter__title лет <br /> на рынке
+									.promo-counter
+										.promo-counter__number(data-from="0" data-to="3416") 0
+										.promo-counter__title изготовлено <br /> конструкций
+									.promo-counter
+										.promo-counter__number(data-from="0" data-to="120") 0
+										.promo-counter__title городов России <br /> реалезованны проекты
+									.promo-counter
+										.promo-counter__number(data-from="0" data-to="64") 0
+										.promo-counter__title сотрудника <br /> в штате
+					.main-port__cont
+						.wrapper
+							.main-port__title-cont
+								.main-port__title То,что вам нужно
+								.main-port__link
+									a(href="#") Смотреть портфолио
+							.main-port
+								a.main-port__one.main-port__one--big(href="#")
+									img.main-port__one-img(src="img/photos/main-port-1.jpg", alt="")
+									.main-port__one-desc
+										.main-port__desc
+											.main-port__desc-title Заголовок
+											.main-port__desc-desc
+												.text-page
+													p какое-то описаниекакое-то описаниекакое-то описаниекакое-то описание
+													p какое-то описаниекакое-то описаниекакое-то описаниекакое-то описание
+								each i, j in ["", "", "", "", ]
+									a.main-port__one(href="#")
+										img.main-port__one-img(src="img/photos/main-port-"+(j+2)+".jpg", alt="")
+										.main-port__one-desc
+											.main-port__desc
+												.main-port__desc-title="Заголовок"+" "+(j+2)
+												.main-port__desc-desc
+													.text-page
+														p какое-то описаниекакое-то описаниекакое-то описаниекакое-то описание
+														p какое-то описаниекакое-то описаниекакое-то описаниекакое-то описание
+					.main-contacts__cont
+						.wrapper
+							.main-contacts
+								.main-contacts__info
+									.main-contacts__info-title НАШИ ОФИСЫ <br /> И ПРОИЗВОДСТВО
+									address.main-contacts__info-address г. Екатеринбург <br />ул. Московская 195, офис 1127
+									address.main-contacts__info-mail
+										a(href="mailto: office@oporagroup.com") office@oporagroup.com
+									.main-contacts__info-soc
+										include inc/soc.jade
+								.main-contacts__map
+									.contacts-map
+										img(src="img/photos/main-map.jpg", alt="")
+								.main-contacts__form
+									.contacts-form
+										form
+											.contacts-form__inputs
+												.contacts-form__input
+													input.forms__input(type="text" placeholder="Ваше имя")
+												.contacts-form__input
+													input.forms__input(type="tel" placeholder="Контактный телефон")
+												.contacts-form__input
+													input.forms__input(type="text" placeholder="Ваш e-mail")
+											.contacts-form__text
+												p Нажимая кнопку вы даете информированное <br /> согласие на <a href="#">обработку своих персональных данных</a>
+											.contacts-form__submit
+												input.gradient-btn(type="submit" value="Отправить заявку")
+				include inc/footer.jade
+		include inc/scripts.jade

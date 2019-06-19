@@ -1,0 +1,182 @@
+body[class*="page_services_"]
+	padding-top: 0 !important
+
+	.title-block__cont
+		position: absolute
+		top: 135px
+		left: 0
+		right: 0
+		z-index: 10
+
+
+
+	.title
+		font-size: rem(35)
+		font-weight: bold
+		text-align: center
+		text-transform: uppercase
+
+
+.main-banner
+	&__cont
+		position: relative
+
+	&__slider-slide
+		img
+			display: block
+			width: 100%
+
+	&__title
+		h1
+			font-size: rem(40)
+			text-transform: uppercase
+
+		&-block
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			flex: 1 1 auto
+
+
+	&__subtitle
+		font-size: rem(21)
+
+	> .wrapper
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 10
+		display: flex
+
+	&__form
+		display: flex
+		justify-content: center
+
+		input[type="submit"]
+			color: #fff
+			border: 0
+			padding: 14px 60px
+			margin-left: 18px
+			background: linear-gradient(90deg, #59335E 8.27%, rgba(76, 51, 94, 0.86) 146.74%, rgba(141, 0, 201, 0) 342.5%)
+
+		&-cont
+			margin-top: 70px
+
+	&__input
+		height: 47px
+		width: 240px
+		border: 1px solid #FFFFFF
+		background: transparent
+		padding: 0 11px
+		color: #fff
+
+	&__form-text
+		font-size: rem(10)
+		margin-top: 13px
+
+		a
+			color: #fff
+
+.works
+	&-cont
+		padding: 153px 0 65px
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		margin: 80px 0 -6pc -6px
+
+
+	&__item
+		position: relative
+		width: calc((100% - 6px * 3) / 3)
+		margin: 0 0 6px 6px
+		border: 1px solid transparent
+		transition: color .5s ease
+
+		&:hover
+			border-color: #fff
+
+			figure
+				img
+					filter: blur(4px)
+
+			.works__item-hidden
+				pointer-events: all
+				opacity: 1
+
+
+		figure
+			img
+				display: block
+				width: 100%
+				height: 100%
+				object-fit: cover
+				object-position: center
+				transition: filter .5s ease
+		
+		&-hidden
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			pointer-events: none
+			z-index: 10
+			padding: 23px 20px 21px
+			text-align: center
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			opacity: 0
+			transition: color .5s ease
+
+		&-date
+			font-size: rem(18)
+
+		&-title
+			font-size: rem(25)
+
+
+		.btn
+			border: 1px solid #8D00C9
+			padding: 13px 30px 13px 11px
+			background-image: url('../img/ico-link-blank.svg')
+			background-position: right 10px center
+			background-repeat: no-repeat
+			background-color: transparent
+			text-decoration: none
+			font-size: rem(15)
+			color: #fff
+			cursor: pointer
+			display: inline-block
+
+	&__more-btn
+		display: flex
+		justify-content: center
+		width: 100%
+		margin-top: 75px
+
+		.btn
+			padding: 13px 20px 13px 20px
+			background: linear-gradient(90deg, #59335E 8.27%, rgba(76, 51, 94, 0.86) 146.74%, rgba(141, 0, 201, 0) 342.5%)
+			font-weight: bold
+			color: #fff
+			text-decoration: none
+			display: flex
+			align-items: center
+
+			&:after
+				content: ''
+				display: inline-block
+				background: url('../img/ico-arrow.svg') no-repeat center
+				+size(16px 19px)
+				margin-left: 15px
+
+
+
+			
+

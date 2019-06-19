@@ -1,0 +1,695 @@
+@import "bourbon"
+@import "vars"
+@import "functions"
+
+*::-webkit-input-placeholder
+	color: #69696e
+	opacity: 1
+
+*:-moz-placeholder
+	color: #69696e
+	opacity: 1
+
+*::-moz-placeholder
+	color: #69696e
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #69696e
+	opacity: 1
+
+html
+	font-size: 100%
+	overflow-x: hidden
+
+input, a, button, textarea, select
+	outline: none
+
+#page-wr
+	#{$all-text-inputs}, select, input[type="submit"], button, input[type="button"]
+		appearance: none
+
+*, *:after, *:before
+	box-sizing: border-box
+
+%clear-text
+	overflow: hidden
+	text-indent: -9999px
+
+%clearfix
+	
+	&:after
+		display: table
+		clear: both
+		content: ""
+
+%clear-select, select
+	-webkit-appearance: none;
+	/* for FF */
+	-moz-appearance: none;
+	text-indent: 0.01px; 
+	text-overflow: '';
+	/* for IE */
+	-ms-appearance: none;
+	appearance: none!important;
+
+	&::-ms-expand 
+		display: none;
+
+address
+	font-weight: 300
+
+body
+	min-width: 320px
+	line-height: lh(24, 16)
+	font-family: $default-font
+	font-weight: 300
+	font-size: rem(16)
+	background: #171718	
+	color: #fff
+
+	&.page_kompaniya_proizvodstvo
+
+		.project__title-block
+			min-height: 0
+
+	&.inner
+		padding-top: 165px
+
+		.wrapper
+			max-width: 1564px
+
+		.head
+			// position: static
+
+			&__wrap
+				// padding: rem(60)
+
+		.head, .footer
+			// background: #1e1e20
+
+		.footer
+			margin: 67px 0 0
+
+		.loader
+			display: none
+
+	&[class*="page_portfolio"], &[class*="page_kompaniya_proizvodstvo"]
+
+		.inner-page
+			position: static
+
+	&.loading, &.loading-2
+
+		.loader
+			// opacity: 1
+
+		&:not(.inner)
+
+			#page-wr
+				// display: none
+
+	&.loading-2, &.loaded
+
+		.loader
+
+			&__title
+
+				&:after
+					transform: scale3d(1, 1, 1)
+
+	&.loaded
+
+		.loader
+			opacity: 0
+			transition-delay: 1.3s
+
+			&__title
+				transform: translate3d(100%, 0, 0)
+
+
+.loader
+	background: #000
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	z-index: 10
+	display: flex
+	align-items: center
+	user-select: none
+	transition: opacity .65s ease
+	// opacity: 0
+	pointer-events: none
+	overflow: hidden
+	// transition-delay: 1.3s
+	will-change: opacity
+
+	&__title
+		position: relative
+		font-size: 32rem
+		width: 100%
+		font-weight: 400
+		font-family: "Roboto Condensed"
+		line-height: 1
+		text-align: center
+		transition: transform .65s ease
+		transition-delay: .55s
+		will-change: transform
+
+		span
+			position: relative
+			z-index: 1
+
+		&:after
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			+size(100%)
+			will-change: transform
+			transform-origin: left
+			transform: scale3d(0, 1, 1)
+			transition: transform .65s ease
+			background: linear-gradient(to right, $main-color, $second-color)
+
+header, footer
+	flex: none
+
+.content
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+
+.main
+	flex: 1 0 auto
+
+#page-wr
+	// max-width: 1920px
+	box-sizing: content-box
+	margin: 0 auto
+	// height: 100vh
+	// display: flex
+
+.inner-page
+	position: relative
+
+a
+	color: #70428a
+	text-decoration: underline
+	font-weight: inherit
+
+	&[href^="tel"], &[href^="mail"]
+		white-space: nowrap
+
+.wrapper
+	max-width: $base-width + px
+	padding: 0 2rem
+	margin: 0 auto
+	width: 100%
+	box-sizing: content-box
+
+	.wrapper
+		padding: 0
+
+input[type="submit"], button
+	cursor: pointer
+
+img
+	max-width: 100%
+
+	&[height]
+		height: auto
+
+li
+	list-style: none
+
+.soc
+	display: flex
+	align-items: center
+	
+	&__link
+		display: flex
+		align-items: center
+
+		&:not(:last-child)
+			margin: 0 28px 0 0
+
+		img
+			filter: hue-rotate(180deg)
+
+%text-page, .text-page
+	// line-height: 1.375
+
+	> *:not(:first-child)
+		margin-top: 22px
+
+	h2, h3, h4, h5, h6
+		font-weight: bold
+
+	h3, h4, h5, h6
+		margin-bottom: 0
+
+		+ p, + ul
+			margin-top: 0 !important
+
+	h2
+		font-size: rem(22)
+		line-height: lh(28, 22)
+
+	h3
+		font-size: rem(20)
+		line-height: rem(26)
+
+	h4, h5
+		line-height: rem(24)
+
+	h4
+		font-size: rem(18)
+	
+	h5
+		font-size: rem(16)
+
+	h6
+		font-size: rem(14)
+
+	img[align]
+		margin-bottom: 25px
+
+	img[align="right"]
+		float: right
+		margin-left: 20px
+
+	img[align="left"]
+		float: left
+		margin-right: 20px
+
+	blockquote
+		border-left: 2px solid $main-color
+		padding-left: 21px
+
+	table
+		width: 100%
+		table-layout: fixed
+		// color: #000
+		font-weight: inherit
+		line-height: inherit
+		font-size: inherit
+
+		td, th
+			padding: 15px 23px
+			font-weight: inherit
+			line-height: inherit
+			font-size: inherit
+			vertical-align: middle
+
+	table[border="1"]
+
+		td, th
+			border: 1px solid $border-color
+
+	ul, ol
+		max-width: 650px
+		margin-top: 0 !important
+
+	li
+		//padding-left: 20px
+		position: relative
+
+		&:before
+			display: inline-block
+
+		&:not(:first-child)
+			//margin-top: 21px
+
+		ul, ol
+			margin-bottom: 20px
+
+		li
+			padding-left: 20px
+
+			&:not(:first-child)
+				margin-top: 0
+
+	ul
+
+		li
+
+			&:before
+				content: "—"
+				margin: 0 5px 0 0
+
+		ul
+
+			li
+				//padding-left: 20px
+
+				&:before
+					content: "-"
+					margin: 0 5px 5px 0
+	
+	ol
+		counter-reset: i
+
+		li
+			counter-increment: i
+
+			&:before
+				content: counter(i) "."
+				margin-right: 4px
+	dt, dd 
+		display: inline
+		font-style: italic
+
+.radio
+	
+	&__input
+		display: none
+
+		&[disabled]
+
+			+ label
+				color: rgb(172, 172, 172) !important
+
+				&:after
+					//opacity: 1
+					//background: #b8b8bb
+
+		&:checked
+
+			+ label
+
+				&:after
+					opacity: 1
+
+	&__label
+		position: relative
+		min-height: 26px
+		display: flex
+		align-items: center
+		cursor: pointer
+		padding-left: 40px
+		user-select: none
+
+		&:before, &:after
+			content: ""
+			position: absolute
+			border-radius: 50%
+
+		&:before
+			top: 0
+			left: 0
+			background: $second-color
+			+size(26px)
+		
+		&:after
+			top: 9px
+			left: 9px
+			+size(8px)
+			transition: opacity .3s ease
+			opacity: 0
+			z-index: 1
+			background: $main-color
+
+.checkbox
+	
+	&__input
+		display: none
+
+		&:checked
+
+			+ label
+				
+				&:after
+					opacity: 1
+
+	&__label
+		position: relative
+		padding-left: 30px
+		cursor: pointer
+		min-height: 17px
+		display: flex
+		align-items: center
+		font-size: 14px
+
+		&:before, &:after
+			position: absolute
+			content: ""
+
+		&:before
+			background: #fff
+			+size(17px)
+			left: 0
+			top: 0px
+			border: 1px solid $border-color
+
+		&:after
+			transition: opacity .3s ease
+			+size(11px 6px)
+			left: 5px
+			top: 6px
+			background: url("../img/ico-check.png") no-repeat
+			opacity: 0
+
+.gradient-btn
+	background: linear-gradient(to right, rgba($main-color, .7), rgba($second-color, .7))
+	padding: 18px 26px 20px
+	transition: background .3s ease
+
+	&:hover, &:focus
+		background: linear-gradient(to right, rgba($main-color, 1), rgba($second-color, 1))
+
+	&--prev, &--next
+		position: relative
+
+		&:before
+			content: ""
+			position: absolute
+			+size(8px 17px)
+			background: url("../img/ico-btn-arrow.png") no-repeat
+			top: calc(50% - 9px)
+			z-index: 1
+
+	&--prev
+		padding-left: 53px
+
+		&:before
+			left: 22px
+			transform: rotate3d(0, 0, 1, 180deg)
+
+	&--next
+		padding-right: 53px
+
+		&:before
+			right: 22px
+
+	&--location
+		padding-left: 60px
+		position: relative
+
+		&:before
+			content: ""
+			position: absolute
+			+size(16px 22px)
+			background: url("../img/ico-small-loc.png") no-repeat
+			top: calc(50% - 11px)
+			left: 21px
+
+	&--play
+		padding-left: 60px
+		position: relative
+		background: none
+		border: 3px solid rgba(96, 58, 117, .7) !important
+
+		&:before
+			content: ""
+			position: absolute
+			+size(16px 20px)
+			background: url("../img/ico-play-white.png") no-repeat
+			background-size: contain
+			top: calc(50% - 11px)
+			left: 24px
+
+.bordered-btn, .gradient-btn
+	display: inline-block
+	color: #fff
+	text-decoration: none
+	border: none
+
+.bordered-btn
+	position: relative
+	background: linear-gradient(to right bottom, $main-color, $second-color)
+	padding: 1px
+
+	&__link
+		background: #252527
+		position: relative
+		z-index: 1
+		color: inherit
+		text-decoration: inherit
+		display: block
+		padding: 16px 22px 17px
+		transition: background .3s ease
+
+		&:hover, &:focus
+			background: transparent
+
+.selectize
+	color: #fff !important
+
+	*
+		color: inherit !important
+	
+	&-control
+		padding: 0 !important
+		height: auto !important
+		min-height: 38px
+		display: flex
+		align-items: center
+
+		&.multi
+
+			.selectize
+
+				&-input
+
+					> div
+						background: #1e1e20
+						padding: 8px
+
+	&-input
+		border: none
+		border-radius: 0
+		box-shadow: none !important
+		background: url("../img/ico-select-white-arrow.png") center right 13px no-repeat, #171718
+		padding-right: 50px !important
+
+		&:after
+			display: none !important
+
+		&.full, &.input-active
+			background: none !important
+
+	&-dropdown
+		height: auto !important
+		padding: 0 !important
+		background: #171718	 !important
+
+		.active
+			background: #1e1e20
+
+.photo-btn
+	padding: 1px
+	display: inline-block
+	background: linear-gradient(to bottom right, $main-color, $second-color)
+
+	&__link
+		display: block
+		color: #fff
+		text-decoration: none
+		padding: 19px 38px 19px 66px
+		background: url("../img/ico-photo.png") center left 25px no-repeat, #252527
+		transition: background .3s ease
+
+		&:hover, &:focus
+			background: url("../img/ico-photo-hover.png") center left 25px no-repeat, transparent
+
+.standart-page
+	background: #2a2a2c
+	display: flex
+	flex-wrap: wrap
+	
+	&__img
+		width: 100%
+
+		img
+			display: block
+	
+	&__text
+		background: #fff
+		color: #000
+		max-width: 1105px
+		width: calc(100% - 459px)
+		padding: rem(62) rem(76)
+
+		.text-page
+			@extend %clearfix
+
+	&__aside
+		flex: none
+		width: 459px
+		display: flex
+		text-align: center
+
+	&__right
+		flex-direction: column
+		display: flex
+		justify-content: space-between
+		width: 100%
+		padding: rem(62) 0
+
+	&__form
+		position: sticky
+		top: 100px
+
+		.contacts-form__text
+			text-align: center
+
+	&__btn
+		position: sticky
+		top: 100px
+
+.bx-ie
+	
+	.promo-counter__number, .service-big__count,
+	.number__number, .timeline__number, .number__sub,
+	.team-info__counter-number, .team-info__counter-text
+		background: none !important
+		color: #fff
+
+	.main-port
+		margin-left: -44px
+
+	.videogallery
+		margin-left: -4.07rem
+
+a.js__bg
+	position: relative
+	transition: color .3s ease, border-color .3s ease
+	display: inline-block
+
+	span
+		position: relative
+		z-index: 1
+
+	&:after
+		content: ""
+		position: absolute
+		left: -5px
+		top: -3px
+		bottom: -4px
+		right: -5px
+		background: linear-gradient(to right, $main-color, $second-color)
+		transition: transform .3s ease
+		transform-origin: bottom
+		transform: scale3d(1, 0, 1)
+
+	&:hover, &:focus
+		color: #fff
+		border-color: transparent
+
+		&:after
+			transform: scale3d(1, 1, 1)
+
+select
+
+	&:not(.selectized)
+		padding: 
+			left: 15px
+			right: 25px
+
+body:not(.loaded)
+
+	.bx-crm-widget-chat-config-wrapper
+		display: none !important

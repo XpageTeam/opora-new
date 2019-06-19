@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Услуги
+		include inc/head.jade
+		include inc/css.jade
+	body.inner.loading
+		#page-wr
+			.content
+				include inc/header.jade
+				main.main
+					.inner-page
+						.title-block__cont
+							.wrapper
+								.title-block
+									.title-block__title
+										h1 Услуги
+									.title-block__crumbs
+										.bread-crumbs
+											a.bread-crumbs__link(href="#") Главная
+											span.bread-crumbs__this Услуги
+						.inner-page__content
+							.wrapper
+								.services__cont
+									.services
+										each service, i in [{title: "Сетевые проекты", text: "Выбор для тех, кто хочет смело заявить об уровне качества своих товаров и услуг"}, {title: "Крышные установки", text: "По-настоящему революционный способ эффектного оформления рекламы"}, ]
+											.services__one
+												.direction
+													a.direction__img(href="#")
+														img(src="img/photos/serv-"+(i+1)+".jpg", alt="")
+													.direction__desc
+														.direction__title=service.title
+														.direction__text
+															.text-page
+																p=service.text
+														.direction__links
+															a.direction__link.direction__link--read(href="#") Читать
+															a.direction__link.direction__link--view(href="#") Смотреть
+										.services__one.services__one--big
+											.service-big
+												.service-big__wrap
+													.service-big__title наши основные направления
+													.service-big__desc
+														.service-big__count 9
+														.service-big__links 
+															.direction__links
+																a.direction__link.direction__link--read(href="#") Читайте подробнее
+																a.direction__link.direction__link--view(href="#") Смотрите работы по услуге
+										each service, i in [{title: "Фасадные вывески", text: "Эффективный способов увеличения продаж и беспроигрышного привлечения внимания"}, {title: "Интерьерные вывески", text: "По-настоящему революционный способ эффектного оформления рекламы"}, {title: "Стеллы", text: "Выбор для тех, кто хочет смело заявить об уровне качества своих товаров и услуг"},]
+											.services__one
+												.direction
+													a.direction__img(href="#")
+														img(src="img/photos/serv-"+(i+1)+".jpg", alt="")
+													.direction__desc
+														.direction__title=service.title
+														.direction__text
+															.text-page
+																p=service.text
+														.direction__links
+															a.direction__link.direction__link--read(href="#") Читать
+															a.direction__link.direction__link--view(href="#") Смотреть
+										.services__one.services__one--info
+											.service-info
+												.service-info__wrap
+													.service-info__title смотреть <br /> наши <br /> проекты
+													.service-info__btn
+														.photo-btn
+															a.photo-btn__link(href="#") Смотреть
+										each service, i in [{title: "Уникальные проекты", text: "По-настоящему революционный способ эффектного оформления рекламы"}, {title: "Выставочные стенды", text: "Эффективный способов увеличения продаж и беспроигрышного привлечения внимания"}, {title: "Брендирование", text: "По-настоящему революционный способ эффектного оформления рекламы"}, ]
+											.services__one
+												.direction
+													a.direction__img(href="#")
+														img(src="img/photos/serv-"+(i+1)+".jpg", alt="")
+													.direction__desc
+														.direction__title=service.title
+														.direction__text
+															.text-page
+																p=service.text
+														.direction__links
+															a.direction__link.direction__link--read(href="#") Читать
+															a.direction__link.direction__link--view(href="#") Смотреть
+				include inc/footer-inner.jade
+		include inc/scripts.jade

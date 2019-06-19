@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Гриль Бар YORK
+		include inc/head.jade
+		include inc/css.jade
+	body.inner.loading.page_portfolio
+		#page-wr
+			.content
+				include inc/header.jade
+				main.main
+					.inner-page
+						.title-block__cont
+							.wrapper
+								.title-block
+									.title-block__title
+										h1 Гриль Бар YORK
+									.title-block__crumbs
+										.bread-crumbs
+											a.bread-crumbs__link(href="#") Главная
+											a.bread-crumbs__link(href="#") Компания
+											a.bread-crumbs__link(href="#") Портфолио
+											span.bread-crumbs__this Гриль Бар YORK
+						.inner-page__content
+							.wrapper
+								.project__cont
+									.project
+										<!-- По макету не слайдер, но мало ли -->
+										.project__slider
+											figure.project__slider-slide
+												img(src="img/photos/project-img.jpg", alt="")
+										.project__title-block
+											.project__title
+												h2 комплексное <br />оформление ресторана
+											.project__subtitle Гриль Бар «YORK»
+										.project__desc
+											.project-desc
+												.project-desc__one
+													.project-desc__label Услуга
+													.project-desc__title Фасадная вывеска
+												.project-desc__one
+													.project-desc__label Сроки выполнения
+													.project-desc__title 10 рабочих дней
+												.project-desc__one
+													.project-desc__label Год 
+													.project-desc__title 2017
+										.project__another-slider
+											.project__another-slider__desc
+												.pr-desc
+													.pr-desc__title Гриль Бар «YORK»
+													.pr-desc__text
+														.text-page
+															p Фасадная вывеска в виде объёмных букв  и «быка» из стали 3мм, сталь искусственно подвержена коррозии  с последующим защитным покрытием лаком, подсветка открытого типа светодиодными лампами 7ват
+															p Внутреннее оформление, объёмные световые буквы с подсветкой контражур, различные декоративные элементы и м.д
+											.project-slider
+												a.project-slider__slide.fancybox(href="img/photos/project-slider-img.jpg" rel="project-slider-gallery")
+													img(src="img/photos/project-slider-img.jpg", alt="")
+												a.project-slider__slide.fancybox(href="img/photos/project-slider-img.jpg" rel="project-slider-gallery")
+													img(src="img/photos/project-slider-img.jpg", alt="")
+												a.project-slider__slide.fancybox(href="img/photos/project-slider-img.jpg" rel="project-slider-gallery")
+													img(src="img/photos/project-slider-img.jpg", alt="")
+												a.project-slider__slide.fancybox(href="img/photos/project-slider-img.jpg" rel="project-slider-gallery")
+													img(src="img/photos/project-slider-img.jpg", alt="")
+										.project__video
+											.project-video
+												a.project-video__link.fancybox.fancybox-ajax(href="https://www.youtube.com/embed/Kf6lgI_hTeU" class="fancybox.iframe")
+													img(src="img/photos/project-video-bg.png", alt="")
+												.project-video__desc
+													.project-video__desc-title Процесс создания комплексного оформления ресторана
+										.project__bot
+											.project__bot-back
+												a.gradient-btn.gradient-btn--prev(href="#") Предыдущий проект
+											.project__bot-form
+												.contacts-form
+													.contacts-form__title Связаться с нами
+													form
+														.contacts-form__inputs
+															.contacts-form__input
+																input.forms__input(type="text" placeholder="Ваше имя")
+															.contacts-form__input
+																input.forms__input(type="tel" placeholder="Контактный телефон")
+														.contacts-form__text
+															p Нажимая кнопку вы даете согласие на <br /> <a href="#">обработку своих персональных данных</a>
+														.contacts-form__submit
+															input.gradient-btn(type="submit" value="Отправить")
+											.project__bot-next
+												a.gradient-btn.gradient-btn--next(href="#") Следующий проект
+				include inc/footer-inner.jade
+		include inc/scripts.jade
