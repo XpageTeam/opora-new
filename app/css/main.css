@@ -758,6 +758,19 @@ body[class*="page_services_"] .title {
   position: relative;
 }
 
+.main-banner__cont:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background-image: url("../img/photos/ico-treangl.svg");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
 .main-banner__slider-slide img {
   display: block;
   width: 100%;
@@ -1256,6 +1269,55 @@ body[class*="page_services_"] .title {
   bottom: 0;
   background: rgba(0, 0, 0, 0.85);
   transition: background .5s ease;
+}
+
+.seo-text-cont {
+  margin-top: 200px;
+}
+
+.seo-text .title {
+  text-align: left !important;
+  margin-bottom: 20px;
+}
+
+.seo-text__text > * {
+  margin-bottom: 35px;
+}
+
+.seo-text__element {
+  display: flex;
+}
+
+.seo-text__el-title {
+  max-width: 466px;
+  width: 100%;
+  border-top: 1px solid #fff;
+  margin-right: 40px;
+  font-size: 2.1875rem;
+  font-weight: bold;
+  padding: 44px 0;
+  flex: none;
+}
+
+.seo-text__el-text > * {
+  margin-bottom: 35px;
+}
+
+.seo-text__el-text li {
+  margin-bottom: 15px;
+}
+
+.seo-text__el-text ol {
+  counter-reset: i;
+}
+
+.seo-text__el-text ol li {
+  counter-increment: i;
+}
+
+.seo-text__el-text ol li:before {
+  content: counter(i) ".";
+  margin-right: 4px;
 }
 
 *[v-cloak] {

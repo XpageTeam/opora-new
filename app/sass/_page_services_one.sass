@@ -21,10 +21,24 @@ body[class*="page_services_"]
 	&__cont
 		position: relative
 
-	&__slider-slide
-		img
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
 			display: block
-			width: 100%
+			background-image: url('../img/photos/ico-treangl.svg')
+			background-position: center top
+			background-repeat: no-repeat
+
+	&__slider
+
+		&-slide
+			img
+				display: block
+				width: 100%
 
 	&__title
 		h1
@@ -464,3 +478,50 @@ body[class*="page_services_"]
 			bottom: 0
 			background: rgba(#000, .85%)
 			transition: background .5s ease
+
+
+.seo-text
+
+	&-cont
+		margin-top: 200px
+
+	.title
+		text-align: left !important
+		margin-bottom: 20px
+
+	&__text
+		> *
+			margin-bottom: 35px
+
+	&__element
+		display: flex
+
+	&__el
+		&-title
+			max-width: 466px
+			width: 100%
+			border-top: 1px solid #fff
+			margin-right: 40px
+			font-size: rem(35)
+			font-weight: bold
+			padding: 44px 0
+			flex: none
+
+		&-text 
+			> *
+				margin-bottom: 35px
+
+			li
+				margin-bottom: 15px
+
+
+			ol
+				counter-reset: i
+
+				li
+					counter-increment: i
+
+					&:before
+						content: counter(i) "."
+						margin-right: 4px
+
