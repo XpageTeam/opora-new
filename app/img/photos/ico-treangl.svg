@@ -1,17 +1,1 @@
-<svg width="1121" height="720" viewBox="0 0 1121 720" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.5" filter="url(#filter0_b)">
-<path d="M1016.46 60.2501L560.5 850L104.538 60.25L1016.46 60.2501Z" stroke="url(#paint0_linear)" stroke-width="120"/>
-</g>
-<defs>
-<filter id="filter0_b" x="-99.3855" y="-99.75" width="1319.77" height="1169.75" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feGaussianBlur in="BackgroundImage" stdDeviation="50"/>
-<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
-</filter>
-<linearGradient id="paint0_linear" x1="560.5" y1="-37" x2="584" y2="1216" gradientUnits="userSpaceOnUse">
-<stop stop-color="#603A75"/>
-<stop offset="0.468968" stop-color="#603A75" stop-opacity="0"/>
-</linearGradient>
-</defs>
-</svg>
+<svg width="1121" height="720" viewBox="0 0 1121 720" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1016.46 60.25L560.5 850 104.538 60.25h911.922z" stroke="url(#a)" stroke-width="120" opacity=".5" filter="url(#b)"/><defs><filter id="b" x="-99.385" y="-99.75" width="1319.77" height="1169.75" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feGaussianBlur in="BackgroundImage" stdDeviation="50"/><feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/><feBlend in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/></filter><linearGradient id="a" x1="560.5" y1="-37" x2="584" y2="1216" gradientUnits="userSpaceOnUse"><stop stop-color="#603A75"/><stop offset=".469" stop-color="#603A75" stop-opacity="0"/></linearGradient></defs></svg>

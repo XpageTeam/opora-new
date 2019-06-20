@@ -13,6 +13,8 @@ postcss = require("gulp-postcss"),
 prefixer = require("autoprefixer"),
 sftp = require("gulp-sftp");
 
+const xpager_path = "/www/html.xpager.ru/opora-new/";
+
 let process = require("child_process"),
 	connectionSettings = require("./accesses/accesses.js");
 
