@@ -1,5 +1,44 @@
 let playSpeed = 4000;
 
+$(".works__list").slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	pauseOnHover: false,
+	arrows: false,
+	slide: ".works__item",
+	infinite: false,
+	dots: true,
+});
+
+$(".advantages__list").slick({
+	slidesToShow: 2,
+	slidesToScroll: 1,
+	pauseOnHover: false,
+	arrows: false,
+	slide: ".advantages__item",
+	infinite: false,
+});
+
+$(".statistics__list").slick({
+	slidesToShow: 2,
+	slidesToScroll: 1,
+	pauseOnHover: false,
+	arrows: false,
+	slide: ".statistics__item",
+	infinite: false,
+	dots: true,
+});
+
+$(".brands__list").slick({
+	slidesToShow: 2,
+	slidesToScroll: 1,
+	pauseOnHover: false,
+	arrows: false,
+	slide: ".brands__item",
+	infinite: false,
+	dots: true,
+});
+
 $(".project-icons__one-img").width(Math.max.apply(null, 
 	$(".project-icons__one-img").map(function(){
 		return $(this).width()
@@ -46,7 +85,7 @@ if ($(".clients-counter__number").length)
 	$(".clients-counter__number").countTo();
 
 if ($(".projects-counter__number").length)
-	$(".projects-counter__number").countTo()
+	$(".projects-counter__number").countTo();
 
 $(".burger").click(function(){
 	let $this = $(this);
@@ -126,6 +165,7 @@ X.onScroll((e, offset) => {
 	if ($(".promo-counter__number").length)
 		if ($(".promo-counter__number").offset().top + 50 <=
 			$(window).scrollTop() + $(window).height()){
+
 				$(".promo-counter__number:not(.countered)").each((i, el) => {
 					let $this = $(el),
 						speed = 0;
@@ -150,9 +190,11 @@ X.onScroll((e, offset) => {
 				});
 		}
 
+
 	if ($(".statistics__item-num").length)
 		if ($(".statistics__item-num").offset().top + 50 <=
 			$(window).scrollTop() + $(window).height()){
+				console.log(1);
 				$(".statistics__item-num:not(.countered)").each((i, el) => {
 					let $this = $(el),
 						speed = 0;
@@ -176,7 +218,11 @@ X.onScroll((e, offset) => {
 					$this.addClass("countered");
 				});
 		}
+
+	
 });
+
+
 
 $(".directions__slider").each((i, el) => {
 	let $slider = $(el).find(".directions__slider-slider");
@@ -227,14 +273,6 @@ $(".text-page table").wrap("<div class='table-wrap'></div>");
 
 X.inner(() => {
 
-
-
-
-	if ($(".number__number").length)
-		$(".number__number").countTo();
-
-	$(".head__menu").append($(".footer__soc .soc").clone().addClass("js__soc-moved"));
-
 	$(".project__slider").slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -244,6 +282,15 @@ X.inner(() => {
 		pauseOnHover: false,
 		slide: ".project__slider-slide"
 	});
+
+
+
+	if ($(".number__number").length)
+		$(".number__number").countTo();
+
+	$(".head__menu").append($(".footer__soc .soc").clone().addClass("js__soc-moved"));
+
+
 
 	$(".project-slider").slick({
 		slidesToScroll: 1,

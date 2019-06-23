@@ -1,5 +1,8 @@
-body[class*="page_services_kryshnye-ustanovki"]
+.page_services_kryshnye-ustanovki
 	padding-top: 0 !important
+
+	.standart-page__aside
+		display: none
 
 	.title-block__cont
 		position: absolute
@@ -14,7 +17,18 @@ body[class*="page_services_kryshnye-ustanovki"]
 		text-align: center
 		text-transform: uppercase
 
-.page_services_kryshnye-ustanovki
+	.title-block__title
+		display: none
+
+	.inner-page__content
+		> .wrapper
+			max-width: 100%
+			padding: 0
+
+			> * 
+				> .wrapper
+					padding: 0 2rem
+					box-sizing: content-box
 
 	.main-banner
 		&__cont
@@ -133,7 +147,7 @@ body[class*="page_services_kryshnye-ustanovki"]
 	&__list
 		display: flex
 		flex-wrap: wrap
-		margin: 80px 0 -6pc -6px
+		margin: 80px 0 -6px -6px
 
 
 	&__item
@@ -648,5 +662,423 @@ body[class*="page_services_kryshnye-ustanovki"]
 					transform: translateY(5px)
 
 
+@media screen and (max-width: 1500px)
+	
+	.page_services_kryshnye-ustanovki 
 
+		.title
+			font-size: 2rem
+
+		.inner-page__content
+			>
+				.wrapper 
+					> * > .wrapper
+						padding: 0 2rem
+						box-sizing: border-box
+
+		.advantages
+			&-cont
+				margin-top: 50px
+
+			&__list
+				margin: 40px 0 -20px -20px
+
+	.price-roof-cont
+		padding: 65px 0
+
+	.calculate-cost
+		padding: 50px 0
+
+
+	.works
+		&-cont
+			padding: 50px 0
+
+		&__list
+			margin: 35px 0 -6px -6px
+
+		&__more-btn
+			margin-top: 50px
+
+	.statistics
+		&-cont
+			padding: 50px 0 100px
+
+		&__list
+			margin-top: 30px
+
+		&__item-num
+			font-size: 3rem
+
+	.brands
+		&__list
+			margin: 30px 0 -25px -25px
+
+		&__item
+			width: calc((100% - 25px * 4)/ 4)
+			margin: 0 0 25px 25px
+
+	.seo-text
+		&-cont
+			margin-top: 70px
+
+		&__el-title
+			max-width: 360px
+			font-size: 1.6rem
+			padding: 30px 0
+
+@media screen and (max-width: 1400px)
+
+	.page_services_kryshnye-ustanovki 
+
+		.title-block__cont
+			top: 70px
+
+@media screen and (max-width: 1200px)
+
+	.page_services_kryshnye-ustanovki 
+		.title-block__cont
+			top: 105px
+
+		.advantages
+			background-size: cover
+
+			&-cont
+				margin-top: 35px
+
+
+
+	.main-banner
+		&__form
+			&-cont
+				margin-top: 25px
+
+		&__subtitle
+			text-align: center
+			max-width: 800px
+
+		&__title h1
+			font-size: 2rem
+
+
+		&__title-block
+			margin-top: 145px
+
+	.price-roof
+		&__img
+			margin-right: 50px
+
+		&__title
+			font-size: 1.7rem
+
+	.calculate-cost__img
+
+		img
+			object-fit: cover
+			object-position: center
+			height: 665px
+
+
+@media screen and (max-width: 1000px)
+	
+	.page_services_kryshnye-ustanovki 
+		.title
+			font-size: 1.7rem
+
+	.main-banner__slider-slide 
+		img
+			height: 600px
+
+	.price-roof__img
+		max-width: 235px
+
+	.calculate-cost 
+		.forms-wrap
+			margin-top: 15px
+
+	.statistics
+		&__item
+			&-num
+				font-size: 1.7rem
+
+			&:not(:last-child):after
+				top: calc(50% - 5px)
+				height: 10px
+				width: 10px
+
+
+			&-text
+				font-size: 10px
+				text-align: center
+
+		&__list
+			margin-top: 20px
+
+		&-cont
+			padding: 30px 0 55px
+
+	.seo-text__el-title
+		max-width: 205px
+		font-size: 1.4rem
+		padding: 15px 0
+
+	.advantages__item
+		img
+			max-height: 65px
+
+@media screen and (max-width: 660px)
+
+
+
+	.page_services_kryshnye-ustanovki
+
+		.inner-page__content>.wrapper>*>.wrapper
+			padding: 0 14px
+
+		.wrapper
+			padding: 0 14px
+
+		.title
+			font-size: rem(20)
+
+
+		.main-banner__cont:before
+			background-size: contain
+
+		.title-block__cont
+			top: 55px
+
+		.bread-crumbs
+			&__link, &__this
+				display: inline-block !important
+				font-size: rem(12)
+				font-weight: bold
+
+			&__link
+
+				&:after
+					display: inline-block !important
+
+				&:nth-last-child(2)
+					padding: 0
+
+					&:before
+						display: none
+
+		.advantages
+			background: none
+
+			&__item
+				margin-bottom: 0
+
+				figure
+					margin-bottom: 13px
+
+
+
+
+
+
+	.main-banner
+		&__slider-slide 
+			img
+				height: 610px
+				object-fit: cover
+				object-position: center
+
+		&__title
+			h1 
+				font-size: rem(25)
+				text-align: center
+
+			&-block
+				margin-top: 0
+
+		&__subtitle
+			font-size: rem(16)
+
+		&__input
+			width: 100%
+
+		&__form 
+			input[type=submit]
+				margin: 23px 0 0 0
+
+			&-text
+				max-width: 227px
+				margin: 0 auto
+				width: 100%
+				text-align: center
+				margin-top: 15px
+
+
+
+	.main-banner__form
+		flex-direction: column
+		max-width: 227px
+		margin: 0 auto
+
+	.price-roof__img
+		display: none
+
+	.works-cont
+		padding: 65px 0 20px
+
+	.calculate-cost
+		padding: 20px 0
+
+	.works
+		&__list
+			display: block
+
+		&__item
+
+			margin: 0 0 0 5px
+
+			img
+				display: block
+
+		&__more-btn
+			display: none
+
+		.slick-list
+			overflow: visible
+
+		.slick-dots
+			display: flex
+			justify-content: center
+			margin-top: 18px
+
+			li
+				+size(10px)
+				flex: none
+
+				&:not(:first-child)
+					margin-left: 10px
+
+			.slick-active
+				button
+					opacity: 1
+
+			button
+				font-size: 0
+				+size(10px)
+				border-radius: 50%
+				background: rgba(141, 0, 201, 0.4)
+				opacity: .7
+				border: 0
+				display: block
+				padding: 0
+
+	.price-roof
+		&-cont
+			padding: 75px 0
+
+		&__title
+			font-size: rem(20)
+
+		&__btn
+			width: 100%
+			margin-top: 25px
+
+			a
+				width: 100%
+
+	.calculate-cost
+		&__img 
+			img
+				height: 555px
+
+		.forms__input
+			height: 50px
+
+		.forms__label
+			margin-bottom: 5px
+
+		.forms-input-cont
+			margin-bottom: 10px
+
+		.forms__label--file:before
+			content: attr(data-btn-text) !important
+
+	.statistics
+		&__item:not(:last-child):after
+			right: 2px
+
+		&__list
+			display: block
+
+		&__item-num
+			font-size: rem(47)
+
+		.slick-dots
+			display: flex
+			justify-content: center
+			margin-top: 18px
+
+			li
+				+size(10px)
+				flex: none
+
+				&:not(:first-child)
+					margin-left: 10px
+
+			.slick-active
+				button
+					opacity: 1
+
+			button
+				font-size: 0
+				+size(10px)
+				border-radius: 50%
+				background: rgba(141, 0, 201, 0.4)
+				opacity: .7
+				border: 0
+				display: block
+				padding: 0
+
+
+	.brands
+		.title
+			text-align: left
+
+		&__item
+			margin-bottom: 0
+
+
+
+		.slick-dots
+			display: flex
+			justify-content: center
+			margin-top: 18px
+			width: 100%
+
+			li
+				+size(10px)
+				flex: none
+
+				&:not(:first-child)
+					margin-left: 10px
+
+			.slick-active
+				button
+					opacity: 1
+
+			button
+				font-size: 0
+				+size(10px)
+				border-radius: 50%
+				background: rgba(141, 0, 201, 0.4)
+				opacity: .7
+				border: 0
+				display: block
+				padding: 0
+
+	.seo-text
+		&__element
+			flex-direction: column
+
+		&__el-title
+			max-width: 100%
+			margin-right: 0
 	
