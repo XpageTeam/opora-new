@@ -4,43 +4,50 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 var playSpeed = 4000;
 
-$(".works__list").slick({
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	pauseOnHover: false,
-	arrows: false,
-	slide: ".works__item",
-	infinite: false,
-	dots: true
-});
+if ($(window).width() < 700) {
 
-$(".advantages__list").slick({
-	slidesToShow: 2,
-	slidesToScroll: 1,
-	pauseOnHover: false,
-	arrows: false,
-	slide: ".advantages__item",
-	infinite: false
-});
+	$(".works__list").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		pauseOnHover: false,
+		arrows: false,
+		slide: ".works__item",
+		infinite: false,
+		dots: true
+	});
 
-$(".statistics__list").slick({
-	slidesToShow: 2,
-	slidesToScroll: 1,
-	pauseOnHover: false,
-	arrows: false,
-	slide: ".statistics__item",
-	infinite: false,
-	dots: true
-});
+	$(".advantages__list").slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		pauseOnHover: false,
+		arrows: false,
+		slide: ".advantages__item",
+		infinite: false
+	});
 
-$(".brands__list").slick({
-	slidesToShow: 2,
-	slidesToScroll: 1,
-	pauseOnHover: false,
-	arrows: false,
-	slide: ".brands__item",
-	infinite: false,
-	dots: true
+	$(".statistics__list").slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		pauseOnHover: false,
+		arrows: false,
+		slide: ".statistics__item",
+		infinite: false,
+		dots: true
+	});
+
+	$(".brands__list").slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		pauseOnHover: false,
+		arrows: false,
+		slide: ".brands__item",
+		infinite: false,
+		dots: true
+	});
+}
+
+$('.seo-text-more .btn').click(function () {
+	$(this).closest('.seo-text-cont').find('.seo-text__elements').slideToggle();
 });
 
 $(".project-icons__one-img").width(Math.max.apply(null, $(".project-icons__one-img").map(function () {
@@ -154,7 +161,7 @@ X.onScroll(function (e, offset) {
 	if (offset > 0) $(".head").addClass("js__scrolled");else $(".head").removeClass("js__scrolled");
 
 	if ($(".promo-counter__number").length) if ($(".promo-counter__number").offset().top + 50 <= $(window).scrollTop() + $(window).height()) {
-
+		console.log(1);
 		$(".promo-counter__number:not(.countered)").each(function (i, el) {
 			var $this = $(el),
 			    speed = 0;

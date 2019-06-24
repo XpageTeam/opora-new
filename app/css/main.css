@@ -735,15 +735,15 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   display: none !important;
 }
 
-.page_services_kryshnye-ustanovki {
+.admin.page_services_kryshnye-ustanovki {
   padding-top: 0 !important;
 }
 
-.page_services_kryshnye-ustanovki .standart-page__aside {
+.admin.page_services_kryshnye-ustanovki .standart-page__aside {
   display: none;
 }
 
-.page_services_kryshnye-ustanovki .title-block__cont {
+.admin.page_services_kryshnye-ustanovki .title-block__cont {
   position: absolute;
   top: 135px;
   left: 0;
@@ -751,32 +751,32 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   z-index: 10;
 }
 
-.page_services_kryshnye-ustanovki .title {
+.admin.page_services_kryshnye-ustanovki .title {
   font-size: 2.1875rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
 }
 
-.page_services_kryshnye-ustanovki .title-block__title {
+.admin.page_services_kryshnye-ustanovki .title-block__title {
   display: none;
 }
 
-.page_services_kryshnye-ustanovki .inner-page__content > .wrapper {
+.admin.page_services_kryshnye-ustanovki .inner-page__content > .wrapper {
   max-width: 100%;
   padding: 0;
 }
 
-.page_services_kryshnye-ustanovki .inner-page__content > .wrapper > * > .wrapper {
+.admin.page_services_kryshnye-ustanovki .inner-page__content > .wrapper > * > .wrapper {
   padding: 0 2rem;
   box-sizing: content-box;
 }
 
-.page_services_kryshnye-ustanovki .main-banner__cont {
+.admin.page_services_kryshnye-ustanovki .main-banner__cont {
   position: relative;
 }
 
-.page_services_kryshnye-ustanovki .main-banner__cont:before {
+.admin.page_services_kryshnye-ustanovki .main-banner__cont:before {
   content: '';
   position: absolute;
   top: 0;
@@ -789,23 +789,23 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   background-repeat: no-repeat;
 }
 
-.page_services_kryshnye-ustanovki .advantages {
+.admin.page_services_kryshnye-ustanovki .advantages {
   background-image: url("../img/ico-triangl.svg");
   background-position: center bottom;
   background-repeat: no-repeat;
 }
 
-.page_services_kryshnye-ustanovki .advantages-cont {
+.admin.page_services_kryshnye-ustanovki .advantages-cont {
   margin-top: 85px;
 }
 
-.page_services_kryshnye-ustanovki .advantages__list {
+.admin.page_services_kryshnye-ustanovki .advantages__list {
   display: flex;
   flex-wrap: wrap;
   margin: 90px 0 -20px -20px;
 }
 
-.page_services_kryshnye-ustanovki .advantages__item {
+.admin.page_services_kryshnye-ustanovki .advantages__item {
   width: calc((100% - 20px * 3) / 3);
   margin: 0 0 50px 20px;
   display: flex;
@@ -813,12 +813,12 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   align-items: center;
 }
 
-.page_services_kryshnye-ustanovki .advantages__item-text {
+.admin.page_services_kryshnye-ustanovki .advantages__item-text {
   max-width: 320px;
   text-align: center;
 }
 
-.page_services_kryshnye-ustanovki .advantages__item figure {
+.admin.page_services_kryshnye-ustanovki .advantages__item figure {
   margin-bottom: 35px;
 }
 
@@ -1292,6 +1292,10 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   transition: background .5s ease;
 }
 
+.seo-text-more {
+  display: none;
+}
+
 .seo-text-cont {
   margin-top: 200px;
 }
@@ -1355,39 +1359,39 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   margin: 0 5px 5px 0;
 }
 
-.page_services_tipografiya .main-banner__title h1 {
+.admin.page_services_tipografiya .main-banner__title h1 {
   font-size: 4rem;
   text-transform: none;
 }
 
-.page_services_tipografiya .main-banner__subtitle {
+.admin.page_services_tipografiya .main-banner__subtitle {
   font-size: 2.25rem;
 }
 
-.page_services_tipografiya .services__vertical {
+.admin.page_services_tipografiya .services__vertical {
   margin-right: 140px;
   flex: none;
 }
 
-.page_services_tipografiya .services__list {
+.admin.page_services_tipografiya .services__list {
   margin-top: 75px;
 }
 
-.page_services_tipografiya .services__item {
+.admin.page_services_tipografiya .services__item {
   display: flex;
 }
 
-.page_services_tipografiya .services__item:not(:first-child) {
+.admin.page_services_tipografiya .services__item:not(:first-child) {
   margin-top: 55px;
 }
 
-.page_services_tipografiya .services__item-title {
+.admin.page_services_tipografiya .services__item-title {
   font-size: 2.1875rem;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
-.page_services_tipografiya .services__item figure {
+.admin.page_services_tipografiya .services__item figure {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1399,21 +1403,21 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   margin-right: 33px;
 }
 
-.page_services_tipografiya .services__item-info {
+.admin.page_services_tipografiya .services__item-info {
   margin-top: 35px;
 }
 
-.page_services_tipografiya .services__item-info li {
+.admin.page_services_tipografiya .services__item-info li {
   margin-bottom: 20px;
 }
 
-.page_services_tipografiya .services__item-info a {
+.admin.page_services_tipografiya .services__item-info a {
   font-size: 1.25rem;
   color: #fff;
   text-decoration: none;
 }
 
-.page_services_tipografiya .advantages-cont {
+.admin.page_services_tipografiya .advantages-cont {
   margin-top: 100px;
   background-image: url("../img/photos/tipografadv.jpg");
   background-repeat: no-repeat;
@@ -1422,31 +1426,31 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   padding: 50px 0 80px;
 }
 
-.page_services_tipografiya .advantages__list {
+.admin.page_services_tipografiya .advantages__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.page_services_tipografiya .advantages__item {
+.admin.page_services_tipografiya .advantages__item {
   width: calc(100% / 2);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.page_services_tipografiya .advantages__item-num {
+.admin.page_services_tipografiya .advantages__item-num {
   font-size: 9rem;
   color: #676767;
 }
 
-.page_services_tipografiya .advantages__item-text {
+.admin.page_services_tipografiya .advantages__item-text {
   position: relative;
   font-size: 1.25rem;
   text-transform: uppercase;
 }
 
-.page_services_tipografiya .advantages__item-text:after {
+.admin.page_services_tipografiya .advantages__item-text:after {
   content: '';
   display: block;
   position: absolute;
@@ -1460,17 +1464,17 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
 }
 
 @media screen and (max-width: 1500px) {
-  .page_services_kryshnye-ustanovki .title {
+  .admin.page_services_kryshnye-ustanovki .title {
     font-size: 2rem;
   }
-  .page_services_kryshnye-ustanovki .inner-page__content > .wrapper > * > .wrapper {
+  .admin.page_services_kryshnye-ustanovki .inner-page__content > .wrapper > * > .wrapper {
     padding: 0 2rem;
     box-sizing: border-box;
   }
-  .page_services_kryshnye-ustanovki .advantages-cont {
+  .admin.page_services_kryshnye-ustanovki .advantages-cont {
     margin-top: 50px;
   }
-  .page_services_kryshnye-ustanovki .advantages__list {
+  .admin.page_services_kryshnye-ustanovki .advantages__list {
     margin: 40px 0 -20px -20px;
   }
   .price-roof-cont {
@@ -1515,19 +1519,19 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
 }
 
 @media screen and (max-width: 1400px) {
-  .page_services_kryshnye-ustanovki .title-block__cont {
+  .admin.page_services_kryshnye-ustanovki .title-block__cont {
     top: 70px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .page_services_kryshnye-ustanovki .title-block__cont {
+  .admin.page_services_kryshnye-ustanovki .title-block__cont {
     top: 105px;
   }
-  .page_services_kryshnye-ustanovki .advantages {
+  .admin.page_services_kryshnye-ustanovki .advantages {
     background-size: cover;
   }
-  .page_services_kryshnye-ustanovki .advantages-cont {
+  .admin.page_services_kryshnye-ustanovki .advantages-cont {
     margin-top: 35px;
   }
   .main-banner__form-cont {
@@ -1557,7 +1561,7 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
 }
 
 @media screen and (max-width: 1000px) {
-  .page_services_kryshnye-ustanovki .title {
+  .admin.page_services_kryshnye-ustanovki .title {
     font-size: 1.7rem;
   }
   .main-banner__slider-slide img {
@@ -1598,42 +1602,42 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
 }
 
 @media screen and (max-width: 660px) {
-  .page_services_kryshnye-ustanovki .inner-page__content > .wrapper > * > .wrapper {
+  .admin.page_services_kryshnye-ustanovki .inner-page__content > .wrapper > * > .wrapper {
     padding: 0 14px;
   }
-  .page_services_kryshnye-ustanovki .wrapper {
+  .admin.page_services_kryshnye-ustanovki .wrapper {
     padding: 0 14px;
   }
-  .page_services_kryshnye-ustanovki .title {
+  .admin.page_services_kryshnye-ustanovki .title {
     font-size: 1.25rem;
   }
-  .page_services_kryshnye-ustanovki .main-banner__cont:before {
+  .admin.page_services_kryshnye-ustanovki .main-banner__cont:before {
     background-size: contain;
   }
-  .page_services_kryshnye-ustanovki .title-block__cont {
+  .admin.page_services_kryshnye-ustanovki .title-block__cont {
     top: 55px;
   }
-  .page_services_kryshnye-ustanovki .bread-crumbs__link, .page_services_kryshnye-ustanovki .bread-crumbs__this {
+  .admin.page_services_kryshnye-ustanovki .bread-crumbs__link, .admin.page_services_kryshnye-ustanovki .bread-crumbs__this {
     display: inline-block !important;
     font-size: 0.75rem;
     font-weight: bold;
   }
-  .page_services_kryshnye-ustanovki .bread-crumbs__link:after {
+  .admin.page_services_kryshnye-ustanovki .bread-crumbs__link:after {
     display: inline-block !important;
   }
-  .page_services_kryshnye-ustanovki .bread-crumbs__link:nth-last-child(2) {
+  .admin.page_services_kryshnye-ustanovki .bread-crumbs__link:nth-last-child(2) {
     padding: 0;
   }
-  .page_services_kryshnye-ustanovki .bread-crumbs__link:nth-last-child(2):before {
+  .admin.page_services_kryshnye-ustanovki .bread-crumbs__link:nth-last-child(2):before {
     display: none;
   }
-  .page_services_kryshnye-ustanovki .advantages {
+  .admin.page_services_kryshnye-ustanovki .advantages {
     background: none;
   }
-  .page_services_kryshnye-ustanovki .advantages__item {
+  .admin.page_services_kryshnye-ustanovki .advantages__item {
     margin-bottom: 0;
   }
-  .page_services_kryshnye-ustanovki .advantages__item figure {
+  .admin.page_services_kryshnye-ustanovki .advantages__item figure {
     margin-bottom: 13px;
   }
   .main-banner__slider-slide img {
@@ -1734,7 +1738,7 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
     width: 100%;
   }
   .calculate-cost__img img {
-    height: 555px;
+    height: 660px;
   }
   .calculate-cost .forms__input {
     height: 50px;
@@ -1818,12 +1822,35 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
     display: block;
     padding: 0;
   }
+  .seo-text-more {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 20px;
+  }
+  .seo-text-more .btn {
+    padding: 13px 20px;
+    background: linear-gradient(90deg, #59335E 8.27%, rgba(76, 51, 94, 0.86) 146.74%, rgba(141, 0, 201, 0) 342.5%);
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
   .seo-text__element {
     flex-direction: column;
   }
   .seo-text__el-title {
     max-width: 100%;
     margin-right: 0;
+  }
+  .seo-text__elements {
+    display: none;
+  }
+  .seo-text__text, .seo-text__el-text {
+    font-size: 0.625rem;
+  }
+  .seo-text__text > *, .seo-text__el-text > * {
+    margin-bottom: 10px;
   }
 }
 

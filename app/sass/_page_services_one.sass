@@ -1,4 +1,4 @@
-.page_services_kryshnye-ustanovki
+.admin.page_services_kryshnye-ustanovki
 	padding-top: 0 !important
 
 	.standart-page__aside
@@ -501,6 +501,9 @@
 
 .seo-text
 
+	&-more
+		display: none
+
 	&-cont
 		margin-top: 200px
 
@@ -565,7 +568,7 @@
 
 
 
-.page_services_tipografiya
+.admin.page_services_tipografiya
 
 	.main-banner
 		&__title 
@@ -664,7 +667,7 @@
 
 @media screen and (max-width: 1500px)
 	
-	.page_services_kryshnye-ustanovki 
+	.admin.page_services_kryshnye-ustanovki 
 
 		.title
 			font-size: 2rem
@@ -729,14 +732,14 @@
 
 @media screen and (max-width: 1400px)
 
-	.page_services_kryshnye-ustanovki 
+	.admin.page_services_kryshnye-ustanovki 
 
 		.title-block__cont
 			top: 70px
 
 @media screen and (max-width: 1200px)
 
-	.page_services_kryshnye-ustanovki 
+	.admin.page_services_kryshnye-ustanovki 
 		.title-block__cont
 			top: 105px
 
@@ -781,7 +784,7 @@
 
 @media screen and (max-width: 1000px)
 	
-	.page_services_kryshnye-ustanovki 
+	.admin.page_services_kryshnye-ustanovki 
 		.title
 			font-size: 1.7rem
 
@@ -830,7 +833,7 @@
 
 
 
-	.page_services_kryshnye-ustanovki
+	.admin.page_services_kryshnye-ustanovki
 
 		.inner-page__content>.wrapper>*>.wrapper
 			padding: 0 14px
@@ -987,7 +990,7 @@
 	.calculate-cost
 		&__img 
 			img
-				height: 555px
+				height: 660px
 
 		.forms__input
 			height: 50px
@@ -1075,10 +1078,35 @@
 				padding: 0
 
 	.seo-text
+		&-more
+			display: flex
+			justify-content: center
+			margin: 15px 0 20px
+
+			.btn
+				padding: 13px 20px
+				background: linear-gradient(90deg,#59335E 8.27%,rgba(76,51,94,.86) 146.74%,rgba(141,0,201,0) 342.5%)
+				font-weight: 700
+				color: #fff
+				text-decoration: none
+				display: flex
+				align-items: center
+
+
 		&__element
 			flex-direction: column
 
 		&__el-title
 			max-width: 100%
 			margin-right: 0
+
+		&__elements
+			display: none
+
+		&__text, &__el-text
+			font-size: rem(10)
+
+			> *
+				margin-bottom: 10px
+
 	
