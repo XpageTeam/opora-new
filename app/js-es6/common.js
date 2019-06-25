@@ -12,13 +12,23 @@ if($(window).width() < 700){
 		dots: true,
 	});
 
-	$(".advantages__list").slick({
+	$(".advantages .advantages__list").slick({
 		slidesToShow: 2,
 		slidesToScroll: 1,
 		pauseOnHover: false,
 		arrows: false,
 		slide: ".advantages__item",
 		infinite: false,
+	});
+
+	$(".advantages-2 .advantages__list").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		pauseOnHover: false,
+		arrows: false,
+		slide: ".advantages__item",
+		infinite: false,
+		dots: true,
 	});
 
 	$(".statistics__list").slick({

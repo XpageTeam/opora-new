@@ -1,4 +1,4 @@
-.admin.page_services_kryshnye-ustanovki
+.admin.pop:not(.page_services)
 	padding-top: 0 !important
 
 	.standart-page__aside
@@ -10,6 +10,7 @@
 		left: 0
 		right: 0
 		z-index: 10
+		display: none
 
 	.title
 		font-size: rem(35)
@@ -46,19 +47,26 @@
 				background-position: center top
 				background-repeat: no-repeat
 
+			&:after
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				display: block
+				background: linear-gradient(180.39deg, #000000 0.6%, rgba(0, 0, 0, 0) 349.72%)
+
 
 	.advantages
 		background-image: url('../img/ico-triangl.svg')
 		background-position: center bottom
 		background-repeat: no-repeat
 
-		&-cont
-			margin-top: 85px
-
 		&__list
 			display: flex
 			flex-wrap: wrap
-			margin: 90px 0 -20px -20px
+			margin: 45px 0 -20px -20px
 
 		&__item
 			width: calc((100% - 20px * 3) / 3)
@@ -85,6 +93,9 @@
 			img
 				display: block
 				width: 100%
+				max-height: 600px
+				object-fit: cover
+				object-position: center
 
 	&__title
 		h1
@@ -101,6 +112,7 @@
 
 	&__subtitle
 		font-size: rem(21)
+		text-align: center
 
 	> .wrapper
 		position: absolute
@@ -142,12 +154,12 @@
 
 .works
 	&-cont
-		padding: 153px 0 65px
+		padding: 80px 0 65px
 
 	&__list
 		display: flex
 		flex-wrap: wrap
-		margin: 80px 0 -6px -6px
+		margin: 40px 0 -6px -6px
 
 
 	&__item
@@ -312,6 +324,7 @@
 		img
 			width: 100%
 			display: block
+			max-height: 800px
 
 	&__subtitle
 		font-size: rem(15)
@@ -442,11 +455,11 @@
 
 .statistics
 	&-cont
-		padding: 104px 0 163px
+		padding: 60px 0 110px
 
 	&__list
 		display: flex
-		margin-top: 140px
+		margin-top: 45px
 
 	&__item
 		position: relative
@@ -472,7 +485,7 @@
 	&__list
 		display: flex
 		flex-wrap: wrap
-		margin: 95px 0 -40px -40px
+		margin: 45px 0 -40px -40px
 
 	&__item
 		position: relative
@@ -505,7 +518,7 @@
 		display: none
 
 	&-cont
-		margin-top: 200px
+		margin-top: 110px
 
 	.title
 		text-align: left !important
@@ -568,7 +581,7 @@
 
 
 
-.admin.page_services_tipografiya
+.admin.pop[class*="page_services_tipografiya"]
 
 	.main-banner
 		&__title 
@@ -580,10 +593,16 @@
 			font-size: rem(36)
 
 	.services
+		margin-bottom: 40px
+		flex-wrap: nowrap
+
 
 		&__vertical
 			margin-right: 140px
 			flex: none
+			margin-left: 2rem
+
+
 
 		&__list
 			margin-top: 75px
@@ -624,7 +643,6 @@
 	.advantages
 
 		&-cont
-			margin-top: 100px
 			background-image: url('../img/photos/tipografadv.jpg') 
 			background-repeat: no-repeat
 			background-position: center
@@ -636,12 +654,14 @@
 			display: flex
 			flex-wrap: wrap
 			justify-content: center
+			margin: 0
 
 		&__item
 			width: calc(100% / 2)
 			display: flex
 			flex-direction: column
 			align-items: center
+			margin: 0
 
 			&-num
 				font-size: rem(144)
@@ -667,7 +687,7 @@
 
 @media screen and (max-width: 1500px)
 	
-	.admin.page_services_kryshnye-ustanovki 
+	.admin.pop
 
 		.title
 			font-size: 2rem
@@ -677,7 +697,7 @@
 				.wrapper 
 					> * > .wrapper
 						padding: 0 2rem
-						box-sizing: border-box
+						box-sizing: border-box !important
 
 		.advantages
 			&-cont
@@ -730,16 +750,33 @@
 			font-size: 1.6rem
 			padding: 30px 0
 
+	.admin.pop[class*=page_services_tipografiya] 
+		.services__item-info 
+			li
+				margin-bottom: 10px
+
+		.services__item-title
+			margin-bottom: 20px
+
+		.services__item:not(:first-child)
+			margin-top: 35px
+
+		.advantages__item-num
+			font-size: 7rem
+
+		.services__vertical
+			margin-right: 40px
+
 @media screen and (max-width: 1400px)
 
-	.admin.page_services_kryshnye-ustanovki 
+	.admin.pop
 
 		.title-block__cont
 			top: 70px
 
 @media screen and (max-width: 1200px)
 
-	.admin.page_services_kryshnye-ustanovki 
+	.admin.pop
 		.title-block__cont
 			top: 105px
 
@@ -764,9 +801,6 @@
 			font-size: 2rem
 
 
-		&__title-block
-			margin-top: 145px
-
 	.price-roof
 		&__img
 			margin-right: 50px
@@ -781,10 +815,23 @@
 			object-position: center
 			height: 665px
 
+	.services__vertical	
+		max-width: 200px
+		display: flex
+		align-items: flex-start
+
+		svg
+			width: 100%
+			height: auto
+
+	.admin.pop[class*=page_services_tipografiya] 
+		.services__item-info
+			margin-top: 25px
+
 
 @media screen and (max-width: 1000px)
 	
-	.admin.page_services_kryshnye-ustanovki 
+	.admin.pop
 		.title
 			font-size: 1.7rem
 
@@ -829,11 +876,40 @@
 		img
 			max-height: 65px
 
+	.services__vertical
+		max-width: 100px
+
+	.admin.pop[class*=page_services_tipografiya] 
+		.services__item 
+			figure
+				height: 70px
+				width: 70px
+
+				img
+					max-width: 40px
+
+		.services__list
+			margin-top: 40px
+
+
+		.services__item-info
+			margin-top: 10px
+
+		.services__item-title
+			font-size: 1.7rem
+
+		.advantages__item-num
+			font-size: 5rem
+
+
 @media screen and (max-width: 660px)
 
+	.services__vertical
+		display: none
 
 
-	.admin.page_services_kryshnye-ustanovki
+
+	.admin.pop
 
 		.inner-page__content>.wrapper>*>.wrapper
 			padding: 0 14px
@@ -842,7 +918,7 @@
 			padding: 0 14px
 
 		.title
-			font-size: rem(20)
+			font-size: rem(20) !important
 
 
 		.main-banner__cont:before
@@ -879,7 +955,7 @@
 
 
 
-
+	
 
 
 	.main-banner
@@ -1108,5 +1184,71 @@
 
 			> *
 				margin-bottom: 10px
+
+
+	.admin.pop[class*=page_services_tipografiya] 
+		.main-banner__title h1
+			font-size: 2rem
+
+		.main-banner__subtitle
+			font-size: 1.25rem
+
+		.services
+			&__item 
+				figure
+					height: 66px
+					width: 66px
+					margin-right: 25px
+
+				&:not(:first-child)
+					margin-top: 9px
+
+
+
+		.services__item-title
+			font-size: rem(20)
+			margin-bottom: 10px
+
+		.services__item-info a
+			font-size: rem(14)
+
+		.services__item-info li
+			margin-bottom: 3px
+
+		.advantages-cont
+			padding: 20px 0 31px
+
+	.advantages-2
+
+		.slick-dots
+			display: flex
+			justify-content: center
+			margin-top: 18px
+
+			li
+				+size(10px)
+				flex: none
+
+				&:not(:first-child)
+					margin-left: 10px
+
+			.slick-active
+				button
+					opacity: 1
+
+			button
+				font-size: 0
+				+size(10px)
+				border-radius: 50%
+				background: rgba(141, 0, 201, 0.4)
+				opacity: .7
+				border: 0
+				display: block
+				padding: 0
+
+	.seo-text-cont
+		margin-top: 30px
+
+
 
 	

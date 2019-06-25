@@ -735,48 +735,49 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   display: none !important;
 }
 
-.admin.page_services_kryshnye-ustanovki {
+.admin.pop:not(.page_services) {
   padding-top: 0 !important;
 }
 
-.admin.page_services_kryshnye-ustanovki .standart-page__aside {
+.admin.pop:not(.page_services) .standart-page__aside {
   display: none;
 }
 
-.admin.page_services_kryshnye-ustanovki .title-block__cont {
+.admin.pop:not(.page_services) .title-block__cont {
   position: absolute;
   top: 135px;
   left: 0;
   right: 0;
   z-index: 10;
+  display: none;
 }
 
-.admin.page_services_kryshnye-ustanovki .title {
+.admin.pop:not(.page_services) .title {
   font-size: 2.1875rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
 }
 
-.admin.page_services_kryshnye-ustanovki .title-block__title {
+.admin.pop:not(.page_services) .title-block__title {
   display: none;
 }
 
-.admin.page_services_kryshnye-ustanovki .inner-page__content > .wrapper {
+.admin.pop:not(.page_services) .inner-page__content > .wrapper {
   max-width: 100%;
   padding: 0;
 }
 
-.admin.page_services_kryshnye-ustanovki .inner-page__content > .wrapper > * > .wrapper {
+.admin.pop:not(.page_services) .inner-page__content > .wrapper > * > .wrapper {
   padding: 0 2rem;
   box-sizing: content-box;
 }
 
-.admin.page_services_kryshnye-ustanovki .main-banner__cont {
+.admin.pop:not(.page_services) .main-banner__cont {
   position: relative;
 }
 
-.admin.page_services_kryshnye-ustanovki .main-banner__cont:before {
+.admin.pop:not(.page_services) .main-banner__cont:before {
   content: '';
   position: absolute;
   top: 0;
@@ -789,23 +790,30 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   background-repeat: no-repeat;
 }
 
-.admin.page_services_kryshnye-ustanovki .advantages {
+.admin.pop:not(.page_services) .main-banner__cont:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: linear-gradient(180.39deg, #000000 0.6%, transparent 349.72%);
+}
+
+.admin.pop:not(.page_services) .advantages {
   background-image: url("../img/ico-triangl.svg");
   background-position: center bottom;
   background-repeat: no-repeat;
 }
 
-.admin.page_services_kryshnye-ustanovki .advantages-cont {
-  margin-top: 85px;
-}
-
-.admin.page_services_kryshnye-ustanovki .advantages__list {
+.admin.pop:not(.page_services) .advantages__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 90px 0 -20px -20px;
+  margin: 45px 0 -20px -20px;
 }
 
-.admin.page_services_kryshnye-ustanovki .advantages__item {
+.admin.pop:not(.page_services) .advantages__item {
   width: calc((100% - 20px * 3) / 3);
   margin: 0 0 50px 20px;
   display: flex;
@@ -813,12 +821,12 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   align-items: center;
 }
 
-.admin.page_services_kryshnye-ustanovki .advantages__item-text {
+.admin.pop:not(.page_services) .advantages__item-text {
   max-width: 320px;
   text-align: center;
 }
 
-.admin.page_services_kryshnye-ustanovki .advantages__item figure {
+.admin.pop:not(.page_services) .advantages__item figure {
   margin-bottom: 35px;
 }
 
@@ -829,6 +837,9 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
 .main-banner__slider-slide img {
   display: block;
   width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .main-banner__title h1 {
@@ -846,6 +857,7 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
 
 .main-banner__subtitle {
   font-size: 1.3125rem;
+  text-align: center;
 }
 
 .main-banner > .wrapper {
@@ -894,13 +906,13 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
 }
 
 .works-cont {
-  padding: 153px 0 65px;
+  padding: 80px 0 65px;
 }
 
 .works__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 80px 0 -6px -6px;
+  margin: 40px 0 -6px -6px;
 }
 
 .works__item {
@@ -1078,6 +1090,7 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
 .calculate-cost__img img {
   width: 100%;
   display: block;
+  max-height: 800px;
 }
 
 .calculate-cost__subtitle {
@@ -1229,12 +1242,12 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
 }
 
 .statistics-cont {
-  padding: 104px 0 163px;
+  padding: 60px 0 110px;
 }
 
 .statistics__list {
   display: flex;
-  margin-top: 140px;
+  margin-top: 45px;
 }
 
 .statistics__item {
@@ -1262,7 +1275,7 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
 .brands__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 95px 0 -40px -40px;
+  margin: 45px 0 -40px -40px;
 }
 
 .brands__item {
@@ -1297,7 +1310,7 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
 }
 
 .seo-text-cont {
-  margin-top: 200px;
+  margin-top: 110px;
 }
 
 .seo-text .title {
@@ -1359,39 +1372,45 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   margin: 0 5px 5px 0;
 }
 
-.admin.page_services_tipografiya .main-banner__title h1 {
+.admin.pop[class*="page_services_tipografiya"] .main-banner__title h1 {
   font-size: 4rem;
   text-transform: none;
 }
 
-.admin.page_services_tipografiya .main-banner__subtitle {
+.admin.pop[class*="page_services_tipografiya"] .main-banner__subtitle {
   font-size: 2.25rem;
 }
 
-.admin.page_services_tipografiya .services__vertical {
-  margin-right: 140px;
-  flex: none;
+.admin.pop[class*="page_services_tipografiya"] .services {
+  margin-bottom: 40px;
+  flex-wrap: nowrap;
 }
 
-.admin.page_services_tipografiya .services__list {
+.admin.pop[class*="page_services_tipografiya"] .services__vertical {
+  margin-right: 140px;
+  flex: none;
+  margin-left: 2rem;
+}
+
+.admin.pop[class*="page_services_tipografiya"] .services__list {
   margin-top: 75px;
 }
 
-.admin.page_services_tipografiya .services__item {
+.admin.pop[class*="page_services_tipografiya"] .services__item {
   display: flex;
 }
 
-.admin.page_services_tipografiya .services__item:not(:first-child) {
+.admin.pop[class*="page_services_tipografiya"] .services__item:not(:first-child) {
   margin-top: 55px;
 }
 
-.admin.page_services_tipografiya .services__item-title {
+.admin.pop[class*="page_services_tipografiya"] .services__item-title {
   font-size: 2.1875rem;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
-.admin.page_services_tipografiya .services__item figure {
+.admin.pop[class*="page_services_tipografiya"] .services__item figure {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1403,22 +1422,21 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   margin-right: 33px;
 }
 
-.admin.page_services_tipografiya .services__item-info {
+.admin.pop[class*="page_services_tipografiya"] .services__item-info {
   margin-top: 35px;
 }
 
-.admin.page_services_tipografiya .services__item-info li {
+.admin.pop[class*="page_services_tipografiya"] .services__item-info li {
   margin-bottom: 20px;
 }
 
-.admin.page_services_tipografiya .services__item-info a {
+.admin.pop[class*="page_services_tipografiya"] .services__item-info a {
   font-size: 1.25rem;
   color: #fff;
   text-decoration: none;
 }
 
-.admin.page_services_tipografiya .advantages-cont {
-  margin-top: 100px;
+.admin.pop[class*="page_services_tipografiya"] .advantages-cont {
   background-image: url("../img/photos/tipografadv.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1426,31 +1444,33 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   padding: 50px 0 80px;
 }
 
-.admin.page_services_tipografiya .advantages__list {
+.admin.pop[class*="page_services_tipografiya"] .advantages__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0;
 }
 
-.admin.page_services_tipografiya .advantages__item {
+.admin.pop[class*="page_services_tipografiya"] .advantages__item {
   width: calc(100% / 2);
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
 }
 
-.admin.page_services_tipografiya .advantages__item-num {
+.admin.pop[class*="page_services_tipografiya"] .advantages__item-num {
   font-size: 9rem;
   color: #676767;
 }
 
-.admin.page_services_tipografiya .advantages__item-text {
+.admin.pop[class*="page_services_tipografiya"] .advantages__item-text {
   position: relative;
   font-size: 1.25rem;
   text-transform: uppercase;
 }
 
-.admin.page_services_tipografiya .advantages__item-text:after {
+.admin.pop[class*="page_services_tipografiya"] .advantages__item-text:after {
   content: '';
   display: block;
   position: absolute;
@@ -1464,17 +1484,17 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
 }
 
 @media screen and (max-width: 1500px) {
-  .admin.page_services_kryshnye-ustanovki .title {
+  .admin.pop .title {
     font-size: 2rem;
   }
-  .admin.page_services_kryshnye-ustanovki .inner-page__content > .wrapper > * > .wrapper {
+  .admin.pop .inner-page__content > .wrapper > * > .wrapper {
     padding: 0 2rem;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
   }
-  .admin.page_services_kryshnye-ustanovki .advantages-cont {
+  .admin.pop .advantages-cont {
     margin-top: 50px;
   }
-  .admin.page_services_kryshnye-ustanovki .advantages__list {
+  .admin.pop .advantages__list {
     margin: 40px 0 -20px -20px;
   }
   .price-roof-cont {
@@ -1516,22 +1536,37 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
     font-size: 1.6rem;
     padding: 30px 0;
   }
+  .admin.pop[class*=page_services_tipografiya] .services__item-info li {
+    margin-bottom: 10px;
+  }
+  .admin.pop[class*=page_services_tipografiya] .services__item-title {
+    margin-bottom: 20px;
+  }
+  .admin.pop[class*=page_services_tipografiya] .services__item:not(:first-child) {
+    margin-top: 35px;
+  }
+  .admin.pop[class*=page_services_tipografiya] .advantages__item-num {
+    font-size: 7rem;
+  }
+  .admin.pop[class*=page_services_tipografiya] .services__vertical {
+    margin-right: 40px;
+  }
 }
 
 @media screen and (max-width: 1400px) {
-  .admin.page_services_kryshnye-ustanovki .title-block__cont {
+  .admin.pop .title-block__cont {
     top: 70px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .admin.page_services_kryshnye-ustanovki .title-block__cont {
+  .admin.pop .title-block__cont {
     top: 105px;
   }
-  .admin.page_services_kryshnye-ustanovki .advantages {
+  .admin.pop .advantages {
     background-size: cover;
   }
-  .admin.page_services_kryshnye-ustanovki .advantages-cont {
+  .admin.pop .advantages-cont {
     margin-top: 35px;
   }
   .main-banner__form-cont {
@@ -1544,9 +1579,6 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   .main-banner__title h1 {
     font-size: 2rem;
   }
-  .main-banner__title-block {
-    margin-top: 145px;
-  }
   .price-roof__img {
     margin-right: 50px;
   }
@@ -1558,10 +1590,22 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
     object-position: center;
     height: 665px;
   }
+  .services__vertical {
+    max-width: 200px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .services__vertical svg {
+    width: 100%;
+    height: auto;
+  }
+  .admin.pop[class*=page_services_tipografiya] .services__item-info {
+    margin-top: 25px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-  .admin.page_services_kryshnye-ustanovki .title {
+  .admin.pop .title {
     font-size: 1.7rem;
   }
   .main-banner__slider-slide img {
@@ -1599,45 +1643,70 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   .advantages__item img {
     max-height: 65px;
   }
+  .services__vertical {
+    max-width: 100px;
+  }
+  .admin.pop[class*=page_services_tipografiya] .services__item figure {
+    height: 70px;
+    width: 70px;
+  }
+  .admin.pop[class*=page_services_tipografiya] .services__item figure img {
+    max-width: 40px;
+  }
+  .admin.pop[class*=page_services_tipografiya] .services__list {
+    margin-top: 40px;
+  }
+  .admin.pop[class*=page_services_tipografiya] .services__item-info {
+    margin-top: 10px;
+  }
+  .admin.pop[class*=page_services_tipografiya] .services__item-title {
+    font-size: 1.7rem;
+  }
+  .admin.pop[class*=page_services_tipografiya] .advantages__item-num {
+    font-size: 5rem;
+  }
 }
 
 @media screen and (max-width: 660px) {
-  .admin.page_services_kryshnye-ustanovki .inner-page__content > .wrapper > * > .wrapper {
+  .services__vertical {
+    display: none;
+  }
+  .admin.pop .inner-page__content > .wrapper > * > .wrapper {
     padding: 0 14px;
   }
-  .admin.page_services_kryshnye-ustanovki .wrapper {
+  .admin.pop .wrapper {
     padding: 0 14px;
   }
-  .admin.page_services_kryshnye-ustanovki .title {
-    font-size: 1.25rem;
+  .admin.pop .title {
+    font-size: 1.25rem !important;
   }
-  .admin.page_services_kryshnye-ustanovki .main-banner__cont:before {
+  .admin.pop .main-banner__cont:before {
     background-size: contain;
   }
-  .admin.page_services_kryshnye-ustanovki .title-block__cont {
+  .admin.pop .title-block__cont {
     top: 55px;
   }
-  .admin.page_services_kryshnye-ustanovki .bread-crumbs__link, .admin.page_services_kryshnye-ustanovki .bread-crumbs__this {
+  .admin.pop .bread-crumbs__link, .admin.pop .bread-crumbs__this {
     display: inline-block !important;
     font-size: 0.75rem;
     font-weight: bold;
   }
-  .admin.page_services_kryshnye-ustanovki .bread-crumbs__link:after {
+  .admin.pop .bread-crumbs__link:after {
     display: inline-block !important;
   }
-  .admin.page_services_kryshnye-ustanovki .bread-crumbs__link:nth-last-child(2) {
+  .admin.pop .bread-crumbs__link:nth-last-child(2) {
     padding: 0;
   }
-  .admin.page_services_kryshnye-ustanovki .bread-crumbs__link:nth-last-child(2):before {
+  .admin.pop .bread-crumbs__link:nth-last-child(2):before {
     display: none;
   }
-  .admin.page_services_kryshnye-ustanovki .advantages {
+  .admin.pop .advantages {
     background: none;
   }
-  .admin.page_services_kryshnye-ustanovki .advantages__item {
+  .admin.pop .advantages__item {
     margin-bottom: 0;
   }
-  .admin.page_services_kryshnye-ustanovki .advantages__item figure {
+  .admin.pop .advantages__item figure {
     margin-bottom: 13px;
   }
   .main-banner__slider-slide img {
@@ -1851,6 +1920,63 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   }
   .seo-text__text > *, .seo-text__el-text > * {
     margin-bottom: 10px;
+  }
+  .admin.pop[class*=page_services_tipografiya] .main-banner__title h1 {
+    font-size: 2rem;
+  }
+  .admin.pop[class*=page_services_tipografiya] .main-banner__subtitle {
+    font-size: 1.25rem;
+  }
+  .admin.pop[class*=page_services_tipografiya] .services__item figure {
+    height: 66px;
+    width: 66px;
+    margin-right: 25px;
+  }
+  .admin.pop[class*=page_services_tipografiya] .services__item:not(:first-child) {
+    margin-top: 9px;
+  }
+  .admin.pop[class*=page_services_tipografiya] .services__item-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  .admin.pop[class*=page_services_tipografiya] .services__item-info a {
+    font-size: 0.875rem;
+  }
+  .admin.pop[class*=page_services_tipografiya] .services__item-info li {
+    margin-bottom: 3px;
+  }
+  .admin.pop[class*=page_services_tipografiya] .advantages-cont {
+    padding: 20px 0 31px;
+  }
+  .advantages-2 .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+  }
+  .advantages-2 .slick-dots li {
+    height: 10px;
+    width: 10px;
+    flex: none;
+  }
+  .advantages-2 .slick-dots li:not(:first-child) {
+    margin-left: 10px;
+  }
+  .advantages-2 .slick-dots .slick-active button {
+    opacity: 1;
+  }
+  .advantages-2 .slick-dots button {
+    font-size: 0;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: rgba(141, 0, 201, 0.4);
+    opacity: .7;
+    border: 0;
+    display: block;
+    padding: 0;
+  }
+  .seo-text-cont {
+    margin-top: 30px;
   }
 }
 
