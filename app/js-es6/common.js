@@ -1,5 +1,8 @@
 let playSpeed = 4000;
 
+
+
+
 if($(window).width() < 700){
 
 	$(".works__list").slick({
@@ -142,6 +145,7 @@ $(".have-sub > a").click(function(){
 });
 
 if (X.IS_MAIN){
+
 	$(".promo__cont").mousemove(e => {
 		if (!$(".promo__cont").length)
 			return false
@@ -172,7 +176,14 @@ if (!X.IS_DESKTOP && $(".video-projects__count").length){
 	$(".video-projects__count").countTo({
 		speed: parseInt(7000)
 	});
+
+
 }
+
+$(window).on('scroll load', function(){
+
+
+})
 
 X.onScroll((e, offset) => {
 	if (offset > 0)
@@ -184,7 +195,6 @@ X.onScroll((e, offset) => {
 	if ($(".promo-counter__number").length)
 		if ($(".promo-counter__number").offset().top + 50 <=
 			$(window).scrollTop() + $(window).height()){
-				console.log(1);
 				$(".promo-counter__number:not(.countered)").each((i, el) => {
 					let $this = $(el),
 						speed = 0;
@@ -210,13 +220,11 @@ X.onScroll((e, offset) => {
 		}
 
 
-	if ($(".statistics__item-num").length)
 		if ($(".statistics__item-num").offset().top + 50 <=
 			$(window).scrollTop() + $(window).height()){
-				console.log(1);
 				$(".statistics__item-num:not(.countered)").each((i, el) => {
 					let $this = $(el),
-						speed = 0;
+					speed = 0;
 
 					switch (i){
 						case 0:
@@ -237,10 +245,8 @@ X.onScroll((e, offset) => {
 					$this.addClass("countered");
 				});
 		}
-
 	
 });
-
 
 
 $(".directions__slider").each((i, el) => {
@@ -470,3 +476,41 @@ $(() => {
 $(window).on("resize", e => {
 	setImgHeight()
 });
+
+
+// document.addEventListener("DOMContentLoaded", () => {
+// 	$(window).on('scroll load', function(){
+// 		if ($(".statistics__item-num").length)
+// 			if ($(".statistics__item-num").offset().top + 50 <=
+// 				$(window).scrollTop() + $(window).height()){
+// 					$(".statistics__item-num:not(.countered)").each((i, el) => {
+// 						let $this = $(el),
+// 							speed = 0;
+
+// 						switch (i){
+// 							case 0:
+// 								speed = 4000;
+// 							break;
+// 							case 1:
+// 								speed = 2000;
+// 							break;
+
+// 							default:
+// 								speed = 3000;
+// 						}
+
+// 						$this.width($this.width())
+
+// 						$this.countTo({
+// 							speed: speed,
+// 							onComplete(){
+// 								$this.width("auto")
+// 							}
+// 						});
+
+// 						$this.addClass("countered");
+// 					});
+// 			}
+
+// 	})
+// })

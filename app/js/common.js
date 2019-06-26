@@ -136,6 +136,7 @@ $(".have-sub > a").click(function () {
 });
 
 if (X.IS_MAIN) {
+
 	$(".promo__cont").mousemove(function (e) {
 		if (!$(".promo__cont").length) return false;
 
@@ -167,11 +168,12 @@ if (!X.IS_DESKTOP && $(".video-projects__count").length) {
 	});
 }
 
+$(window).on('scroll load', function () {});
+
 X.onScroll(function (e, offset) {
 	if (offset > 0) $(".head").addClass("js__scrolled");else $(".head").removeClass("js__scrolled");
 
 	if ($(".promo-counter__number").length) if ($(".promo-counter__number").offset().top + 50 <= $(window).scrollTop() + $(window).height()) {
-		console.log(1);
 		$(".promo-counter__number:not(.countered)").each(function (i, el) {
 			var $this = $(el),
 			    speed = 0;
@@ -196,8 +198,7 @@ X.onScroll(function (e, offset) {
 		});
 	}
 
-	if ($(".statistics__item-num").length) if ($(".statistics__item-num").offset().top + 50 <= $(window).scrollTop() + $(window).height()) {
-		console.log(1);
+	if ($(".statistics__item-num").offset().top + 50 <= $(window).scrollTop() + $(window).height()) {
 		$(".statistics__item-num:not(.countered)").each(function (i, el) {
 			var $this = $(el),
 			    speed = 0;
@@ -427,4 +428,41 @@ $(function () {
 $(window).on("resize", function (e) {
 	setImgHeight();
 });
+
+// document.addEventListener("DOMContentLoaded", () => {
+// 	$(window).on('scroll load', function(){
+// 		if ($(".statistics__item-num").length)
+// 			if ($(".statistics__item-num").offset().top + 50 <=
+// 				$(window).scrollTop() + $(window).height()){
+// 					$(".statistics__item-num:not(.countered)").each((i, el) => {
+// 						let $this = $(el),
+// 							speed = 0;
+
+// 						switch (i){
+// 							case 0:
+// 								speed = 4000;
+// 							break;
+// 							case 1:
+// 								speed = 2000;
+// 							break;
+
+// 							default:
+// 								speed = 3000;
+// 						}
+
+// 						$this.width($this.width())
+
+// 						$this.countTo({
+// 							speed: speed,
+// 							onComplete(){
+// 								$this.width("auto")
+// 							}
+// 						});
+
+// 						$this.addClass("countered");
+// 					});
+// 			}
+
+// 	})
+// })
 //# sourceMappingURL=common.js.map

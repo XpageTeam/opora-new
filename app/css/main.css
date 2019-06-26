@@ -772,6 +772,10 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   }
 }
 
+.pop .inner-page__content > .wrapper > * .wrapper {
+  max-width: 1434px;
+}
+
 .brands-cont {
   margin-top: 40px;
 }
