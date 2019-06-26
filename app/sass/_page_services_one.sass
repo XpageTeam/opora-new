@@ -1,3 +1,4 @@
+
 @media screen and (min-width: 1920px)
 	.works, .advantages
 		.title
@@ -14,7 +15,7 @@
 				position: absolute
 				bottom: 0
 				left: 0
-				transform: translateX(-65%)
+				transform: translateX(-65%) scale3d(0,0,0)
 
 	.advantages, .price-roof, .statistics
 		position: relative
@@ -29,7 +30,7 @@
 			position: absolute
 			bottom: 0
 			left: 0
-			transform: translateX(-65%)
+			transform: translateX(-65%) scale3d(0,0,0)
 
 	.price-roof, .statistics
 		&:after
@@ -40,7 +41,22 @@
 		> .wrapper
 			> *
 				.wrapper
-					max-width: 1434px
+					max-width: 1168px
+
+	.animation
+		visibility: visible !important
+		opacity: 0
+		transform: translate3d(0, 60px,0)
+		transition: opacity 2s ease, transform 2s ease
+		will-change: auto
+
+		&.animated
+			opacity: 1
+			transform: translate3d(0, 0,0)
+
+	.main-banner__cont
+		opacity: 1
+		transform: none
 
 
 .brands-cont
@@ -110,6 +126,7 @@
 		background-image: url('../img/ico-triangl.svg')
 		background-position: center bottom
 		background-repeat: no-repeat
+		background-size: cover
 
 		&__list
 			display: flex
@@ -207,6 +224,10 @@
 			padding: 14px 60px
 			margin-left: 18px
 			background: linear-gradient(90deg, #59335E 8.27%, rgba(76, 51, 94, 0.86) 146.74%, rgba(141, 0, 201, 0) 342.5%)
+			transition: background .3s ease
+
+			&:hover
+				background: linear-gradient(90deg,#59335E 3.27%,rgba(76,51,94,.86) 100.74%,rgba(141,0,201,0) 25.5%)
 
 		&-cont
 			margin-top: 70px
@@ -360,7 +381,11 @@
 		align-items: center
 
 
+.advantages__item
+	transition: transform .5s ease
 
+	&:hover
+		transform: translate3d(0,-10px,0)
 .calculate-cost
 	display: flex
 	flex-direction: column
@@ -541,7 +566,7 @@
 		text-align: center
 
 		&-num
-			font-size: rem(80)
+			font-size: rem(40)
 			font-weight: bold
 
 		&:not(:last-child):after
@@ -774,7 +799,7 @@
 				position: absolute
 				bottom: 0
 				left: 0
-				transform: translateX(-52%)
+				transform: translateX(-52%) scale3d(0,0,0)
 
 	.advantages, .price-roof, .statistics
 		position: relative
@@ -789,7 +814,7 @@
 			position: absolute
 			bottom: 0
 			left: 0
-			transform: translateX(-52%)
+			transform: translateX(-52%) scale3d(0,0,0)
 
 	.price-roof, .statistics
 		&:after
@@ -1022,6 +1047,9 @@
 
 
 @media screen and (max-width: 660px)
+
+	.main-banner__form input[type=submit]
+		padding: 14px 15px
 
 	.price-roof:after, .statistics:after
 		bottom: -75px

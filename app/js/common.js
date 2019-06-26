@@ -1,8 +1,16 @@
-"use strict";
+'use strict';
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 var playSpeed = 4000;
+
+new WOW({
+	boxClass: 'animation', // default
+	animateClass: 'animated', // default
+	offset: 50, // default
+	mobile: true, // default
+	live: false // default
+}).init();
 
 if ($(window).width() < 700) {
 
@@ -198,7 +206,7 @@ X.onScroll(function (e, offset) {
 		});
 	}
 
-	if ($(".statistics__item-num").offset().top + 50 <= $(window).scrollTop() + $(window).height()) {
+	if ($(".statistics__item-num").length) if ($(".statistics__item-num").offset().top + 50 <= $(window).scrollTop() + window.innerHeight) {
 		$(".statistics__item-num:not(.countered)").each(function (i, el) {
 			var $this = $(el),
 			    speed = 0;
@@ -223,6 +231,8 @@ X.onScroll(function (e, offset) {
 		});
 	}
 });
+
+console.log($(window).innerHeight());
 
 $(".directions__slider").each(function (i, el) {
 	var $slider = $(el).find(".directions__slider-slider");
@@ -428,41 +438,4 @@ $(function () {
 $(window).on("resize", function (e) {
 	setImgHeight();
 });
-
-// document.addEventListener("DOMContentLoaded", () => {
-// 	$(window).on('scroll load', function(){
-// 		if ($(".statistics__item-num").length)
-// 			if ($(".statistics__item-num").offset().top + 50 <=
-// 				$(window).scrollTop() + $(window).height()){
-// 					$(".statistics__item-num:not(.countered)").each((i, el) => {
-// 						let $this = $(el),
-// 							speed = 0;
-
-// 						switch (i){
-// 							case 0:
-// 								speed = 4000;
-// 							break;
-// 							case 1:
-// 								speed = 2000;
-// 							break;
-
-// 							default:
-// 								speed = 3000;
-// 						}
-
-// 						$this.width($this.width())
-
-// 						$this.countTo({
-// 							speed: speed,
-// 							onComplete(){
-// 								$this.width("auto")
-// 							}
-// 						});
-
-// 						$this.addClass("countered");
-// 					});
-// 			}
-
-// 	})
-// })
 //# sourceMappingURL=common.js.map

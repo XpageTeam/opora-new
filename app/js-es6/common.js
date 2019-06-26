@@ -1,6 +1,12 @@
 let playSpeed = 4000;
 
-
+new WOW({
+	boxClass:     'animation',      // default
+	animateClass: 'animated', // default
+	offset:       50,          // default
+	mobile:       true,       // default
+	live:         false        // default
+}).init();
 
 
 if($(window).width() < 700){
@@ -219,9 +225,9 @@ X.onScroll((e, offset) => {
 				});
 		}
 
-
+	if ($(".statistics__item-num").length)
 		if ($(".statistics__item-num").offset().top + 50 <=
-			$(window).scrollTop() + $(window).height()){
+			$(window).scrollTop() + window.innerHeight) {
 				$(".statistics__item-num:not(.countered)").each((i, el) => {
 					let $this = $(el),
 					speed = 0;
@@ -245,8 +251,13 @@ X.onScroll((e, offset) => {
 					$this.addClass("countered");
 				});
 		}
+
+	
 	
 });
+
+
+console.log($(window).innerHeight())
 
 
 $(".directions__slider").each((i, el) => {
@@ -478,39 +489,4 @@ $(window).on("resize", e => {
 });
 
 
-// document.addEventListener("DOMContentLoaded", () => {
-// 	$(window).on('scroll load', function(){
-// 		if ($(".statistics__item-num").length)
-// 			if ($(".statistics__item-num").offset().top + 50 <=
-// 				$(window).scrollTop() + $(window).height()){
-// 					$(".statistics__item-num:not(.countered)").each((i, el) => {
-// 						let $this = $(el),
-// 							speed = 0;
 
-// 						switch (i){
-// 							case 0:
-// 								speed = 4000;
-// 							break;
-// 							case 1:
-// 								speed = 2000;
-// 							break;
-
-// 							default:
-// 								speed = 3000;
-// 						}
-
-// 						$this.width($this.width())
-
-// 						$this.countTo({
-// 							speed: speed,
-// 							onComplete(){
-// 								$this.width("auto")
-// 							}
-// 						});
-
-// 						$this.addClass("countered");
-// 					});
-// 			}
-
-// 	})
-// })
