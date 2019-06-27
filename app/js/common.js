@@ -4,13 +4,15 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 var playSpeed = 4000;
 
-new WOW({
-	boxClass: 'animation', // default
-	animateClass: 'animated', // default
-	offset: 50, // default
-	mobile: true, // default
-	live: false // default
-}).init();
+if ($('body').hasClass('pop')) {
+	new WOW({
+		boxClass: 'animation', // default
+		animateClass: 'animated', // default
+		offset: 50, // default
+		mobile: true, // default
+		live: false // default
+	}).init();
+}
 
 if ($(window).width() < 700) {
 

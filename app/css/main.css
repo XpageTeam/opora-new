@@ -750,7 +750,7 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
     position: absolute;
     bottom: 0;
     left: 0;
-    transform: translateX(-65%) scale3d(0, 0, 0);
+    transform: translateX(-65%);
   }
   .advantages, .price-roof, .statistics {
     position: relative;
@@ -765,7 +765,7 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
     position: absolute;
     bottom: 0;
     left: 0;
-    transform: translateX(-65%) scale3d(0, 0, 0);
+    transform: translateX(-65%);
   }
   .price-roof:after, .statistics:after {
     bottom: -100px;
@@ -1605,7 +1605,7 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
     position: absolute;
     bottom: 0;
     left: 0;
-    transform: translateX(-52%) scale3d(0, 0, 0);
+    transform: translateX(-52%);
   }
   .advantages, .price-roof, .statistics {
     position: relative;
@@ -1620,7 +1620,7 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
     position: absolute;
     bottom: 0;
     left: 0;
-    transform: translateX(-52%) scale3d(0, 0, 0);
+    transform: translateX(-52%);
   }
   .price-roof:after, .statistics:after {
     bottom: -100px;

@@ -1,12 +1,15 @@
 let playSpeed = 4000;
 
-new WOW({
-	boxClass:     'animation',      // default
-	animateClass: 'animated', // default
-	offset:       50,          // default
-	mobile:       true,       // default
-	live:         false        // default
-}).init();
+if($('body').hasClass('pop')){
+	new WOW({
+		boxClass:     'animation',      // default
+		animateClass: 'animated', // default
+		offset:       50,          // default
+		mobile:       true,       // default
+		live:         false        // default
+	}).init();
+	
+}
 
 
 if($(window).width() < 700){
