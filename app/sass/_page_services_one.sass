@@ -218,6 +218,10 @@
 		display: flex
 		justify-content: center
 
+		.contacts-form__input
+			margin-bottom: 0 
+
+
 		input[type="submit"]
 			color: #fff
 			border: 0
@@ -392,6 +396,18 @@
 	align-items: center
 	padding: 130px 0 65px
 
+	input[disabled]
+		~ .forms__checkbox-label
+			opacity: .5
+			cursor: default
+
+		~ .forms__label--file
+			&:before
+				cursor: default
+				opacity: .5
+
+
+
 	&-cont
 		position: relative
 
@@ -526,7 +542,7 @@
 					padding: 10px 50px 10px 10px
 					border: 1px solid #fff
 					width: auto
-					height: auto
+					height: 56px
 					text-align: left
 					line-height: 1
 					background-image: url('../img/ico-clip.svg')
@@ -551,6 +567,13 @@
 
 		a 
 			text-decoration: underline
+
+	.recaptcha
+		width: auto
+		display: flex
+		justify-content: center
+		padding: 0
+		margin-bottom: 15px
 
 .statistics
 	&-cont

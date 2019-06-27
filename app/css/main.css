@@ -969,6 +969,10 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   justify-content: center;
 }
 
+.main-banner__form .contacts-form__input {
+  margin-bottom: 0;
+}
+
 .main-banner__form input[type="submit"] {
   color: #fff;
   border: 0;
@@ -1163,6 +1167,16 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   padding: 130px 0 65px;
 }
 
+.calculate-cost input[disabled] ~ .forms__checkbox-label {
+  opacity: .5;
+  cursor: default;
+}
+
+.calculate-cost input[disabled] ~ .forms__label--file:before {
+  cursor: default;
+  opacity: .5;
+}
+
 .calculate-cost-cont {
   position: relative;
 }
@@ -1316,7 +1330,7 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   padding: 10px 50px 10px 10px;
   border: 1px solid #fff;
   width: auto;
-  height: auto;
+  height: 56px;
   text-align: left;
   line-height: 1;
   background-image: url("../img/ico-clip.svg");
@@ -1346,6 +1360,14 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
 
 .calculate-cost .forms-text a {
   text-decoration: underline;
+}
+
+.calculate-cost .recaptcha {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 15px;
 }
 
 .statistics-cont {
