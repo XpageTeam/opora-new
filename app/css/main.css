@@ -1565,7 +1565,7 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   text-decoration: none;
 }
 
-.admin.pop[class*="page_services_tipografiya"] .advantages-cont, .inner.pop.page_services_vystavochnye-stendy .advantages-cont {
+.advantages-cont.advantages-cont-col-2 {
   background-image: url("../img/photos/tipografadv.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1573,14 +1573,14 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   padding: 50px 0 80px;
 }
 
-.admin.pop[class*="page_services_tipografiya"] .advantages__list, .inner.pop.page_services_vystavochnye-stendy .advantages__list {
+.advantages-cont.advantages-cont-col-2 .advantages-2 .advantages__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
 }
 
-.admin.pop[class*="page_services_tipografiya"] .advantages__item, .inner.pop.page_services_vystavochnye-stendy .advantages__item {
+.advantages-cont.advantages-cont-col-2 .advantages-2 .advantages__item {
   width: calc(100% / 2);
   display: flex;
   flex-direction: column;
@@ -1588,18 +1588,18 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   margin: 0;
 }
 
-.admin.pop[class*="page_services_tipografiya"] .advantages__item-num, .inner.pop.page_services_vystavochnye-stendy .advantages__item-num {
+.advantages-cont.advantages-cont-col-2 .advantages-2 .advantages__item-num {
   font-size: 9rem;
   color: #676767;
 }
 
-.admin.pop[class*="page_services_tipografiya"] .advantages__item-text, .inner.pop.page_services_vystavochnye-stendy .advantages__item-text {
+.advantages-cont.advantages-cont-col-2 .advantages-2 .advantages__item-text {
   position: relative;
   font-size: 1.25rem;
   text-transform: uppercase;
 }
 
-.admin.pop[class*="page_services_tipografiya"] .advantages__item-text:after, .inner.pop.page_services_vystavochnye-stendy .advantages__item-text:after {
+.advantages-cont.advantages-cont-col-2 .advantages-2 .advantages__item-text:after {
   content: '';
   display: block;
   position: absolute;
