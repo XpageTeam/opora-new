@@ -772,11 +772,11 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   }
 }
 
-.pop .inner-page__content > .wrapper > * .wrapper {
+.section-services .inner-page__content > .wrapper > * .wrapper {
   max-width: 1168px;
 }
 
-.pop .animation {
+.section-services .animation {
   visibility: visible !important;
   opacity: 0;
   transform: translate3d(0, 60px, 0);
@@ -784,12 +784,12 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   will-change: auto;
 }
 
-.pop .animation.animated {
+.section-services .animation.animated {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
 
-.pop .main-banner__cont {
+.section-services .main-banner__cont {
   opacity: 1;
   transform: none;
 }
@@ -798,15 +798,15 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   margin-top: 40px;
 }
 
-.pop:not(.page_services) {
+.section-services:not(.page_services) {
   padding-top: 0 !important;
 }
 
-.pop:not(.page_services) .standart-page__aside {
+.section-services:not(.page_services) .standart-page__aside {
   display: none;
 }
 
-.pop:not(.page_services) .title-block__cont {
+.section-services:not(.page_services) .title-block__cont {
   position: absolute;
   top: 135px;
   left: 0;
@@ -815,32 +815,32 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   display: none;
 }
 
-.pop:not(.page_services) .title {
+.section-services:not(.page_services) .title {
   font-size: 2.1875rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
 }
 
-.pop:not(.page_services) .title-block__title {
+.section-services:not(.page_services) .title-block__title {
   display: none;
 }
 
-.pop:not(.page_services) .inner-page__content > .wrapper {
+.section-services:not(.page_services) .inner-page__content > .wrapper {
   max-width: 100%;
   padding: 0;
 }
 
-.pop:not(.page_services) .inner-page__content > .wrapper > * > .wrapper {
+.section-services:not(.page_services) .inner-page__content > .wrapper > * > .wrapper {
   padding: 0 2rem;
   box-sizing: content-box;
 }
 
-.pop:not(.page_services) .main-banner__cont {
+.section-services:not(.page_services) .main-banner__cont {
   position: relative;
 }
 
-.pop:not(.page_services) .main-banner__cont:before {
+.section-services:not(.page_services) .main-banner__cont:before {
   content: '';
   position: absolute;
   top: 0;
@@ -853,7 +853,7 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   background-repeat: no-repeat;
 }
 
-.pop:not(.page_services) .main-banner__cont:after {
+.section-services:not(.page_services) .main-banner__cont:after {
   content: '';
   position: absolute;
   top: 0;
@@ -864,20 +864,20 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   background: linear-gradient(180.39deg, #000000 0.6%, transparent 349.72%);
 }
 
-.pop:not(.page_services) .advantages {
+.section-services:not(.page_services) .advantages {
   background-image: url("../img/ico-triangl.svg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.pop:not(.page_services) .advantages__list {
+.section-services:not(.page_services) .advantages__list {
   display: flex;
   flex-wrap: wrap;
   margin: 45px 0 -20px -20px;
 }
 
-.pop:not(.page_services) .advantages__item {
+.section-services:not(.page_services) .advantages__item {
   width: calc((100% - 20px * 3) / 3);
   margin: 0 0 50px 20px;
   display: flex;
@@ -885,12 +885,12 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   align-items: center;
 }
 
-.pop:not(.page_services) .advantages__item-text {
+.section-services:not(.page_services) .advantages__item-text {
   max-width: 320px;
   text-align: center;
 }
 
-.pop:not(.page_services) .advantages__item figure {
+.section-services:not(.page_services) .advantages__item figure {
   margin-bottom: 35px;
 }
 
@@ -1505,45 +1505,45 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   margin: 0 5px 5px 0;
 }
 
-.pop[class*="page_services_tipografiya"] .main-banner__title h1, .inner.pop.page_services_vystavochnye-stendy .main-banner__title h1 {
+.section-services[class*="page_services_tipografiya"] .main-banner__title h1, .inner.section-services.page_services_vystavochnye-stendy .main-banner__title h1 {
   font-size: 4rem;
   text-transform: none;
 }
 
-.pop[class*="page_services_tipografiya"] .main-banner__subtitle, .inner.pop.page_services_vystavochnye-stendy .main-banner__subtitle {
+.section-services[class*="page_services_tipografiya"] .main-banner__subtitle, .inner.section-services.page_services_vystavochnye-stendy .main-banner__subtitle {
   font-size: 2.25rem;
 }
 
-.pop[class*="page_services_tipografiya"] .services, .inner.pop.page_services_vystavochnye-stendy .services {
+.section-services[class*="page_services_tipografiya"] .services, .inner.section-services.page_services_vystavochnye-stendy .services {
   margin-bottom: 40px;
   flex-wrap: nowrap;
 }
 
-.pop[class*="page_services_tipografiya"] .services__vertical, .inner.pop.page_services_vystavochnye-stendy .services__vertical {
+.section-services[class*="page_services_tipografiya"] .services__vertical, .inner.section-services.page_services_vystavochnye-stendy .services__vertical {
   margin-right: 140px;
   flex: none;
   margin-left: 2rem;
 }
 
-.pop[class*="page_services_tipografiya"] .services__list, .inner.pop.page_services_vystavochnye-stendy .services__list {
+.section-services[class*="page_services_tipografiya"] .services__list, .inner.section-services.page_services_vystavochnye-stendy .services__list {
   margin-top: 75px;
 }
 
-.pop[class*="page_services_tipografiya"] .services__item, .inner.pop.page_services_vystavochnye-stendy .services__item {
+.section-services[class*="page_services_tipografiya"] .services__item, .inner.section-services.page_services_vystavochnye-stendy .services__item {
   display: flex;
 }
 
-.pop[class*="page_services_tipografiya"] .services__item:not(:first-child), .inner.pop.page_services_vystavochnye-stendy .services__item:not(:first-child) {
+.section-services[class*="page_services_tipografiya"] .services__item:not(:first-child), .inner.section-services.page_services_vystavochnye-stendy .services__item:not(:first-child) {
   margin-top: 55px;
 }
 
-.pop[class*="page_services_tipografiya"] .services__item-title, .inner.pop.page_services_vystavochnye-stendy .services__item-title {
+.section-services[class*="page_services_tipografiya"] .services__item-title, .inner.section-services.page_services_vystavochnye-stendy .services__item-title {
   font-size: 2.1875rem;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
-.pop[class*="page_services_tipografiya"] .services__item figure, .inner.pop.page_services_vystavochnye-stendy .services__item figure {
+.section-services[class*="page_services_tipografiya"] .services__item figure, .inner.section-services.page_services_vystavochnye-stendy .services__item figure {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1555,15 +1555,15 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   margin-right: 33px;
 }
 
-.pop[class*="page_services_tipografiya"] .services__item-info, .inner.pop.page_services_vystavochnye-stendy .services__item-info {
+.section-services[class*="page_services_tipografiya"] .services__item-info, .inner.section-services.page_services_vystavochnye-stendy .services__item-info {
   margin-top: 35px;
 }
 
-.pop[class*="page_services_tipografiya"] .services__item-info li, .inner.pop.page_services_vystavochnye-stendy .services__item-info li {
+.section-services[class*="page_services_tipografiya"] .services__item-info li, .inner.section-services.page_services_vystavochnye-stendy .services__item-info li {
   margin-bottom: 20px;
 }
 
-.pop[class*="page_services_tipografiya"] .services__item-info a, .inner.pop.page_services_vystavochnye-stendy .services__item-info a {
+.section-services[class*="page_services_tipografiya"] .services__item-info a, .inner.section-services.page_services_vystavochnye-stendy .services__item-info a {
   font-size: 1.25rem;
   color: #fff;
   text-decoration: none;
@@ -1654,17 +1654,17 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
 }
 
 @media screen and (max-width: 1500px) {
-  .pop .title {
+  .section-services .title {
     font-size: 2rem;
   }
-  .pop .inner-page__content > .wrapper > * > .wrapper {
+  .section-services .inner-page__content > .wrapper > * > .wrapper {
     padding: 0 2rem;
     box-sizing: border-box !important;
   }
-  .pop .advantages-cont {
+  .section-services .advantages-cont {
     margin-top: 50px;
   }
-  .pop .advantages__list {
+  .section-services .advantages__list {
     margin: 40px 0 -20px -20px;
   }
   .price-roof-cont {
@@ -1706,37 +1706,37 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
     font-size: 1.6rem;
     padding: 30px 0;
   }
-  .pop[class*=page_services_tipografiya] .services__item-info li, .inner.pop.page_services_vystavochnye-stendy .services__item-info li {
+  .section-services[class*=page_services_tipografiya] .services__item-info li, .inner.section-services.page_services_vystavochnye-stendy .services__item-info li {
     margin-bottom: 10px;
   }
-  .pop[class*=page_services_tipografiya] .services__item-title, .inner.pop.page_services_vystavochnye-stendy .services__item-title {
+  .section-services[class*=page_services_tipografiya] .services__item-title, .inner.section-services.page_services_vystavochnye-stendy .services__item-title {
     margin-bottom: 20px;
   }
-  .pop[class*=page_services_tipografiya] .services__item:not(:first-child), .inner.pop.page_services_vystavochnye-stendy .services__item:not(:first-child) {
+  .section-services[class*=page_services_tipografiya] .services__item:not(:first-child), .inner.section-services.page_services_vystavochnye-stendy .services__item:not(:first-child) {
     margin-top: 35px;
   }
-  .pop[class*=page_services_tipografiya] .advantages__item-num, .inner.pop.page_services_vystavochnye-stendy .advantages__item-num {
+  .section-services[class*=page_services_tipografiya] .advantages__item-num, .inner.section-services.page_services_vystavochnye-stendy .advantages__item-num {
     font-size: 7rem;
   }
-  .pop[class*=page_services_tipografiya] .services__vertical, .inner.pop.page_services_vystavochnye-stendy .services__vertical {
+  .section-services[class*=page_services_tipografiya] .services__vertical, .inner.section-services.page_services_vystavochnye-stendy .services__vertical {
     margin-right: 40px;
   }
 }
 
 @media screen and (max-width: 1400px) {
-  .pop .title-block__cont {
+  .section-services .title-block__cont {
     top: 70px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .pop .title-block__cont {
+  .section-services .title-block__cont {
     top: 105px;
   }
-  .pop .advantages {
+  .section-services .advantages {
     background-size: cover;
   }
-  .pop .advantages-cont {
+  .section-services .advantages-cont {
     margin-top: 35px;
   }
   .main-banner__form-cont {
@@ -1773,7 +1773,7 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   .services__vertical-text {
     margin-bottom: 35px;
   }
-  .pop[class*=page_services_tipografiya] .services__item-info, .inner.pop.page_services_vystavochnye-stendy .services__item-info {
+  .section-services[class*=page_services_tipografiya] .services__item-info, .inner.section-services.page_services_vystavochnye-stendy .services__item-info {
     margin-top: 25px;
   }
 }
@@ -1782,7 +1782,7 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   .price-roof:after, .statistics:after {
     bottom: -65px;
   }
-  .pop .title {
+  .section-services .title {
     font-size: 1.7rem;
   }
   .main-banner__slider-slide img {
@@ -1820,23 +1820,23 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   .advantages__item img {
     max-height: 65px;
   }
-  .pop[class*=page_services_tipografiya] .services__item figure, .inner.pop.page_services_vystavochnye-stendy .services__item figure {
+  .section-services[class*=page_services_tipografiya] .services__item figure, .inner.section-services.page_services_vystavochnye-stendy .services__item figure {
     height: 70px;
     width: 70px;
   }
-  .pop[class*=page_services_tipografiya] .services__item figure img, .inner.pop.page_services_vystavochnye-stendy .services__item figure img {
+  .section-services[class*=page_services_tipografiya] .services__item figure img, .inner.section-services.page_services_vystavochnye-stendy .services__item figure img {
     max-width: 40px;
   }
-  .pop[class*=page_services_tipografiya] .services__list, .inner.pop.page_services_vystavochnye-stendy .services__list {
+  .section-services[class*=page_services_tipografiya] .services__list, .inner.section-services.page_services_vystavochnye-stendy .services__list {
     margin-top: 40px;
   }
-  .pop[class*=page_services_tipografiya] .services__item-info, .inner.pop.page_services_vystavochnye-stendy .services__item-info {
+  .section-services[class*=page_services_tipografiya] .services__item-info, .inner.section-services.page_services_vystavochnye-stendy .services__item-info {
     margin-top: 10px;
   }
-  .pop[class*=page_services_tipografiya] .services__item-title, .inner.pop.page_services_vystavochnye-stendy .services__item-title {
+  .section-services[class*=page_services_tipografiya] .services__item-title, .inner.section-services.page_services_vystavochnye-stendy .services__item-title {
     font-size: 1.7rem;
   }
-  .pop[class*=page_services_tipografiya] .advantages__item-num, .inner.pop.page_services_vystavochnye-stendy .advantages__item-num {
+  .section-services[class*=page_services_tipografiya] .advantages__item-num, .inner.section-services.page_services_vystavochnye-stendy .advantages__item-num {
     font-size: 5rem;
   }
 }
@@ -1851,42 +1851,42 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   .services__vertical {
     display: none;
   }
-  .pop .inner-page__content > .wrapper > * > .wrapper {
+  .section-services .inner-page__content > .wrapper > * > .wrapper {
     padding: 0 14px;
   }
-  .pop .wrapper {
+  .section-services .wrapper {
     padding: 0 14px;
   }
-  .pop .title {
+  .section-services .title {
     font-size: 1.25rem !important;
   }
-  .pop .main-banner__cont:before {
+  .section-services .main-banner__cont:before {
     background-size: contain;
   }
-  .pop .title-block__cont {
+  .section-services .title-block__cont {
     top: 55px;
   }
-  .pop .bread-crumbs__link, .pop .bread-crumbs__this {
+  .section-services .bread-crumbs__link, .section-services .bread-crumbs__this {
     display: inline-block !important;
     font-size: 0.75rem;
     font-weight: bold;
   }
-  .pop .bread-crumbs__link:after {
+  .section-services .bread-crumbs__link:after {
     display: inline-block !important;
   }
-  .pop .bread-crumbs__link:nth-last-child(2) {
+  .section-services .bread-crumbs__link:nth-last-child(2) {
     padding: 0;
   }
-  .pop .bread-crumbs__link:nth-last-child(2):before {
+  .section-services .bread-crumbs__link:nth-last-child(2):before {
     display: none;
   }
-  .pop .advantages {
+  .section-services .advantages {
     background: none;
   }
-  .pop .advantages__item {
+  .section-services .advantages__item {
     margin-bottom: 0;
   }
-  .pop .advantages__item figure {
+  .section-services .advantages__item figure {
     margin-bottom: 13px;
   }
   .main-banner__slider-slide img {
@@ -2101,31 +2101,31 @@ body:not(.loaded) .bx-crm-widget-chat-config-wrapper {
   .seo-text__text > *, .seo-text__el-text > * {
     margin-bottom: 10px;
   }
-  .pop[class*=page_services_tipografiya] .main-banner__title h1, .inner.pop.page_services_vystavochnye-stendy .main-banner__title h1 {
+  .section-services[class*=page_services_tipografiya] .main-banner__title h1, .inner.section-services.page_services_vystavochnye-stendy .main-banner__title h1 {
     font-size: 2rem;
   }
-  .pop[class*=page_services_tipografiya] .main-banner__subtitle, .inner.pop.page_services_vystavochnye-stendy .main-banner__subtitle {
+  .section-services[class*=page_services_tipografiya] .main-banner__subtitle, .inner.section-services.page_services_vystavochnye-stendy .main-banner__subtitle {
     font-size: 1.25rem;
   }
-  .pop[class*=page_services_tipografiya] .services__item figure, .inner.pop.page_services_vystavochnye-stendy .services__item figure {
+  .section-services[class*=page_services_tipografiya] .services__item figure, .inner.section-services.page_services_vystavochnye-stendy .services__item figure {
     height: 66px;
     width: 66px;
     margin-right: 25px;
   }
-  .pop[class*=page_services_tipografiya] .services__item:not(:first-child), .inner.pop.page_services_vystavochnye-stendy .services__item:not(:first-child) {
+  .section-services[class*=page_services_tipografiya] .services__item:not(:first-child), .inner.section-services.page_services_vystavochnye-stendy .services__item:not(:first-child) {
     margin-top: 9px;
   }
-  .pop[class*=page_services_tipografiya] .services__item-title, .inner.pop.page_services_vystavochnye-stendy .services__item-title {
+  .section-services[class*=page_services_tipografiya] .services__item-title, .inner.section-services.page_services_vystavochnye-stendy .services__item-title {
     font-size: 1.25rem;
     margin-bottom: 10px;
   }
-  .pop[class*=page_services_tipografiya] .services__item-info a, .inner.pop.page_services_vystavochnye-stendy .services__item-info a {
+  .section-services[class*=page_services_tipografiya] .services__item-info a, .inner.section-services.page_services_vystavochnye-stendy .services__item-info a {
     font-size: 0.875rem;
   }
-  .pop[class*=page_services_tipografiya] .services__item-info li, .inner.pop.page_services_vystavochnye-stendy .services__item-info li {
+  .section-services[class*=page_services_tipografiya] .services__item-info li, .inner.section-services.page_services_vystavochnye-stendy .services__item-info li {
     margin-bottom: 3px;
   }
-  .pop[class*=page_services_tipografiya] .advantages-cont, .inner.pop.page_services_vystavochnye-stendy .advantages-cont {
+  .section-services[class*=page_services_tipografiya] .advantages-cont, .inner.section-services.page_services_vystavochnye-stendy .advantages-cont {
     padding: 20px 0 31px;
   }
   .advantages-2 .slick-dots {

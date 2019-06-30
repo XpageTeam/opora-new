@@ -1,16 +1,5 @@
 let playSpeed = 4000;
 
-if($('body').hasClass('pop')){
-	new WOW({
-		boxClass:     'animation',      // default
-		animateClass: 'animated', // default
-		offset:       50,          // default
-		mobile:       true,       // default
-		live:         false        // default
-	}).init();
-	
-}
-
 
 if($(window).width() < 700){
 
@@ -490,6 +479,18 @@ $(() => {
 $(window).on("resize", e => {
 	setImgHeight()
 });
+
+
+if($('body').hasClass('inner')){
+	new WOW({
+		boxClass:     'animation',      // default
+		animateClass: 'animated', // default
+		offset:       50,          // default
+		mobile:       true,       // default
+		live:         false        // default
+	}).init();
+	
+}
 
 
 

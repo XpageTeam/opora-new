@@ -1,18 +1,8 @@
-'use strict';
+"use strict";
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 var playSpeed = 4000;
-
-if ($('body').hasClass('pop')) {
-	new WOW({
-		boxClass: 'animation', // default
-		animateClass: 'animated', // default
-		offset: 50, // default
-		mobile: true, // default
-		live: false // default
-	}).init();
-}
 
 if ($(window).width() < 700) {
 
@@ -440,4 +430,14 @@ $(function () {
 $(window).on("resize", function (e) {
 	setImgHeight();
 });
+
+if ($('body').hasClass('inner')) {
+	new WOW({
+		boxClass: 'animation', // default
+		animateClass: 'animated', // default
+		offset: 50, // default
+		mobile: true, // default
+		live: false // default
+	}).init();
+}
 //# sourceMappingURL=common.js.map
